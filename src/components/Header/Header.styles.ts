@@ -180,13 +180,12 @@ export const DropdownItem = styled.a`
     background-color: #555;
     color: #C778DD;
   }
-
 `;
 
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;  // Espaço entre o menu e as imagens
+  margin-top: 30px;  // Espaço entre o menu e as imagens
 `;
 
 export const SvgImage = styled.img`
@@ -194,13 +193,13 @@ export const SvgImage = styled.img`
   height: auto;
 `;
 
-
 export const SvgLink = styled.a`
   display: inline-block;
   width: 40px;
   height: auto;
   transition: transform 0.2s;
-
+  margin-right: 3px;
+  padding: 2px;
   &:hover {
     transform: scale(1.1);  // Efeito de zoom ao passar o mouse
   }

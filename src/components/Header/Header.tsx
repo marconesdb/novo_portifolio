@@ -20,7 +20,8 @@ import {
 import logo from '../../assets/images/Logo.svg';
 import Github from '../../assets/images/Github.svg';
 import Web from '../../assets/images/Web.svg';
-import Figma from '../../assets/images/Figma.svg';
+import Linkedin from '../../assets/images/Linkedin.svg';
+import WhatsApp from '../../assets/images/WhatsApp.svg';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,15 +69,21 @@ const Header: React.FC = () => {
         {/* Exibe os ícones somente se o menu estiver aberto */}
         {isOpen && (
           <ImageContainer>
+             {/* <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <SvgImage src={Web} alt="Web" />
+            </SvgLink> */}
+            <SvgLink href="https://wa.me/5538992182727" target="_blank">
+              <SvgImage src={WhatsApp} alt="WhatsApp" />
+            </SvgLink>
             <SvgLink href="https://github.com/marconesdb" target="_blank" rel="noopener noreferrer">
               <SvgImage src={Github} alt="Github" />
             </SvgLink>
-            <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <SvgImage src={Web} alt="Web" />
+           
+            <SvgLink href="https://www.linkedin.com/in/marconesb/" target="_blank">
+              <SvgImage src={Linkedin} alt="Linkedin" />
             </SvgLink>
-            <SvgLink href="https://www.figma.com/design/IQ1tIxj1mZXhpqpMWLWiOa/Portfolio-(Community)?node-id=0-1&t=vwzNXYxBGgZ8PvuH-0" target="_blank" rel="noopener noreferrer">
-              <SvgImage src={Figma} alt="Figma" />
-            </SvgLink>
+
+           
           </ImageContainer>
         )}
       </NavMenu>
