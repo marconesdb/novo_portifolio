@@ -69,9 +69,9 @@ const Header: React.FC = () => {
         {/* Exibe os ícones somente se o menu estiver aberto */}
         {isOpen && (
           <ImageContainer>
-             {/* <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+             <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
               <SvgImage src={Web} alt="Web" />
-            </SvgLink> */}
+            </SvgLink>
             <SvgLink href="https://wa.me/5538992182727" target="_blank">
               <SvgImage src={WhatsApp} alt="WhatsApp" />
             </SvgLink>
