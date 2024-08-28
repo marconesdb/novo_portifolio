@@ -44,13 +44,13 @@ export const NavItem = styled.a`
 
   &:before {
     content: '#';
-    color: #C778DD;
+    color: #A8990F;
     position: absolute;
     left: -13px;
   }
 
   &:hover {
-    color: #C778DD;
+    color: #A8990F;
   }
 `;
 
@@ -126,14 +126,14 @@ export const Dropdown = styled.div`
 
 export const DropdownToggle = styled.div`
   cursor: pointer;
-  color: #ABB2BF;
+  color: #A8990F;
   font-size: 18px;
   display: flex;
   align-items: center;
   position: relative;
   font-weight: bold;
   &:hover {
-    color: #C778DD;
+    color: #A8990F;
   }
 
   span {
@@ -178,7 +178,7 @@ export const DropdownItem = styled.a`
 
   &:hover {
     background-color: #555;
-    color: #C778DD;
+    color: #A8990F;
   }
 `;
 
