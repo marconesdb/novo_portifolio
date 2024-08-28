@@ -4,10 +4,11 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #282C33;
+  padding: 20px 40px; /* Ajusta o padding lateral para garantir margens apropriadas */
+  background-color: #35383d;
   color: #fff;
   position: relative;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura do elemento */
 `;
 
 export const Logo = styled.h1`
@@ -132,9 +133,20 @@ export const DropdownToggle = styled.div`
   font-size: 18px;
   display: flex;
   align-items: center;
-
+  position: relative;
+  font-weight: bold;
   &:hover {
     color: #C778DD;
+  }
+
+  span {
+    position: absolute;
+    top: 100%;  /* Posiciona o símbolo logo abaixo do texto */
+    left: 50%;
+    transform: translateX(10%) translateY(-53px);  /* Ajusta a posição do símbolo */
+    font-size: 38px;  /* Mantém o tamanho do símbolo consistente com o texto */
+    color: inherit;  /* Usa a cor do texto */
+    margin-left: 15px;
   }
 `;
 

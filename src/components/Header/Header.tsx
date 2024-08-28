@@ -14,12 +14,12 @@ import {
   DropdownItem
 } from './Header.styles';
 
-import logo from '../../assets/images/Logo.svg'  
-
+import logo from '../../assets/images/Logo.svg';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownSymbol, setDropdownSymbol] = useState('ˬ');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,6 +27,7 @@ const Header: React.FC = () => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+    setDropdownSymbol(dropdownOpen ? 'ˬ' : '˰'); // Alterna entre ˬ e ˰
   };
 
   return (
@@ -48,7 +49,8 @@ const Header: React.FC = () => {
           <NavItem href="#projects">Projetos</NavItem>
           <Dropdown>
             <DropdownToggle onClick={toggleDropdown}>
-              PT ˅
+              PT
+              <span>{dropdownSymbol}</span> {/* Exibe o caractere Unicode baseado no estado */}
             </DropdownToggle>
             <DropdownMenu isOpen={dropdownOpen}>
               <DropdownItem href="#en">EN</DropdownItem>
