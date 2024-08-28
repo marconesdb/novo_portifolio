@@ -143,7 +143,9 @@ export const DropdownToggle = styled.div`
 `;
 
 export const DropdownMenu = styled.div<{ isOpen: boolean }>`
-  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -170,6 +172,9 @@ export const DropdownItem = styled.a`
   padding: 10px;
   font-size: 16px;
   white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
 
   &:hover {
     background-color: #555;
