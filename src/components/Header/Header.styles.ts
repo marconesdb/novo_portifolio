@@ -11,8 +11,16 @@ export const Container = styled.header`
 `;
 
 export const Logo = styled.h1`
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ajuste a distância entre a imagem e o texto */
+`;
+
+export const LogoImage = styled.img`
+  width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
 `;
 
 export const Nav = styled.nav`
@@ -38,11 +46,18 @@ export const NavItem = styled.a`
     color: #C778DD;
     position: absolute;
     left: -13px; /* Ajuste a posição conforme necessário */
-
   }
 
   &:hover {
     color: #C778DD;
+  }
+`;
+
+export const NavItemHome = styled(NavItem)`
+  color: #fff; /* Cor específica para o item "Início" */
+
+  &:hover {
+    /* color: #FFBD33; Cor ao passar o mouse sobre o item "Início" */
   }
 `;
 

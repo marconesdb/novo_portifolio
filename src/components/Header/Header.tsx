@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import {
   Container,
   Logo,
+  LogoImage,
   Nav,
   NavItem,
+  NavItemHome,
   Hamburger,
   NavMenu,
   Dropdown,
@@ -11,6 +13,9 @@ import {
   DropdownMenu,
   DropdownItem
 } from './Header.styles';
+
+import logo from '../../assets/images/Logo.svg'  
+
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +31,10 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <Logo>My Portfolio</Logo>
+      <Logo>
+        <LogoImage src={logo} alt="Logo" />
+        MSB
+      </Logo>
       <Hamburger isOpen={isOpen} onClick={toggleMenu}>
         <span />
         <span />
@@ -34,7 +42,7 @@ const Header: React.FC = () => {
       </Hamburger>
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <NavItem href="#home">Início</NavItem>
+          <NavItemHome href="#home">Início</NavItemHome>
           <NavItem href="#about">Sobre</NavItem>
           <NavItem href="#skills">Skills</NavItem>
           <NavItem href="#projects">Projetos</NavItem>
