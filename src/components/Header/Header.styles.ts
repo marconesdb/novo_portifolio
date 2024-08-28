@@ -4,11 +4,11 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px; /* Ajusta o padding lateral para garantir margens apropriadas */
+  padding: 20px 40px;
   background-color: #35383d;
   color: #fff;
   position: relative;
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura do elemento */
+  box-sizing: border-box;
 `;
 
 export const Logo = styled.h1`
@@ -16,11 +16,11 @@ export const Logo = styled.h1`
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 10px; /* Ajuste a distância entre a imagem e o texto */
+  gap: 10px;
 `;
 
 export const LogoImage = styled.img`
-  width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 40px;
   height: auto;
 `;
 
@@ -46,7 +46,7 @@ export const NavItem = styled.a`
     content: '#';
     color: #C778DD;
     position: absolute;
-    left: -13px; /* Ajuste a posição conforme necessário */
+    left: -13px;
   }
 
   &:hover {
@@ -55,10 +55,10 @@ export const NavItem = styled.a`
 `;
 
 export const NavItemHome = styled(NavItem)`
-  color: #fff; /* Cor específica para o item "Início" */
+  color: #fff;
 
   &:hover {
-    /* color: #FFBD33; Cor ao passar o mouse sobre o item "Início" */
+    /* color: #FFBD33; */
   }
 `;
 
@@ -83,19 +83,16 @@ export const Hamburger = styled.div<{ isOpen: boolean }>`
     transition: .25s ease-in-out;
   }
 
-  /* Traço superior */
   span:nth-child(1) {
     top: ${({ isOpen }) => (isOpen ? '11px' : '0px')};
     transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
   }
 
-  /* Traço do meio */
   span:nth-child(2) {
     top: 11px;
     opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
   }
 
-  /* Traço inferior */
   span:nth-child(3) {
     top: ${({ isOpen }) => (isOpen ? '11px' : '22px')};
     transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
@@ -122,9 +119,9 @@ export const NavMenu = styled.div<{ isOpen: boolean }>`
   }
 `;
 
-/* Dropdown */
 export const Dropdown = styled.div`
   position: relative;
+  display: inline-block;
 `;
 
 export const DropdownToggle = styled.div`
@@ -140,13 +137,8 @@ export const DropdownToggle = styled.div`
   }
 
   span {
-    position: absolute;
-    top: 100%;  /* Posiciona o símbolo logo abaixo do texto */
-    left: 50%;
-    transform: translateX(10%) translateY(-53px);  /* Ajusta a posição do símbolo */
-    font-size: 38px;  /* Mantém o tamanho do símbolo consistente com o texto */
-    color: inherit;  /* Usa a cor do texto */
-    margin-left: 15px;
+    margin-left: 5px;
+    font-size: 18px; // Ajustado para ser do mesmo tamanho do texto
   }
 `;
 
@@ -154,18 +146,30 @@ export const DropdownMenu = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #444;
-  min-width: 150px;
-  z-index: 1;
+  min-width: 100px;
+  z-index: 1000;
+  padding: 5px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 10px;
+  }
 `;
 
 export const DropdownItem = styled.a`
-  color: #fff;
+  color: #ABB2BF;
   text-decoration: none;
   display: block;
   padding: 10px;
   font-size: 16px;
+  white-space: nowrap;
 
   &:hover {
     background-color: #555;
