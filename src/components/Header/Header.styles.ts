@@ -5,7 +5,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #282C33;
   color: #fff;
   position: relative;
 `;
@@ -26,20 +26,28 @@ export const Nav = styled.nav`
 `;
 
 export const NavItem = styled.a`
-  color: #fff;
+  color: #ABB2BF;
   text-decoration: none;
   font-size: 18px;
+  position: relative;
   transition: color 0.3s ease;
+  padding-right: 25px;
+
+  &:before {
+    content: '#';
+    color: #C778DD;
+    position: absolute;
+    left: -13px; /* Ajuste a posição conforme necessário */
+
+  }
 
   &:hover {
-    color: #ff6347;
+    color: #C778DD;
   }
 `;
 
 export const Hamburger = styled.div<{ isOpen: boolean }>`
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
   cursor: pointer;
   width: 30px;
   height: 24px;
@@ -47,32 +55,38 @@ export const Hamburger = styled.div<{ isOpen: boolean }>`
   z-index: 1000;
 
   span {
-    height: 4px;
-    background-color: #fff;
-    transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.4s ease;
+    display: block;
+    position: absolute;
+    height: 3px;
     width: 100%;
-    border-radius: 2px;
-    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
   }
 
-  /* Primeiro traço (topo) */
+  /* Traço superior */
   span:nth-child(1) {
-    transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'rotate(0)')};
+    top: ${({ isOpen }) => (isOpen ? '11px' : '0px')};
+    transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
   }
 
-  /* Segundo traço (meio) */
+  /* Traço do meio */
   span:nth-child(2) {
-    opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
-    transform: ${({ isOpen }) => (isOpen ? 'translateX(-20px)' : 'translateX(0)')};
+    top: 11px;
+    opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
   }
 
-  /* Terceiro traço (inferior) */
+  /* Traço inferior */
   span:nth-child(3) {
-    transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'rotate(0)')};
+    top: ${({ isOpen }) => (isOpen ? '11px' : '22px')};
+    transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
   }
 
   @media (max-width: 768px) {
-    display: flex;
+    display: block;
   }
 `;
 
@@ -89,5 +103,45 @@ export const NavMenu = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
+  }
+`;
+
+/* Dropdown */
+export const Dropdown = styled.div`
+  position: relative;
+`;
+
+export const DropdownToggle = styled.div`
+  cursor: pointer;
+  color: #ABB2BF;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #C778DD;
+  }
+`;
+
+export const DropdownMenu = styled.div<{ isOpen: boolean }>`
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  min-width: 150px;
+  z-index: 1;
+`;
+
+export const DropdownItem = styled.a`
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #555;
+    color: #C778DD;
   }
 `;
