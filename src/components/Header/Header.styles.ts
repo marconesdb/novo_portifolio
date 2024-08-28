@@ -5,7 +5,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #35383d;
+  background-color: #282C33;
   color: #fff;
   position: relative;
   box-sizing: border-box;
@@ -112,7 +112,7 @@ export const NavMenu = styled.div<{ isOpen: boolean }>`
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #282C33;
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
@@ -145,7 +145,7 @@ export const DropdownToggle = styled.div`
 export const DropdownMenu = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -179,5 +179,29 @@ export const DropdownItem = styled.a`
   &:hover {
     background-color: #555;
     color: #C778DD;
+  }
+
+`;
+
+export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;  // Espaço entre o menu e as imagens
+`;
+
+export const SvgImage = styled.img`
+  width: 100%;  // Tamanho das imagens SVG
+  height: auto;
+`;
+
+
+export const SvgLink = styled.a`
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);  // Efeito de zoom ao passar o mouse
   }
 `;

@@ -11,10 +11,16 @@ import {
   Dropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  ImageContainer,
+  SvgLink,
+  SvgImage
 } from './Header.styles';
 
 import logo from '../../assets/images/Logo.svg';
+import Github from '../../assets/images/Github.svg';
+import Web from '../../assets/images/Web.svg';
+import Figma from '../../assets/images/Figma.svg';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,10 +49,10 @@ const Header: React.FC = () => {
       </Hamburger>
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <NavItemHome href="#home">Início</NavItemHome>
-          <NavItem href="#about">Sobre</NavItem>
+          <NavItemHome href="#início">Início</NavItemHome>
+          <NavItem href="#sobre">Sobre</NavItem>
           <NavItem href="#skills">Skills</NavItem>
-          <NavItem href="#projects">Projetos</NavItem>
+          <NavItem href="#projetos">Projetos</NavItem>
           <Dropdown>
             <DropdownToggle onClick={toggleDropdown}>
               PT
@@ -58,6 +64,21 @@ const Header: React.FC = () => {
             </DropdownMenu>
           </Dropdown>
         </Nav>
+
+        {/* Exibe os ícones somente se o menu estiver aberto */}
+        {isOpen && (
+          <ImageContainer>
+            <SvgLink href="https://github.com/marconesdb" target="_blank" rel="noopener noreferrer">
+              <SvgImage src={Github} alt="Github" />
+            </SvgLink>
+            <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <SvgImage src={Web} alt="Web" />
+            </SvgLink>
+            <SvgLink href="https://www.figma.com/design/IQ1tIxj1mZXhpqpMWLWiOa/Portfolio-(Community)?node-id=0-1&t=vwzNXYxBGgZ8PvuH-0" target="_blank" rel="noopener noreferrer">
+              <SvgImage src={Figma} alt="Figma" />
+            </SvgLink>
+          </ImageContainer>
+        )}
       </NavMenu>
     </Container>
   );
