@@ -126,7 +126,7 @@ export const Dropdown = styled.div`
 
 export const DropdownToggle = styled.div`
   cursor: pointer;
-  color: #A8990F;
+  color: #ABB2BF;
   font-size: 18px;
   display: flex;
   align-items: center;
