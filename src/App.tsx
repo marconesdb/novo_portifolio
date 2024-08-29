@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <ContentWrapper>
         <Header />
         <MainContent />
-        {/* <Footer /> */}
+        <Footer />
       </ContentWrapper>
       <AsideRight />
       <GlobalStyles/>
