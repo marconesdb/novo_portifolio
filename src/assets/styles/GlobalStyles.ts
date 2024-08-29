@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle `
   }
 
   body {
-  background-color: #f5f5f5;
+  background-color: #1e1e1e;
   }
 
   body, button, input {
@@ -23,5 +23,7 @@ export const GlobalStyles = createGlobalStyle `
   }
     
   }
+
+  
 `;
 

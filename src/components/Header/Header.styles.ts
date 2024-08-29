@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.header`
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +11,12 @@ export const Container = styled.header`
   color: #fff;
   position: relative;
   box-sizing: border-box;
+  background-color: #2c3036;
+  width: 100%;
+  max-width: 1400px; /* Exemplo de largura máxima */
 `;
+
+
 
 export const Logo = styled.h1`
   font-size: 16px;
@@ -112,7 +119,7 @@ export const NavMenu = styled.div<{ isOpen: boolean }>`
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #282C33;
+    background-color: #2c3036;
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
