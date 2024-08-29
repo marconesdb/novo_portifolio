@@ -9,6 +9,6 @@ export const AsideRight = styled.aside`
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
 
   @media (max-width: 540px) {
-    display: none; /* Esconde o AsideRight em telas com largura até 400px */
+    display: none; /* Esconde o AsideRight em telas com largura até 540px */
   }
 `;

@@ -11,7 +11,7 @@ export const AsideLeft = styled.aside`
   padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
 
   @media (max-width: 540px) {
-    display: none; /* Esconde o AsideLeft em telas com largura até 400px */
+    display: none; /* Esconde o AsideLeft em telas com largura até 540px */
   }
 `;
 
