@@ -2,8 +2,8 @@
 import styled from 'styled-components';
 
 const StyledMainContent = styled.main`
-  grid-area: main;
-  padding: 1rem;
+  
+  background-color: #2c3036; 
 `;
 
 export default StyledMainContent;

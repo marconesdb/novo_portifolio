@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle `
   }
 
   body {
-  background-color: #1e1e1e;
+   background-color: #2c3036;
   }
 
   body, button, input {

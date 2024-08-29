@@ -4,6 +4,7 @@ import Github from '../../assets/images/Github.svg'
 import WhatsApp from '../../assets/images/WhatsApp.svg'
 import Linkedin from '../../assets/images/Linkedin.svg'
 import { SvgImage, SvgLink } from '../Header/Header.styles';
+import { FooterContainer } from '../Footer/Footer.styles';
 
 
 const AsideLeft: React.FC = () => {

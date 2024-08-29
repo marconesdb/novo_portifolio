@@ -10,17 +10,18 @@ import { GlobalStyles } from './assets/styles/GlobalStyles';
 
 const App: React.FC = () => {
   return (
+    <>
     <Container>
       <AsideLeft />
       <ContentWrapper>
         <Header />
         <MainContent />
-        <Footer />
       </ContentWrapper>
       <AsideRight />
       <GlobalStyles/>
     </Container>
-  
+    <Footer/>
+    </>
   );
 };
 

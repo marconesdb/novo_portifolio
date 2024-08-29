@@ -20,11 +20,13 @@ import {
   CentralParagraph,
   ParagraphSocialNetworks,
   LogoImage,
+  FooterContent,
 } from './Footer.styles';
 
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
+      <FooterContent>
       <LeftSection>
         <LeftSectionContent>
           <ImageContainer>
@@ -56,6 +58,7 @@ const Footer: React.FC = () => {
           </SvgLink>
         </ImagesContainer>
       </RightSection>
+      </FooterContent>
     </FooterContainer>
   );
 };

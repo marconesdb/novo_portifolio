@@ -1,11 +1,23 @@
-import StyledMainContent from "./MainContent.styles";
+// components/MainContent/MainContent.tsx
+import React from 'react';
+import Home from '../../sections/Home/Home';
+import Projects from '../../sections/Projects/Projects';
+import SmallProjects from '../../sections/SmallProjects/SmallProjects';
+import Skills from '../../sections/Skills/Skills';
+import About from '../../sections/About/About';
+import Contact from '../../sections/Contact/Contact';
 
-interface MainContentProps {
-  children?: React.ReactNode;  // Agora é opcional
-}
-
-const MainContent: React.FC<MainContentProps> = ({ children }) => {
-  return <StyledMainContent>{children}</StyledMainContent>;
+const MainContent: React.FC = () => {
+  return (
+    <div>
+      <Home/>
+      <Projects/>
+      <SmallProjects/>
+      <Skills/>
+      <About/>
+      <Contact/>
+    </div>
+  );
 };
 
 export default MainContent;
