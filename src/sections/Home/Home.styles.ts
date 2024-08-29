@@ -44,6 +44,7 @@ export const Title = styled.h1`
 
   span {
     color: #d9a400; /* Cor amarela */
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
   }
 `;
 
