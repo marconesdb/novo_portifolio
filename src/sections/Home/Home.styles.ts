@@ -41,10 +41,10 @@ export const Title = styled.h1`
   text-align: left; /* Alinha o texto à esquerda */
   margin: 0; /* Remove a margem do título */
   padding: 0; /* Remove o preenchimento do título */
-
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
   span {
     color: #d9a400; /* Cor amarela */
-    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+    
   }
 `;
 
