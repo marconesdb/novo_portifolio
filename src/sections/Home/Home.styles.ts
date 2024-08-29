@@ -63,7 +63,7 @@ export const ContactButton = styled.button`
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  margin: 0; /* Remove qualquer margem que possa estar aplicando ao botão */
+  margin: 0;      /* Remove qualquer margem que possa estar aplicando ao botão */
   display: block; /* Garante que o botão seja exibido como bloco */
   text-align: left; /* Alinha o texto do botão à esquerda */
   margin-top: 20px;
