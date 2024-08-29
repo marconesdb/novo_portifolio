@@ -14,6 +14,9 @@ export const Container = styled.header`
   background-color: #2c3036;
   width: 100%;
   max-width: 1400px; /* Exemplo de largura máxima */
+  /* Adicionando borda sólida e box-shadow */
+  border: 1px solid #000000;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 `;
 
 
