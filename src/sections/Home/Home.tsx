@@ -16,7 +16,10 @@ import {
   ImageFundo, 
   HorizontalLineSuperior, 
   HorizontalAspas, 
-  HorizontalLineSuperiorCont 
+  HorizontalLineSuperiorCont, 
+  HorizontalLineInferior,
+  HorizontalLineInferiorCont,
+  InferiorAspas
 } from './Home.styles';
 
 const Home: React.FC = () => (
@@ -45,8 +48,12 @@ const Home: React.FC = () => (
     </ContentWrapper>
     <div style={{ textAlign: 'center', marginTop: '10px' }}>
       <HorizontalLineSuperior />
-      <HorizontalAspas>“</HorizontalAspas>
+      <HorizontalAspas>❝</HorizontalAspas>
       <HorizontalLineSuperiorCont />
+      <br />
+      <HorizontalLineInferior />
+      <InferiorAspas>❞</InferiorAspas>
+      <HorizontalLineInferiorCont />
     </div>
   </Container>
 );
