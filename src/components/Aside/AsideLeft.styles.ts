@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const AsideLeft = styled.aside`
   width: 15%; /* Define a largura como 15% */
   background-color: #282C33; /* Cor de fundo opcional para diferenciar */
-  height: 100vh; /* Garante que o AsideLeft ocupe a altura total da viewport */
   box-sizing: border-box; /* Inclui a borda e o preenchimento na largura */
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
