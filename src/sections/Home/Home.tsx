@@ -1,10 +1,25 @@
-import fotoPerfil from '../../assets/images/Marcone.png'
-// import Quadrado from '../../assets/images/Quadrado.png'
-import ImgFundo from '../../assets/images/Logo.png'
-import { Container, ContentWrapper, TextSection, ImageSection, Title, Subtitle, ContactButton, Image, ImageQuadrado, PortfolioTag, QuoteContainer, QuoteText, QuoteAuthor, ImageFundo } from './Home.styles';
+// Home.tsx
+import React from 'react';
+import fotoPerfil from '../../assets/images/Marcone.png';
+import ImgFundo from '../../assets/images/Logo.png';
+import { 
+  Container, 
+  ContentWrapper, 
+  TextSection, 
+  ImageSection, 
+  Title, 
+  Subtitle, 
+  ContactButton, 
+  Image, 
+  ImageQuadrado, 
+  PortfolioTag, 
+  ImageFundo, 
+  HorizontalLineSuperior, 
+  HorizontalAspas, 
+  HorizontalLineSuperiorCont 
+} from './Home.styles';
 
-
-const Home = () => (
+const Home: React.FC = () => (
   <Container>
     <ContentWrapper>
       <TextSection>
@@ -16,24 +31,23 @@ const Home = () => (
         <a href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
           <ContactButton>Fale comigo !!</ContactButton>
         </a>
-      
       </TextSection>
       <ImageSection>
-        <ImageFundo src={ImgFundo} alt="Quadrado" />
+        <ImageFundo src={ImgFundo} alt="Logo" />
         <div>
           <Image src={fotoPerfil} alt="Foto - Marcone" />
           <PortfolioTag>
-            <ImageQuadrado>
-            </ImageQuadrado>
-            <p>Atualmente trabalhando em projetos <p><span>Sociais.</span></p></p>
+            <ImageQuadrado />
+            <p>Atualmente trabalhando em projetos <span>Sociais.</span></p>
           </PortfolioTag>
         </div>
       </ImageSection>
     </ContentWrapper>
-    <QuoteContainer>
-          <QuoteText>“Creativity is intelligence having fun.”</QuoteText>
-          <QuoteAuthor>- Albert Einstein</QuoteAuthor>
-        </QuoteContainer>
+    <div style={{ textAlign: 'center', marginTop: '10px' }}>
+      <HorizontalLineSuperior />
+      <HorizontalAspas>“</HorizontalAspas>
+      <HorizontalLineSuperiorCont />
+    </div>
   </Container>
 );
 
