@@ -27,13 +27,18 @@ export const TextSection = styled.div`
   padding: 0; /* Remove qualquer preenchimento que possa estar aplicando ao texto */
 `;
 
+
+
 export const ImageSection = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: column; /* Adiciona esta linha para empilhar verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente */
+  flex-direction: row; /* Altera para dispor as imagens lado a lado */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 20px; /* Espaço entre as imagens, ajuste conforme necessário */
+  padding: 20px;
 `;
+
 
 export const Title = styled.h1`
   font-size: 32px;
@@ -78,21 +83,38 @@ export const ContactButton = styled.button`
 export const Image = styled.img`
   width: 350px; /* Ajuste o tamanho conforme necessário */
   height: auto;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-left: 0px;
+`;
+
+export const ImageFundo = styled.img`
+  width: 80px;
+  margin-left: 100px;
+  margin-bottom: 300px;
+  width: 150px;
+  transform: rotate(15deg); /* Adiciona a rotação de 30 graus */
 `;
 
 export const ImageQuadrado = styled.img`
-  width: 30px; /* Ajuste o tamanho conforme necessário */
-  height: 30px; /* Ajuste o tamanho conforme necessário */
+  width: 35px; /* Ajuste o tamanho conforme necessário */
+  height: 35px; /* Ajuste o tamanho conforme necessário */
   margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  background-color: #d9a400;
+  
 `;
+
+export const ImagePerfil = styled.img`
+  
+  
+`;
+
 
 export const PortfolioTag = styled.div`
   display: flex; /* Usando flexbox para alinhar o conteúdo */
   align-items: center; /* Centraliza verticalmente o conteúdo */
   font-size: 16px;
   color: #cccccc;
-  margin: 0; /* Remove a margem do PortfolioTag */
+  margin: 0px; /* Remove a margem do PortfolioTag */
   padding: 0; /* Remove o preenchimento do PortfolioTag */
 
   span {
@@ -101,7 +123,7 @@ export const PortfolioTag = styled.div`
   }
 
   p{
-    margin-right: 5px;
+      margin-right: -35px;
   }
 `;
 
