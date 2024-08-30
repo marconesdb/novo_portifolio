@@ -14,20 +14,15 @@ import {
   ImageQuadrado, 
   PortfolioTag, 
   ImageFundo, 
-  HorizontalLineSuperior, 
-  HorizontalAspas, 
-  HorizontalLineSuperiorCont, 
-  HorizontalLineInferior,
-  HorizontalLineInferiorCont,
-  InferiorAspas
 } from './Home.styles';
 
 const Home: React.FC = () => (
+  <>
   <Container>
     <ContentWrapper>
       <TextSection>
         <Title>
-          Marcone S. de Brito é <span>Analista de Sistemas</span> e <span>Desenvolvedor Front-end</span>.
+          Marcone S. de Brito é <br /><span>Analista de Sistemas</span> e <span>Desenvolvedor Front-end</span>.
           <br />
         </Title>
         <Subtitle>“Transformo ideias em realidade, codificando a Web com bytes de inovação.”</Subtitle>
@@ -46,16 +41,9 @@ const Home: React.FC = () => (
         </div>
       </ImageSection>
     </ContentWrapper>
-    <div style={{ textAlign: 'center', marginTop: '10px' }}>
-      <HorizontalLineSuperior />
-      <HorizontalAspas>❝</HorizontalAspas>
-      <HorizontalLineSuperiorCont />
-      <br />
-      <HorizontalLineInferior />
-      <InferiorAspas>❞</InferiorAspas>
-      <HorizontalLineInferiorCont />
-    </div>
+
   </Container>
+  </>
 );
 
 export default Home;

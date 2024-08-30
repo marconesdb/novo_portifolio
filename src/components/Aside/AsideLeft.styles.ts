@@ -24,6 +24,7 @@ export const VerticalLine = styled.div`
   margin-left: 20px;
 `;
 
+
 // Contêiner para as imagens
 export const ImageContainer = styled.div`
   display: flex;
@@ -31,12 +32,7 @@ export const ImageContainer = styled.div`
   gap: 10px; /* Espaço entre as imagens */
 `;
 
-// Estilo das imagens
-export const Image = styled.img`
-  width: 10%; /* Ajusta a largura das imagens para o tamanho do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-left: 8px;
-`;
+
 
 
 

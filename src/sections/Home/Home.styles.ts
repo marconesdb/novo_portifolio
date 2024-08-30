@@ -33,10 +33,11 @@ export const ImageSection = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row; /* Altera para dispor as imagens lado a lado */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  gap: 20px; /* Espaço entre as imagens, ajuste conforme necessário */
-  padding: 20px;
+  /* align-items: center; Centraliza verticalmente */
+  /* justify-content: center; Centraliza horizontalmente */
+  gap: 10px; /* Espaço entre as imagens, ajuste conforme necessário */
+  padding: 0px;
+  margin-right: -90px;
 `;
 
 
@@ -47,6 +48,7 @@ export const Title = styled.h1`
   margin: 0; /* Remove a margem do título */
   padding: 0; /* Remove o preenchimento do título */
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+  
   span {
     color: #d9a400; /* Cor amarela */
     
@@ -82,17 +84,18 @@ export const ContactButton = styled.button`
 
 export const Image = styled.img`
   width: 350px; /* Ajuste o tamanho conforme necessário */
-  height: auto;
+  /* height: auto; */
   margin-top: 50px;
-  margin-left: 0px;
+  margin-left: -30px;
+  
 `;
 
 export const ImageFundo = styled.img`
   width: 80px;
-  margin-left: 100px;
+  margin-left: 0px;
   margin-bottom: 300px;
   width: 150px;
-  transform: rotate(15deg); /* Adiciona a rotação de 30 graus */
+  transform: rotate(5deg); /* Adiciona a rotação de 30 graus */
 `;
 
 export const ImageQuadrado = styled.img`
@@ -116,7 +119,11 @@ export const PortfolioTag = styled.div`
   color: #cccccc;
   margin: 0px; /* Remove a margem do PortfolioTag */
   padding: 0; /* Remove o preenchimento do PortfolioTag */
-
+  margin-top: 30px;
+  border: 1px solid #fff;
+  width: 400px;
+  padding: 5px;
+  margin-right: 90px;
   span {
     color: #fff;
     font-weight: bold;
@@ -130,70 +137,6 @@ export const PortfolioTag = styled.div`
 
 export const StyledMainContent = styled.main`
   background-color: #2c3036; 
-`;
-
-
-// Traço horizontal à esquerda
-export const HorizontalLineSuperior = styled.div`
-  position: relative;
-  width: 50px; /* Largura reduzida do traço à esquerda */
-  height: 2px; /* Altura do traço */
-  background-color: #ccc; /* Cor do traço */
-  display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
-`;
-
-// Componente de aspa
-export const HorizontalAspas = styled.div`
-  position: relative;
-  width: 50px; /* Largura do espaço onde as aspas ficam */
-  height: 2px; /* Altura do traço */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px; /* Tamanho das aspas */
-  color: #ccc; /* Cor das aspas */
-  display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
-  
-`;
-
-// Traço horizontal à direita
-export const HorizontalLineSuperiorCont = styled.div`
-  position: relative;
-  width: 750px; /* Largura reduzida do traço à direita */
-  height: 2px; /* Altura do traço */
-  background-color: #ccc; /* Cor do traço */
-  display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
-`;
-
-// Traço horizontal à direita
-export const HorizontalLineInferior = styled.div`
-  position: relative;
-  width: 750px; /* Largura reduzida do traço à esquerda */
-  height: 2px; /* Altura do traço */
-  background-color: #ccc; /* Cor do traço */
-  display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
-`;
-
-
-export const InferiorAspas = styled.div`
-  position: relative;
-  width: 50px; /* Largura do espaço onde as aspas ficam */
-  height: 2px; /* Altura do traço */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px; /* Tamanho das aspas */
-  color: #ccc; /* Cor das aspas */
-  display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
-  
-`;
-
-export const HorizontalLineInferiorCont = styled.div`
-  position: relative;
-  width: 50px; /* Largura reduzida do traço à direita */
-  height: 2px; /* Altura do traço */
-  background-color: #ccc; /* Cor do traço */
-  display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
 `;
 
 
