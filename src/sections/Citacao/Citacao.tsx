@@ -1,10 +1,11 @@
 import React from 'react';
-import { Citacao, ContainerCitacao, HorizontalAspas, HorizontalLineInferior, HorizontalLineInferiorCont, HorizontalLineSuperior, HorizontalLineSuperiorCont, InferiorAspas } from '../../sections/Citacao/Citacao.styles';
+import { Autor, Citacao, ContainerCitacao, HorizontalAspas, HorizontalLineInferior, HorizontalLineInferiorCont, HorizontalLineInferiorMenor, HorizontalLineSuperior, HorizontalLineSuperiorCont, InferiorAspas, TracoVerticalDireito, TracoVerticalEsquerdo, VerticalLineDireito, VerticalLineDireitoMenor, VerticalLineEsquerdo, VerticalLineEsquerdoMenor, } from '../../sections/Citacao/Citacao.styles';
 
 const CitacaoComponent: React.FC = () => {
   return (
- 
+    <>
     <ContainerCitacao>
+      <VerticalLineEsquerdo/>
       <HorizontalLineSuperior />
       <HorizontalAspas>❝</HorizontalAspas>
       <HorizontalLineSuperiorCont />
@@ -12,8 +13,15 @@ const CitacaoComponent: React.FC = () => {
       <HorizontalLineInferior />
       <InferiorAspas>❞</InferiorAspas>
       <HorizontalLineInferiorCont />
-      </ContainerCitacao>
-     
+      <VerticalLineDireito/>
+    </ContainerCitacao>
+    <VerticalLineEsquerdoMenor/>
+      <Autor>- Dr. Who</Autor>
+      <HorizontalLineInferiorMenor/>
+      <VerticalLineDireitoMenor/>
+    {/*  */}
+      
+    </> 
   );
 };
 
