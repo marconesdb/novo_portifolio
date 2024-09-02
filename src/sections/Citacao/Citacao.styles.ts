@@ -7,6 +7,8 @@ export const ContainerCitacao = styled.div`
   background-color: white; */
   margin-top: -50px;
   padding-bottom: 100px;
+  font-family: 'Fira Code', sans-serif; 
+  color: #FFFFFF;
  
 `;
 
@@ -18,8 +20,10 @@ export const HorizontalLineSuperior = styled.div`
   background-color: #ccc; /* Cor do traço */
   display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
   margin-left: 60px;
+
+
   @media (min-width: 1640px) {
-  width: 54px;
+  width: 65px;
 }
 `;
 
@@ -34,6 +38,7 @@ export const HorizontalAspas = styled.div`
   font-size: 40px; /* Tamanho das aspas */
   color: #ccc; /* Cor das aspas */
   display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
+  color: #ABB2BF;
   
  
 `;
@@ -67,7 +72,7 @@ export const HorizontalLineInferior = styled.div`
   margin-left: 10px;
 
   @media (min-width: 1640px) {
-  width: 580px;
+  width: 590px;
   
 }
 `;
@@ -83,6 +88,7 @@ export const InferiorAspas = styled.div`
   font-size: 40px; /* Tamanho das aspas */
   color: #ccc; /* Cor das aspas */
   display: inline-block; /* Faz com que o traço respeite o espaço do contêiner */
+  color: #ABB2BF;
   
   @media (min-width: 1640px) {
   padding-top: 20px;
@@ -130,9 +136,9 @@ export const VerticalLineDireito = styled.div`
   }
 
   @media (min-width: 1640px) {
-  margin-left: 1010px;
-  height: 100px;
-  transform: translateY(-106px); /* Sobe o traço 100px */
+  margin-left: 1020px;
+  height: 120px;
+  transform: translateY(-127px); /* Sobe o traço 100px */
 
 }
 `;
@@ -148,13 +154,14 @@ export const VerticalLineEsquerdo = styled.div`
 
  @media (max-width: 1200px) {
   margin-left: 243px;
+
   }
 
 
   @media (min-width: 1640px) {
-  margin-left: 322px;
-  height: 98px;
-  transform: translateY(140px);
+  margin-left: 320px;
+  height: 124px;
+  transform: translateY(165px);
 }
    
 `;
@@ -173,8 +180,8 @@ export const VerticalLineEsquerdoMenor = styled.div`
   }
 
   @media (min-width: 1640px) {
-  margin-left: 809px;
-  transform: translateY(-106px); /* Desce o traço 100px */
+  margin-left: 851px;
+  transform: translateY(-226px); /* Desce o traço 100px */
   height: 50px;
   }
 `;
@@ -189,8 +196,8 @@ export const Autor = styled.div`
  
 
  @media (min-width: 1640px) {
-  margin-left: 845px;
-  transform: translateY(-164px); /* Sobe nome do Autor */
+  margin-left: 875px;
+  transform: translateY(-290px); /* Sobe nome do Autor */
 }
 `;
 
@@ -205,9 +212,9 @@ margin-bottom: 50px;
 transform: translateY(-231px); /* Sobe o traço 100px */
 
 @media (min-width: 1640px) {
-  margin-left: 809px;
-  transform: translateY(-129px); /* Sobe o traço 100px */
-  width: 203px ;
+  margin-left: 853px;
+  transform: translateY(-259px); /* Sobe o traço 100px */
+  width: 167px;
 }
 `;
 
@@ -223,8 +230,8 @@ export const VerticalLineDireitoMenor = styled.div`
 
 
  @media (min-width: 1640px) {
-  margin-left: 1010px;
-  transform: translateY(-244px); /* Sobe o traço 100px */
+  margin-left: 1020px;
+  transform: translateY(-373px); /* Sobe o traço 100px */
   height: 59px;
 }
 `;
