@@ -18,7 +18,7 @@ const MainContent: React.FC = () => {
       <Skills/>
       <About/>
       <Contact/>
-    </div>
+      </div>
   );
 };
 

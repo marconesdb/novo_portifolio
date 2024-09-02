@@ -1,5 +1,5 @@
 import React from 'react';
-import { Autor, Citacao, ContainerCitacao, HorizontalAspas, HorizontalLineInferior, HorizontalLineInferiorCont, HorizontalLineInferiorMenor, HorizontalLineSuperior, HorizontalLineSuperiorCont, InferiorAspas, TracoVerticalDireito, TracoVerticalEsquerdo, VerticalLineDireito, VerticalLineDireitoMenor, VerticalLineEsquerdo, VerticalLineEsquerdoMenor, } from '../../sections/Citacao/Citacao.styles';
+import { Autor, Citacao, ContainerCitacao, HorizontalAspas, HorizontalLineInferior, HorizontalLineInferiorCont, HorizontalLineInferiorMenor, HorizontalLineSuperior, HorizontalLineSuperiorCont, InferiorAspas, VerticalLineDireito, VerticalLineDireitoMenor, VerticalLineEsquerdo, VerticalLineEsquerdoMenor, } from '../../sections/Citacao/Citacao.styles';
 
 const CitacaoComponent: React.FC = () => {
   return (
@@ -9,14 +9,14 @@ const CitacaoComponent: React.FC = () => {
       <HorizontalLineSuperior />
       <HorizontalAspas>❝</HorizontalAspas>
       <HorizontalLineSuperiorCont />
-      <Citacao>Olá Mundo!</Citacao>
+      <Citacao>A única maneira de fazer um excelente trabalho é amar o que você faz.</Citacao>
       <HorizontalLineInferior />
       <InferiorAspas>❞</InferiorAspas>
       <HorizontalLineInferiorCont />
       <VerticalLineDireito/>
     </ContainerCitacao>
     <VerticalLineEsquerdoMenor/>
-      <Autor>- Dr. Who</Autor>
+      <Autor>- Steve Jobs</Autor>
       <HorizontalLineInferiorMenor/>
       <VerticalLineDireitoMenor/>
     {/*  */}
