@@ -14,10 +14,10 @@ const MainContent: React.FC = () => {
       <Home/>
       <Citacao/>
       <Projects/>
-      <SmallProjects/>
+      {/* <SmallProjects/>
       <Skills/>
       <About/>
-      <Contact/>
+      <Contact/> */}
       </div>
   );
 };
