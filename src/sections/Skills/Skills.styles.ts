@@ -120,6 +120,10 @@ export const ImagensInferiorContainer = styled.div`
     height: 60px;
     margin-top: 50px;
     transform: translateX(-10px);
+
+    @media (min-width: 1640px) {
+    
+    }
   }
 `;
 
@@ -132,7 +136,10 @@ export const SkillsContainer = styled.div`
   transform: translateX(95px);
   transform: translateY(20px);
   
-
+  @media (min-width: 1640px) {
+   
+    transform: translateX(190px) !important;
+  }
 
   .Skill-1 {
     /* background-color: #2b2e33; */
@@ -143,6 +150,12 @@ export const SkillsContainer = styled.div`
     width: 150px; 
     height: 150px; 
     margin-top: 160px;
+
+    @media (min-width: 1640px) {
+    width: 200px;
+    transform: translateX(-125px);
+    margin-left: 5px;
+    }
   }
 
   .p-1{
@@ -151,6 +164,10 @@ export const SkillsContainer = styled.div`
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
+
+    @media (min-width: 1640px) {
+    width: 198px;
+    }
   }
 
   .Skill-2 {
@@ -164,6 +181,13 @@ export const SkillsContainer = styled.div`
     transform: translateX(-195px);
     transform: translateY(-150px);
     margin-left: 170px;
+
+    @media (min-width: 1640px) {
+    width: 240px;
+    transform: translateY(-200px);
+    transform: translateX(-80px);
+    margin-top: -150px;
+    }
   }
 
   .p-2{
@@ -172,6 +196,11 @@ export const SkillsContainer = styled.div`
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
+
+
+    @media (min-width: 1640px) {
+    width: 238px;
+    }
   }
 
 
@@ -188,6 +217,14 @@ export const SkillsContainer = styled.div`
     transform: translateX(-195px);
     transform: translateY(-300px);
     margin-left: 340px;
+
+    @media (min-width: 1640px) {
+    width: 270px;
+    /* transform: translateY(-200px); */
+    /* transform: translateX(-80px); */
+    margin-top: 150px;
+        
+    }
   }
 
 
@@ -197,6 +234,10 @@ export const SkillsContainer = styled.div`
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
+
+    @media (min-width: 1640px) {
+    width: 268px;
+    }
   }
 
   .Skill-4 {
@@ -210,6 +251,12 @@ export const SkillsContainer = styled.div`
     transform: translateX(-195px);
     transform: translateY(-340px);
     margin-left: 170px;
+
+    @media (min-width: 1640px) {
+      width: 240px;
+      transform: translateX(-80px) translateY(-350px) !important; /* Forçar a aplicação */
+       
+    }
   }
 
   .p-4{
@@ -218,6 +265,12 @@ export const SkillsContainer = styled.div`
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
+
+
+    
+    @media (min-width: 1640px) {
+    width: 238px;
+    }
   }
 
 
@@ -231,6 +284,12 @@ export const SkillsContainer = styled.div`
     height: 210px; 
     transform: translateY(-430px);
     margin-left: 340px;
+
+    @media (min-width: 1640px) {
+    width: 270px; 
+    height: 210px; 
+    margin-top: -10px;
+    }
     }
 
   .p-5{
@@ -239,9 +298,12 @@ export const SkillsContainer = styled.div`
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
+
+    
+    @media (min-width: 1640px) {
+    width: 268px;
+    }
   }
 
  
-
-
 `;
