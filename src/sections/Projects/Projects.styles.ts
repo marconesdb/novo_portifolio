@@ -10,6 +10,7 @@ export const Container = styled.section`
   padding: 20px;
   position: relative;
   transform: translateY(-200px);
+  
 `;
 
 export const Title = styled.div`
@@ -53,7 +54,7 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: solid 1px #fff;
+  border: solid 1px #ABB2BF;
 `;
 
 export const CardImage = styled.img`
@@ -78,7 +79,7 @@ export const CardSubtitle = styled.h3`
   text-align: center;
   width: 300px;
   padding: 10px;
-  border: 1px solid #fff;
+  border: solid 1px #ABB2BF;
 `;
 
 export const CardText = styled.p`
@@ -101,7 +102,7 @@ export const CardButtons = styled.div`
 
   button {
     background-color: #1b1e23;
-    border: 1px solid #fff;
+    border: solid 1px #ABB2BF;
     color: white;
     padding: 10px 20px;
     cursor: pointer;

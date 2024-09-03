@@ -66,7 +66,7 @@ export const Subtitle = styled.p`
 
 export const ContactButton = styled.button`
   padding: 10px 20px;
-  border: 2px solid #d9a400;
+  border: 1px solid #d9a400;
   background: transparent;
   color: #fff;
   font-size: 16px;
@@ -120,7 +120,7 @@ export const PortfolioTag = styled.div`
   margin: 0px; /* Remove a margem do PortfolioTag */
   padding: 0; /* Remove o preenchimento do PortfolioTag */
   margin-top: 30px;
-  border: 1px solid #fff;
+  border: solid 1px #ABB2BF;
   width: 400px;
   padding: 5px;
   margin-right: 90px;

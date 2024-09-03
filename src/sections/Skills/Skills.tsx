@@ -46,12 +46,12 @@ const Skills: React.FC = () => {
           </div>
           <SkillsContainer>
             {/* Adicione seus itens de habilidades (skills) aqui */}
-            <div>Skill 1</div>
-            <div>Skill 2</div>
-            <div>Skill 3</div>
-            <div>Skill 4</div>
-            <div>Skill 5</div>
-            <div>Skill 6</div>
+            <div className='Skill-1'><p className='p-1'>Linguagens</p></div>
+            <div className='Skill-2'><p className='p-2'>Skill 2</p></div>
+            <div className='Skill-3'><p className='p-3'>Skill 3</p></div>
+            <div className='Skill-4'><p className='p-4'>Skill 4</p></div>
+            <div className='Skill-5'><p className='p-5'>Skill 5</p></div>
+            {/* <div className='Skill-6'>Skill 6</div> */}
           </SkillsContainer>
         </MainContainer>
       </Container>
