@@ -14,8 +14,8 @@ const MainContent: React.FC = () => {
       <Home/>
       <Citacao/>
       <Projects/>
-      {/* <SmallProjects/>
       <Skills/>
+      {/* <SmallProjects/>
       <About/>
       <Contact/> */}
       </div>

@@ -24,6 +24,9 @@ export const Title = styled.div`
   span {
     color: #d9a400; /* Cor amarela */
   }
+  p{
+    font-size: 32px;
+  }
 `;
 
 export const Line = styled.div`
