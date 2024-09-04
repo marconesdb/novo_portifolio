@@ -35,7 +35,7 @@ export const Title = styled.div`
 
 export const Line = styled.div`
   height: 1px;
-  width: 350px;
+  width: 325px;
   background-color: #d9a400;
   margin-left: 10px;
 `;

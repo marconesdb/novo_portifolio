@@ -16,7 +16,7 @@ const Skills: React.FC = () => {
       <Container>
         <Title>
           <span>#</span>
-          <p>skills</p>
+          <p>Skills</p>
           <Line />
         </Title>
         <MainContainer>

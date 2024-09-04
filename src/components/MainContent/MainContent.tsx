@@ -16,8 +16,9 @@ const MainContent: React.FC = () => {
       <Projects/>
       <Skills/>
       <About/>
+      <Contact/>
       {/* <SmallProjects/>
-      <Contact/> */}
+       */}
       </div>
   );
 };

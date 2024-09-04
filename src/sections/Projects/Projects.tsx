@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
     <Container>
       <Title>
         <span>#</span>
-        <p>projects</p>
+        <p>Projetos</p>
         <Line />
       </Title>
       <Cards>

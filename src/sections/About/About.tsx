@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <Container>
        <Title>
           <span>#</span>
-          <p>about-me</p>
+          <p>Sobre mim</p>
           <Line />
         </Title>
     <ContainerAbout>
