@@ -46,11 +46,11 @@ const Skills: React.FC = () => {
           </div>
           <SkillsContainer>
             {/* Adicione seus itens de habilidades (skills) aqui */}
-            <div className='Skill-1'><p className='p-1'>Linguagens</p></div>
-            <div className='Skill-2'><p className='p-2'>Skill 2</p></div>
-            <div className='Skill-3'><p className='p-3'>Skill 3</p></div>
-            <div className='Skill-4'><p className='p-4'>Skill 4</p></div>
-            <div className='Skill-5'><p className='p-5'>Skill 5</p></div>
+            <div className='Skill-1'><p className='p-1'>Linguagens</p><p className='p-texto'>TypeScript, Javascript</p></div>
+            <div className='Skill-2'><p className='p-2'>Databases</p><p className='p-texto'>MySQL, PostgreSQL</p></div>
+            <div className='Skill-3'><p className='p-3'>Outros</p><p className='p-texto'>HTML, CSS, EJS, SCSS</p></div>
+            <div className='Skill-4'><p className='p-4'>Ferramentas</p><p className='p-texto'>Vscode, Insomnia, Figma, Font Awesome </p></div>
+            <div className='Skill-5'><p className='p-5'>Frameworks</p><p className='p-texto'>Tailwind.CSS, Bootstrap, React.JS, </p></div>
             {/* <div className='Skill-6'>Skill 6</div> */}
           </SkillsContainer>
         </MainContainer>

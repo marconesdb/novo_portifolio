@@ -305,5 +305,9 @@ export const SkillsContainer = styled.div`
     }
   }
 
- 
+  .p-texto{
+    color: #ABB2BF;
+    font-size: 16px;
+    padding: 10px;
+  }
 `;
