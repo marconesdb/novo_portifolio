@@ -32,7 +32,7 @@ export const Title = styled.div`
 `;
 
 export const Line = styled.div`
-  height: 2px;
+  height: 1px;
   width: 280px;
   background-color: #d9a400;
   margin-left: 10px;
