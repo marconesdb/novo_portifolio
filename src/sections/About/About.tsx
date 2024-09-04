@@ -14,9 +14,12 @@ const About: React.FC = () => {
     <ContainerAbout>
     <ContainerEsquerdo>
       <p className='texto-titulo'>Olá, eu sou o Marcone S. de Brito! </p>
-        <p  className='p-1'> I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. 
-
-        <p className='p-2'>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p></p>
+        <p  className='p-1'> Sou um desenvolvedor Front-end e Analista de Sistemas, entusiasta de tecnologia, com uma sólida formação acadêmica e ampla experiência prática. Possuo pós-graduação em Big Data, Ciência de Dados, Machine Learning e Inteligência Artificial, e estou localizado em Montes Claros - MG, Brasil.  
+        <p className='p-1'>Tenho experiência na criação de sites responsivos e na transformação de ideias em experiências web modernas e envolventes. Meu foco é desenvolver interfaces intuitivas e acessíveis, garantindo uma navegação fluida e agradável para os usuários.</p>
+        <p className='p-2'>Nos últimos anos, trabalhei com uma variedade de clientes, ajudando-os a construir uma presença online sólida e eficiente. Além de dominar HTML, CSS e JavaScript, estou constantemente atualizando meus conhecimentos em tecnologias emergentes e frameworks como React, para oferecer soluções inovadoras e de alta qualidade.</p>
+        
+        <p className='p-2'>Minha paixão pelo desenvolvimento web vai além da codificação; também me esforço para entender as necessidades dos usuários e criar designs que ofereçam valor real. Estou comprometido com a melhoria contínua, sempre buscando aprender novas habilidades e técnicas para entregar resultados excepcionais em cada projeto.</p>
+        </p>
 
          {/* Direcionar para a página que tem o curriculo online em HTML e CSS */}
       <a href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>

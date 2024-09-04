@@ -63,6 +63,7 @@ export const CuboDireito= styled.div`
   }
 
   @media (min-width: 1640px) {
-   
+    transform: translateY(400px);
+    margin-left: 52px;
   }
 `;

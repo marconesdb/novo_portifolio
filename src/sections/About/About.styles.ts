@@ -111,7 +111,11 @@ export const ContainerDireito = styled.div`
     transform: translateY(-20px);
     margin-left: 425px;
     
-    
+    @media (min-width: 1640px) {
+   
+    margin-left:550px;
+   
+    }
   }
 
   .dot {

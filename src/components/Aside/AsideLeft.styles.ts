@@ -38,11 +38,11 @@ export const RetanguloEsquerdoInferior = styled.div`
   border: solid 1px #ABB2BF;
   transform: translateY(2499px);
   border-left: none;
-  margin-left: -50px;
+  margin-left: -40px;
 
   @media (min-width: 1640px) {
-    transform: translateY(1600px);
-    margin-left:185px;
+    transform: translateY(2900px);
+    margin-left:-30px;
     height: 200px;
   }
 `;
