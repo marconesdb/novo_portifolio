@@ -47,12 +47,12 @@ export const RetanguloDireitoInferior= styled.div`
 export const CuboDireito= styled.div`
 .cubo1 {
     display: grid;
-    grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
+    grid-template-columns: repeat(4, 15px); /* 5 colunas de 30px */
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
-    margin-left: 70px;
+    margin-left: 80px;
     margin-top: 40px;
-    transform: translateY(1500px);
+    transform: translateY(1400px);
   }
 
   .dot {

@@ -32,6 +32,22 @@ export const ImageContainer = styled.div`
 `;
 
 
+export const RetanguloEsquerdoInferior = styled.div`
+  width: 100px;
+  height: 180px;
+  border: solid 1px #ABB2BF;
+  transform: translateY(2499px);
+  border-left: none;
+  margin-left: -50px;
+
+  @media (min-width: 1640px) {
+    transform: translateY(1600px);
+    margin-left:185px;
+    height: 200px;
+  }
+`;
+
+
 
 
 

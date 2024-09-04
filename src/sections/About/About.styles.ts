@@ -53,6 +53,29 @@ export const ContainerAbout = styled.div`
 export const ContainerEsquerdo = styled.div`
   width: 50%;
   padding: 0px;
+
+
+  .texto-titulo{
+  font-size: 16px;
+  color: #ABB2BF;
+  
+  }
+
+
+ .p-1{
+  font-size: 16px;
+  color: #ABB2BF;
+  margin-top: 10px;
+  text-align: justify;
+ }
+
+ .p-2{
+  font-size: 16px;
+  color: #ABB2BF;
+  margin-top: 10px;
+  text-align: justify;
+ }
+
  
 `;
 
@@ -61,4 +84,40 @@ export const ContainerDireito = styled.div`
   width: 50%;
   padding: 0px;
  
+
+  .cubo1 {
+    display: grid;
+    grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
+    grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
+    gap: 5px; /* Espaço entre os círculos */
+    transform: translateY(-20px);
+    margin-left: 150px;
+    
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #ABB2BF;
+    border-radius: 50%;
+  }
+
+
+  .cubo2 {
+    display: grid;
+    grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
+    grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
+    gap: 10px; /* Espaço entre os círculos */
+    transform: translateY(-20px);
+    margin-left: 425px;
+    
+    
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #ABB2BF;
+    border-radius: 50%;
+  }
 `;

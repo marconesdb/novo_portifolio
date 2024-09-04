@@ -13,7 +13,7 @@ const AsideRight: React.FC = () => {
       <div className='cubo1'>
       <div className='cubo1'>
         {/* Criação do cubo */}
-        {[...Array(25)].map((_, index) => (
+        {[...Array(20)].map((_, index) => (
         <div key={index} className="dot"></div>
         ))}
       </div>
