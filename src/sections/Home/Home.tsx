@@ -13,7 +13,8 @@ import {
   Image, 
   ImageQuadrado, 
   PortfolioTag, 
-  ImageFundo, 
+  ImageFundo,
+  Logo, 
 } from './Home.styles';
 
 const Home: React.FC = () => (
@@ -31,7 +32,22 @@ const Home: React.FC = () => (
         </a>
       </TextSection>
       <ImageSection>
-        <ImageFundo src={ImgFundo} alt="Logo" />
+        {/* <ImageFundo src={ImgFundo} alt="Logo" /> */}
+        <Logo>
+           <div>
+            <div className='RetanguloInferior'>
+              <div className='RetanguloInferiorMenor'>
+
+              </div>
+            </div>
+            <div className='RetanguloSuperior'>
+               <div className='RetanguloSuperiorMenor'>
+
+               </div>
+            </div>
+           </div>
+        </Logo>
+        
         <div>
           <Image src={fotoPerfil} alt="Foto - Marcone" />
           <PortfolioTag>

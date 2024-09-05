@@ -29,7 +29,7 @@ export const Title = styled.div`
   align-items: center;
 
   span {
-    color: #d9a400; /* Cor amarela */
+    color: #A8990F; /* Cor amarela */
   }
 
   p {
@@ -40,7 +40,7 @@ export const Title = styled.div`
 export const Line = styled.div`
   height: 1px;
   width: 200px;
-  background-color: #d9a400;
+  background-color: #A8990F;
   margin-left: 10px;
 `;
 

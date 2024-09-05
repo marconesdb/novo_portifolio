@@ -40,6 +40,57 @@ export const ImageSection = styled.div`
   margin-right: -90px;
 `;
 
+export const Logo = styled.div`
+  
+  display: flex; /* Flexbox para alinhar os retângulos lado a lado */
+  flex-direction: row; /* Direção da flexbox em linha para alinhar os elementos horizontalmente */
+  gap: 10px; /* Espaço entre os retângulos, ajuste conforme necessário */
+  margin-right: -5px;
+  margin-top: -120px;
+
+  .RetanguloInferior{
+   
+   border: solid 1px #A8990F;
+   width: 80px;
+   height: 150px;
+   transform: translateY(90px);
+   margin-left: -29px;
+  }
+
+
+  .RetanguloInferiorMenor{
+   border: solid 1px #A8990F;
+   width: 40px;
+   height: 49px;
+   transform: translateY(-1px);
+   margin-left: 78px;
+   margin-top: 1px;
+  
+   
+  }
+
+  .RetanguloSuperior{
+  
+   border: solid 1px #A8990F;
+   width: 80px;
+   height: 150px;
+   transform: translateY(-115px);
+   margin-left: 50px;
+   
+  }
+
+  .RetanguloSuperiorMenor{
+   border: solid 1px #A8990F;
+   width: 40px;
+   height: 46px;
+   transform: translateY(75px);
+   margin-left: -40px;
+   margin-top: 29px;
+   
+   
+  }
+`;
+
 
 export const Title = styled.h1`
   font-size: 32px;
@@ -50,8 +101,9 @@ export const Title = styled.h1`
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
   
   span {
-    color: #d9a400; /* Cor amarela */
-    
+    /* color: #d9a400; */
+     /* Cor amarela */
+    color: #A8990F;
   }
 `;
 
@@ -66,7 +118,7 @@ export const Subtitle = styled.p`
 
 export const ContactButton = styled.button`
   padding: 10px 20px;
-  border: 1px solid #d9a400;
+  border: 1px solid #A8990F;
   background: transparent;
   color: #fff;
   font-size: 16px;
@@ -102,7 +154,7 @@ export const ImageQuadrado = styled.img`
   width: 35px; /* Ajuste o tamanho conforme necessário */
   height: 35px; /* Ajuste o tamanho conforme necessário */
   margin-right: 10px; /* Espaçamento entre a imagem e o texto */
-  background-color: #d9a400;
+  background-color: #A8990F;
   
 `;
 
