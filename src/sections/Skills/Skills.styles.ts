@@ -103,7 +103,7 @@ export const ImagensInferiorContainer = styled.div`
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
     transform: translateY(-20px);
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 60px;
   }
 
@@ -124,6 +124,57 @@ export const ImagensInferiorContainer = styled.div`
     @media (min-width: 1640px) {
     
     }
+  }
+`;
+
+
+export const IconeLogo = styled.div`
+  
+  display: flex; /* Flexbox para alinhar os retângulos lado a lado */
+  flex-direction: row; /* Direção da flexbox em linha para alinhar os elementos horizontalmente */
+  gap: 10px; /* Espaço entre os retângulos, ajuste conforme necessário */
+  margin-right: 20px;
+  margin-top: -120px;
+  margin-left: 15px;
+  .RetanguloInferior{
+   
+   border: solid 1px #A8990F;
+   width: 55px;
+   height: 100px;
+   transform: translateY(80px);
+   margin-left: 0px;
+  }
+
+
+  .RetanguloInferiorMenor{
+   border: solid 1px #A8990F;
+   width: 40px;
+   height: 35px;
+   transform: translateY(32px);
+   margin-left: 14px;
+   margin-top: 1px;
+   
+   
+  }
+
+  .RetanguloSuperior{
+  
+   border: solid 1px #A8990F;
+   width: 55px;
+   height: 100px;
+   transform: translateY(-51px);
+   margin-left: 55px;
+   
+  }
+
+  .RetanguloSuperiorMenor{
+   border: solid 1px #A8990F;
+   width: 40px;
+   height: 35px;
+   transform: translateY(0px);
+   margin-left: -2px;
+   margin-top: 30px;
+   
   }
 `;
 

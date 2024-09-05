@@ -1,7 +1,8 @@
 import React from 'react';
-import LogoM from '../../assets/images/logo-medium.png'
+
 import { 
   Container, 
+  IconeLogo, 
   ImagensInferiorContainer, 
   ImagensSuperiorContainer, 
   Line, 
@@ -9,6 +10,7 @@ import {
   SkillsContainer, 
   Title 
 } from './Skills.styles';
+
 
 const Skills: React.FC = () => {
   return (
@@ -32,7 +34,24 @@ const Skills: React.FC = () => {
               </div>
             </ImagensSuperiorContainer>
             <ImagensInferiorContainer>
-              <img src={LogoM} alt="Logo" />
+              
+
+              <IconeLogo>
+           <div>
+            <div className='RetanguloInferior'>
+              <div className='RetanguloInferiorMenor'>
+
+              </div>
+            </div>
+            <div className='RetanguloSuperior'>
+               <div className='RetanguloSuperiorMenor'>
+
+               </div>
+            </div>
+           </div>
+        </IconeLogo>
+
+              
               <div className='cubo2'>
                 {/* Criação do cubo */}
                 {[...Array(25)].map((_, index) => (
@@ -51,7 +70,7 @@ const Skills: React.FC = () => {
             <div className='Skill-3'><p className='p-3'>Outros</p><p className='p-texto'>HTML, CSS, EJS, SCSS</p></div>
             <div className='Skill-4'><p className='p-4'>Ferramentas</p><p className='p-texto'>Vscode, Insomnia, Figma, Font Awesome </p></div>
             <div className='Skill-5'><p className='p-5'>Frameworks</p><p className='p-texto'>Tailwind.CSS, Bootstrap, React.JS, </p></div>
-            {/* <div className='Skill-6'>Skill 6</div> */}
+            
           </SkillsContainer>
         </MainContainer>
       </Container>

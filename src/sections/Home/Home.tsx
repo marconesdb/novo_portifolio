@@ -13,7 +13,6 @@ import {
   Image, 
   ImageQuadrado, 
   PortfolioTag, 
-  ImageFundo,
   Logo, 
 } from './Home.styles';
 
