@@ -10,14 +10,13 @@ const AsideRight: React.FC = () => {
       </RetanguloDireitoInferior>
       <CuboDireito>
 
-      <div className='cubo1'>
-      <div className='cubo1'>
+        <div className='cubo1'>
         {/* Criação do cubo */}
         {[...Array(20)].map((_, index) => (
         <div key={index} className="dot"></div>
         ))}
       </div>
-      </div>
+      
       </CuboDireito>
     </StyledAsideRight>
   );

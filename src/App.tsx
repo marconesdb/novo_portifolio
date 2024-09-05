@@ -18,8 +18,7 @@ const App: React.FC = () => {
         <MainContent />
       </ContentWrapper>
       <AsideRight />
-     
-      <FooterWrapper>
+     <FooterWrapper>
       <Footer/>
       </FooterWrapper>
     </Container>

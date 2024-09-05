@@ -38,6 +38,17 @@ const AsideLeft: React.FC = () => {
         ))}
     </div>
       </Cubo>
+
+      <Cubo>
+
+        <div className='cubo2'>
+        {/* Criação do cubo */}
+        {[...Array(20)].map((_, index) => (
+        <div key={index} className="dot"></div>
+        ))}
+      </div>
+      
+      </Cubo>
     </StyledAsideLeft>
   );
 };
