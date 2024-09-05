@@ -10,7 +10,7 @@ export const Container = styled.section`
   padding: 20px;
   position: relative;
   transform: translateY(-190px);
-  margin-top: -150px;
+  margin-top: -165px;
   
   
 `;
@@ -46,7 +46,7 @@ export const Main = styled.div`
   align-items: center; /* Alinha os containers verticalmente */
   width: 100%; /* Ocupa 100% da largura disponível */
   transform: translateY(30px);
-  margin-top: -80px;
+  margin-top: -90px;
 
 `;
 
