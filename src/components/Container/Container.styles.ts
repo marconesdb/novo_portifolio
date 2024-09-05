@@ -14,5 +14,5 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   position: absolute;
   bottom: 0;
-  transform: translateY(3800px);
+  transform: translateY(4600px);
 `;

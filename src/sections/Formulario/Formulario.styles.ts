@@ -6,11 +6,12 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   background-color: #2c3036;
-  height: 80vh; 
-  padding: 20px;
+  min-height: 100vh; 
+  padding: 0px;
   position: relative;
-  transform: translateY(-190px);
-  margin-top: -165px;
+  transform: translateY(-210px);
+  margin-top: -186px;
+ 
   
   @media (min-width: 1640px) {
     /* Ajustes específicos para telas maiores */
@@ -37,6 +38,8 @@ export const FormularioWrapper = styled.div`
     background-color: #2c3036;
     max-width: 600px;
     width: 100%;
+    margin-top: 200px;
+    
   }
 
   h2 {

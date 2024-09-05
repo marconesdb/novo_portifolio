@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Main, FormularioWrapper, EnviarButton } from './Formulario.styles';
-import { ContactButton } from '../Home/Home.styles';
+
 
 const Formulario: React.FC = () => {
   return (
@@ -31,10 +31,8 @@ const Formulario: React.FC = () => {
                 <textarea id="mensagem" name="mensagem" rows={5} required placeholder="Digite aqui sua mensagem..."></textarea>
               </div>
 
-              {/* <button type="submit">Enviar</button> */}
-
               <EnviarButton>Enviar</EnviarButton>
-              
+  
             </form>
           </div>
         </FormularioWrapper>
