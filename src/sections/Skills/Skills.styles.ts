@@ -142,7 +142,7 @@ export const IconeLogo = styled.div`
    width: 55px;
    height: 100px;
    transform: translateY(80px);
-   margin-left: 0px;
+   margin-left: 1px;
   }
 
 
@@ -172,7 +172,7 @@ export const IconeLogo = styled.div`
    width: 40px;
    height: 35px;
    transform: translateY(0px);
-   margin-left: -2px;
+   margin-left: -1px;
    margin-top: 30px;
    
   }
