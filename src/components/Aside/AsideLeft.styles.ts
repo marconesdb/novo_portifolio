@@ -7,9 +7,9 @@ export const AsideLeft = styled.aside`
   box-sizing: border-box; /* Inclui a borda e o preenchimento na largura */
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
-  padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
-
-  @media (max-width: 540px) {
+   padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
+   
+   @media (max-width: 540px) {
     display: none; /* Esconde o AsideLeft em telas com largura até 540px */
   }
 `;
@@ -36,7 +36,7 @@ export const RetanguloEsquerdoInferior = styled.div`
   width: 100px;
   height: 180px;
   border: solid 1px #ABB2BF;
-  transform: translateY(2499px);
+  transform: translateY(2550px);
   border-left: none;
   margin-left: -40px;
 
@@ -58,7 +58,7 @@ export const Cubo = styled.div`
     grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
-    transform: translateY(3190px);
+    transform: translateY(3310px);
     margin-left: -55px;
     
   }

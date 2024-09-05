@@ -6,19 +6,23 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   border-top: 1px solid #fff;
   background-color: #282C33;
+  transform: translateY(150px);
+  
+  
 `;
 
 export const FooterContent = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c3036;
+  background-color: #1b1e23;
   color: #fff;
   position: relative;
   box-sizing: border-box;
   width: 70%;
   height: 250px;
   border-top: 0px solid #fff;
+  
 
   @media (max-width: 1200px) {
     width: 90%;

@@ -9,6 +9,10 @@ export const GlobalStyles = createGlobalStyle `
 
   body {
    background-color: #2c3036;
+ 
+  
+  height: 50vh; /* ou altura específica */
+
   }
 
   body, button, input {

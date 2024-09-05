@@ -6,11 +6,11 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   background-color: #1b1e23;
-  min-height: 100vh;
+  min-height:100vh;
   padding: 20px;
   position: relative;
-  transform: translateY(-400px);
- 
+  transform: translateY(-340px);
+  margin-bottom: -50px;
 `;
 
 

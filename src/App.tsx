@@ -4,7 +4,7 @@ import AsideLeft from './components/Aside/AsideLeft';
 import AsideRight from './components/Aside/AsideRight';
 import Footer from './components/Footer/Footer';
 import MainContent from './components/MainContent/MainContent';
-import { Container } from './components/Container/Container.styles';
+import { Container, FooterWrapper } from './components/Container/Container.styles';
 import { ContentWrapper } from './components/ContentWrapper/ContentWrapper'; 
 import { GlobalStyles } from './assets/styles/GlobalStyles';
 
@@ -18,9 +18,12 @@ const App: React.FC = () => {
         <MainContent />
       </ContentWrapper>
       <AsideRight />
-      <GlobalStyles/>
+     
+      <FooterWrapper>
+      <Footer/>
+      </FooterWrapper>
     </Container>
-    <Footer/>
+    <GlobalStyles/>
     </>
   );
 };

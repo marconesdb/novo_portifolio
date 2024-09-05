@@ -6,10 +6,13 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   background-color: #1b1e23;
-  min-height: 100vh;
+  height: 80vh; 
   padding: 20px;
   position: relative;
-  transform: translateY(-400px);
+  transform: translateY(-190px);
+  margin-top: -150px;
+  
+  
 `;
 
 export const Title = styled.div`
@@ -42,7 +45,9 @@ export const Main = styled.div`
   justify-content: center; /* Centraliza os containers horizontalmente */
   align-items: center; /* Alinha os containers verticalmente */
   width: 100%; /* Ocupa 100% da largura disponível */
-  transform: translateY(-150px);
+  transform: translateY(30px);
+  margin-top: -80px;
+
 `;
 
 export const ContainerEsquerdo = styled.div`

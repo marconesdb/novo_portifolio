@@ -6,7 +6,7 @@ export const AsideRight = styled.aside`
   box-sizing: border-box; /* Inclui a borda e o preenchimento na largura */
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
-
+ 
   @media (max-width: 540px) {
     display: none; /* Esconde o AsideRight em telas com largura até 540px */
   }
@@ -52,7 +52,7 @@ export const CuboDireito= styled.div`
     gap: 5px; /* Espaço entre os círculos */
     margin-left: 80px;
     margin-top: 40px;
-    transform: translateY(1400px);
+    transform: translateY(1440px);
   }
 
   .dot {

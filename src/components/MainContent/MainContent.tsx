@@ -8,6 +8,7 @@ import About from '../../sections/About/About';
 import Contact from '../../sections/Contact/Contact';
 import Citacao from '../../sections/Citacao/Citacao';
 
+
 const MainContent: React.FC = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const MainContent: React.FC = () => {
       <Skills/>
       <About/>
       <Contact/>
-      {/* <SmallProjects/>
+       {/* <SmallProjects/>
        */}
       </div>
   );
