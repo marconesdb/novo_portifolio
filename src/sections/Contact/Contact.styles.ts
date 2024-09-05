@@ -53,7 +53,7 @@ export const ContainerEsquerdo = styled.div`
   .paragrafo{
   font-size: 16px;
   color: #ABB2BF;
-  margin-top: 10px;
+  margin-top: -100px;
   text-align: justify;
  }
 `;
@@ -64,10 +64,10 @@ export const ContainerDireito = styled.div`
  
 
   .contato{
-  width: 70%; /* Ocupa 50% da largura */
+  width: 60%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
   border: solid 1px #fff;
-  transform:translateX(140px)
+  transform:translateX(185px)
   }
 
   .emailContainer {

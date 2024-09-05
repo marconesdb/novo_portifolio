@@ -1,5 +1,5 @@
 import React from 'react';
-import { AsideLeft as StyledAsideLeft, VerticalLine, ImageContainer, RetanguloEsquerdoInferior,  } from './AsideLeft.styles';
+import { AsideLeft as StyledAsideLeft, VerticalLine, ImageContainer, RetanguloEsquerdoInferior, Cubo,  } from './AsideLeft.styles';
 import Github from '../../assets/images/Github.svg'
 import WhatsApp from '../../assets/images/WhatsApp.svg'
 import Linkedin from '../../assets/images/Linkedin.svg'
@@ -30,6 +30,14 @@ const AsideLeft: React.FC = () => {
 
       <RetanguloEsquerdoInferior>
       </RetanguloEsquerdoInferior>
+      <Cubo>
+      <div className='cubo1'>
+        {/* Criação do cubo */}
+        {[...Array(25)].map((_, index) => (
+        <div key={index} className="dot"></div>
+        ))}
+    </div>
+      </Cubo>
     </StyledAsideLeft>
   );
 };
