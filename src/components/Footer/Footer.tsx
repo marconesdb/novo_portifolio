@@ -1,8 +1,6 @@
 import React from 'react';
-import Github from '../../assets/images/Github.svg';
-import Linkedin from '../../assets/images/Linkedin.svg';
-import WhatsApp from '../../assets/images/WhatsApp.svg';
-import { SvgImage, SvgLink } from '../Header/Header.styles';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Importando os ícones
+import { SvgLink } from '../Header/Header.styles';
 import Logo from '../../assets/images/Logo.svg';
 
 import {
@@ -23,41 +21,48 @@ import {
   FooterContent,
 } from './Footer.styles';
 
+// Função para obter o ano atual
+const getCurrentYear = () => {
+  return new Date().getFullYear();
+};
+
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterContent>
-      <LeftSection>
-        <LeftSectionContent>
-          <ImageContainer>
-            <LogoImage src={Logo} alt="Logo" />
-          </ImageContainer>
-          <ParagraphContainer>
-            <FirstParagraph>Marcone S. de Brito</FirstParagraph>
-            <SecondParagraph>marconebritt@gmail.com</SecondParagraph>
-          </ParagraphContainer>
-        </LeftSectionContent>
-        <ThirdParagraph>Analista de Sistemas e Desenvolvedor Front-end </ThirdParagraph>
-      </LeftSection>
+        <LeftSection>
+          <LeftSectionContent>
+            <ImageContainer>
+              <LogoImage src={Logo} alt="Logo" />
+            </ImageContainer>
+            <ParagraphContainer>
+              <FirstParagraph>Marcone S. de Brito</FirstParagraph>
+              <SecondParagraph>marconebritt@gmail.com</SecondParagraph>
+            </ParagraphContainer>
+          </LeftSectionContent>
+          <ThirdParagraph>Analista de Sistemas e Desenvolvedor Front-end</ThirdParagraph>
+        </LeftSection>
 
-      <CenterSection>
-        <CentralParagraph>&copy; Copyright 2024. Desenvolvido por: Marcone S. de Brito</CentralParagraph>
-      </CenterSection>
+        <CenterSection>
+          <CentralParagraph>
+            &copy; Copyright {getCurrentYear()}. Desenvolvido por: Marcone S. de Brito
+          </CentralParagraph>
+        </CenterSection>
 
-      <RightSection>
-        <ParagraphSocialNetworks>Redes Sociais</ParagraphSocialNetworks>
-        <ImagesContainer>
-          <SvgLink href="https://wa.me/5538992182727" target="_blank">
-            <SvgImage src={WhatsApp} alt="WhatsApp" />
-          </SvgLink>
-          <SvgLink href="https://github.com/marconesdb" target="_blank" rel="noopener noreferrer">
-            <SvgImage src={Github} alt="Github" />
-          </SvgLink>
-          <SvgLink href="https://www.linkedin.com/in/marconesb/" target="_blank">
-            <SvgImage src={Linkedin} alt="Linkedin" />
-          </SvgLink>
-        </ImagesContainer>
-      </RightSection>
+        <RightSection>
+          <ParagraphSocialNetworks>Redes Sociais</ParagraphSocialNetworks>
+          <ImagesContainer>
+            <SvgLink href="https://wa.me/5538992182727" target="_blank">
+              <FaWhatsapp size={30} color="#fff" />  {/* Ícone WhatsApp */}
+            </SvgLink>
+            <SvgLink href="https://github.com/marconesdb" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={30} color="#fff" />  {/* Ícone GitHub */}
+            </SvgLink>
+            <SvgLink href="https://www.linkedin.com/in/marconesb/" target="_blank">
+              <FaLinkedin size={30} color="#fff" />  {/* Ícone LinkedIn */}
+            </SvgLink>
+          </ImagesContainer>
+        </RightSection>
       </FooterContent>
     </FooterContainer>
   );

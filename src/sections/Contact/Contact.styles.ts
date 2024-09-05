@@ -80,7 +80,7 @@ export const ContainerDireito = styled.div`
   .contato{
   width: 60%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
-  border: solid 1px #fff;
+  border: 1px solid #ABB2BF;
   transform:translateX(185px)
   }
 

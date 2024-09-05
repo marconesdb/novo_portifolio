@@ -65,7 +65,7 @@ export const Logo = styled.div`
    transform: translateY(-1px);
    margin-left: 78px;
    margin-top: 1px;
-  
+   
    
   }
 
