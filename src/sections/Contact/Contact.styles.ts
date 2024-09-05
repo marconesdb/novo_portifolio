@@ -5,14 +5,18 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1b1e23;
+  background-color: #2c3036;
   height: 80vh; 
   padding: 20px;
   position: relative;
   transform: translateY(-190px);
   margin-top: -165px;
   
-  
+  @media (min-width: 1640px) {
+    transform: translateY(-390px);
+    height: 600px;
+    margin-bottom: -300px;
+  }
 `;
 
 export const Title = styled.div`
@@ -47,6 +51,11 @@ export const Main = styled.div`
   width: 100%; /* Ocupa 100% da largura disponível */
   transform: translateY(30px);
   margin-top: -90px;
+
+  @media (min-width: 1640px) {
+    margin-top: -20px;
+   
+  }
 
 `;
 

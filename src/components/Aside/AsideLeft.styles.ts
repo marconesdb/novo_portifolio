@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // Contêiner principal do aside
 export const AsideLeft = styled.aside`
   width: 15%; /* Define a largura como 15% */
-  background-color: #282C33; /* Cor de fundo opcional para diferenciar */
+  background-color: #282C33;/* Cor de fundo opcional para diferenciar */
   box-sizing: border-box; /* Inclui a borda e o preenchimento na largura */
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
@@ -44,6 +44,7 @@ export const RetanguloEsquerdoInferior = styled.div`
     transform: translateY(2900px);
     margin-left:-30px;
     height: 200px;
+    
   }
 
   
@@ -61,6 +62,11 @@ export const Cubo = styled.div`
     transform: translateY(3310px);
     margin-left: -55px;
     
+
+    @media (min-width: 1640px) {
+      transform: translateY(3890px);
+   
+  }
   }
 
   .dot {
@@ -76,8 +82,15 @@ export const Cubo = styled.div`
     grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
-    transform: translateY(310px);
+    transform: translateY(340px);
     margin-left: -30px;
+    
+
+    
+    @media (min-width: 1640px) {
+    transform: translateY(870px);
+   
+  }
     
   }
 

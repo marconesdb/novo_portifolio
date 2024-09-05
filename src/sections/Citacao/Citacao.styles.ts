@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const ContainerCitacao = styled.div`
   text-align: center;
-  background-color:#1b1e23;
+  background-color:#2c3036;
 /* 
   background-color: white; */
   margin-top: -50px;

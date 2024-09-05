@@ -8,10 +8,10 @@ export const GlobalStyles = createGlobalStyle `
   }
 
   body {
-   background-color: #2c3036;
+    
+  background-color: #282c33;
  
-  
-  height: 50vh; /* ou altura específica */
+  // height: 50vh; /* ou altura específica */
 
   }
 

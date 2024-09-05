@@ -8,14 +8,16 @@ export const FooterContainer = styled.footer`
   background-color: #282C33;
   transform: translateY(150px);
   
-  
+  @media (min-width: 1640px) {
+    transform: translateY(300px);
+    }
 `;
 
 export const FooterContent = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1b1e23;
+  background-color: #2c3036;
   color: #fff;
   position: relative;
   box-sizing: border-box;

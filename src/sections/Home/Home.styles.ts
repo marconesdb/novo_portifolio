@@ -5,7 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1b1e23; /* Cor de fundo escura */
+  background-color: #2c3036; /* Cor de fundo escura */
   color: #ffffff; /* Cor do texto */
   height: 100vh;
   padding: 20px;
