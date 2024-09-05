@@ -50,9 +50,14 @@ export const CuboDireito= styled.div`
     grid-template-columns: repeat(4, 15px); /* 5 colunas de 30px */
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
-    margin-left: 80px;
+    margin-left: 155px;
     margin-top: 40px;
-    transform: translateY(1440px);
+    transform: translateY(2920px);
+
+    @media (min-width: 1640px) {
+    transform: translateY(2899px);
+    margin-left: 160px;
+  }
   }
 
   .dot {

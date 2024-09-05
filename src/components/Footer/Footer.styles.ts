@@ -24,7 +24,8 @@ export const FooterContent = styled.footer`
   width: 70%;
   height: 250px;
   border-top: 0px solid #fff;
-  
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media (max-width: 1200px) {
     width: 90%;
@@ -46,6 +47,11 @@ export const FooterContent = styled.footer`
     align-items: center;
     padding: 15px;
   }
+
+  @media (min-width: 1640px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 `;
 
 // Seção da esquerda
