@@ -9,7 +9,7 @@ export const Container = styled.section`
   color: #ffffff; /* Cor do texto */
   height: 100vh;
   padding: 20px;
-
+  margin-top: 89px;
   
   @media (max-width: 400px) {
     padding: 10px;
@@ -187,26 +187,27 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const ContactButton = styled.button`
+export const ContactButton = styled.a`
+  display: block;
   padding: 10px 20px;
   border: 1px solid #A8990F;
   background: transparent;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  margin: 0;      /* Remove qualquer margem que possa estar aplicando ao botão */
-  display: block; /* Garante que o botão seja exibido como bloco */
-  text-align: left; /* Alinha o texto do botão à esquerda */
   margin-top: 20px;
-  
+  text-decoration: none;
+  text-align: left;
+  width: 178px;
+
   &:hover {
     background-color: #d9a400;
     color: #1b1e23;
   }
 
   @media (max-width: 400px) {
-    width: 50%; /* O botão ocupa toda a largura em telas menores */
-    text-align: center; /* Centraliza o texto do botão */
+    width: 50%;
+    text-align: center;
     margin-left: 25%;
     margin-top: 50px;
   }

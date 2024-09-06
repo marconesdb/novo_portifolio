@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle `
   box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     
   background-color: #282c33;

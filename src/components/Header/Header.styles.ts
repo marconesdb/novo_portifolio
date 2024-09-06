@@ -7,16 +7,25 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  position: fixed; /* Navbar fixa no topo */
+  top: 0;  /* Adicionado para fixar no topo */
+  z-index: 1000;  /* Z-index alto para sobrepor outros elementos */
   background-color: #282C33;
   color: #fff;
-  position: relative;
   box-sizing: border-box;
   background-color: #2c3036;
   width: 100%;
-  max-width: 1400px; /* Exemplo de largura máxima */
+  max-width: 1065px;  /* Exemplo de largura máxima */
   /* Adicionando borda sólida e box-shadow */
   border: 1px solid #000000;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  
+
+
+  
+  @media (min-width: 1640px) {
+    max-width: 1335px; 
+  }
   
 `;
 
