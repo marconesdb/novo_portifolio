@@ -1,7 +1,7 @@
 // Home.tsx
 import React from 'react';
 import fotoPerfil from '../../assets/images/Marcone.png';
-import ImgFundo from '../../assets/images/Logo.png';
+
 import { 
   Container, 
   ContentWrapper, 

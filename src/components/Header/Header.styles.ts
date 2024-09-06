@@ -80,7 +80,7 @@ export const Hamburger = styled.div<{ isOpen: boolean }>`
   height: 24px;
   position: relative;
   z-index: 1000;
-
+  
   span {
     display: block;
     position: absolute;
@@ -92,6 +92,7 @@ export const Hamburger = styled.div<{ isOpen: boolean }>`
     left: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
+    
   }
 
   span:nth-child(1) {
@@ -116,7 +117,7 @@ export const Hamburger = styled.div<{ isOpen: boolean }>`
 
 export const NavMenu = styled.div<{ isOpen: boolean }>`
   display: flex;
-
+  
   @media (max-width: 768px) {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     position: absolute;
@@ -133,6 +134,7 @@ export const NavMenu = styled.div<{ isOpen: boolean }>`
 export const Dropdown = styled.div`
   position: relative;
   display: inline-block;
+  
 `;
 
 export const DropdownToggle = styled.div`
@@ -143,6 +145,8 @@ export const DropdownToggle = styled.div`
   align-items: center;
   position: relative;
   font-weight: bold;
+  
+
   &:hover {
     color: #A8990F;
   }
@@ -197,6 +201,7 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 30px;  // Espaço entre o menu e as imagens
+  
 `;
 
 export const SvgImage = styled.img`

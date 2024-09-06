@@ -14,15 +14,10 @@ import {
   DropdownItem,
   ImageContainer,
   SvgLink,
-  SvgImage,
-
 } from './Header.styles';
 
+import { FaGithub, FaLinkedin, FaWhatsapp, FaGlobe } from 'react-icons/fa'; // Importação dos ícones
 import logo from '../../assets/images/Logo.svg';
-import Github from '../../assets/images/Github.svg';
-import Web from '../../assets/images/Web.svg';
-import Linkedin from '../../assets/images/Linkedin.svg';
-import WhatsApp from '../../assets/images/WhatsApp.svg';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,57 +34,55 @@ const Header: React.FC = () => {
   };
 
   return (
+    <Container>
+      <Logo>
+        <LogoImage src={logo} alt="Logo" />
+        MSB
+      </Logo>
+      <Hamburger isOpen={isOpen} onClick={toggleMenu}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
 
-      <Container>
-        <Logo>
-          <LogoImage src={logo} alt="Logo" />
-          MSB
-        </Logo>
-        <Hamburger isOpen={isOpen} onClick={toggleMenu}>
-          <span />
-          <span />
-          <span />
-        </Hamburger>
+      <NavMenu isOpen={isOpen}>
+        <Nav>
+          <NavItemHome href="#início">Início</NavItemHome>
+          <NavItem href="#projetos">Projetos</NavItem>
+          <NavItem href="#skills">Skills</NavItem>
+          <NavItem href="#sobre">Sobre</NavItem>
+          <NavItem href="#contato">Contato</NavItem>
+          <Dropdown>
+            <DropdownToggle onClick={toggleDropdown}>
+              PT
+              <span>{dropdownSymbol}</span> {/* Exibe o caractere Unicode baseado no estado */}
+            </DropdownToggle>
+            <DropdownMenu isOpen={dropdownOpen}>
+              <DropdownItem href="#en">EN</DropdownItem>
+              <DropdownItem href="#es">ES</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </Nav>
 
-        <NavMenu isOpen={isOpen}>
-          <Nav>
-            <NavItemHome href="#início">Início</NavItemHome>
-            <NavItem href="#projetos">Projetos</NavItem>
-            <NavItem href="#skills">Skills</NavItem>
-            <NavItem href="#sobre">Sobre</NavItem>
-            <NavItem href="#contato">Contato</NavItem>
-            <Dropdown>
-              <DropdownToggle onClick={toggleDropdown}>
-                PT
-                <span>{dropdownSymbol}</span> {/* Exibe o caractere Unicode baseado no estado */}
-              </DropdownToggle>
-              <DropdownMenu isOpen={dropdownOpen}>
-                <DropdownItem href="#en">EN</DropdownItem>
-                <DropdownItem href="#es">ES</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-          </Nav>
-
-          {/* Exibe os ícones somente se o menu estiver aberto */}
-          {isOpen && (
-            <ImageContainer>
-              <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <SvgImage src={Web} alt="Web" />
-              </SvgLink>
-              <SvgLink href="https://wa.me/5538992182727" target="_blank">
-                <SvgImage src={WhatsApp} alt="WhatsApp" />
-              </SvgLink>
-              <SvgLink href="https://github.com/marconesdb" target="_blank" rel="noopener noreferrer">
-                <SvgImage src={Github} alt="Github" />
-              </SvgLink>
-              <SvgLink href="https://www.linkedin.com/in/marconesb/" target="_blank">
-                <SvgImage src={Linkedin} alt="Linkedin" />
-              </SvgLink>
-            </ImageContainer>
-          )}
-        </NavMenu>
-      </Container>
-      
+        {/* Exibe os ícones somente se o menu estiver aberto */}
+        {isOpen && (
+          <ImageContainer>
+            <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <FaGlobe size={40} color="#fff" /> {/* Ícone de Web */}
+            </SvgLink>
+            <SvgLink href="https://wa.me/5538992182727" target="_blank">
+              <FaWhatsapp size={40} color="#fff" /> {/* Ícone de WhatsApp */}
+            </SvgLink>
+            <SvgLink href="https://github.com/marconesdb" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={40} color="#fff" /> {/* Ícone de Github */}
+            </SvgLink>
+            <SvgLink href="https://www.linkedin.com/in/marconesb/" target="_blank">
+              <FaLinkedin size={40} color="#fff" /> {/* Ícone de LinkedIn */}
+            </SvgLink>
+          </ImageContainer>
+        )}
+      </NavMenu>
+    </Container>
   );
 };
 

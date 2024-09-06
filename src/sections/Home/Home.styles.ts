@@ -9,6 +9,13 @@ export const Container = styled.section`
   color: #ffffff; /* Cor do texto */
   height: 100vh;
   padding: 20px;
+
+  
+  @media (max-width: 400px) {
+    padding: 10px;
+    height: auto; /* Ajusta a altura para o conteúdo */
+    justify-content: flex-start;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -18,7 +25,12 @@ export const ContentWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 1200px; /* Ajuste conforme necessário */
-  
+
+  @media (max-width: 400px) {
+    flex-direction: column; /* Muda para coluna em telas pequenas */
+    align-items: flex-start; /* Alinha ao início da tela */
+    gap: 20px; /* Espaçamento entre as seções */
+  }
 `;
 
 export const TextSection = styled.div`
@@ -26,6 +38,11 @@ export const TextSection = styled.div`
   text-align: left;
   margin: 0; /* Remove qualquer margem que possa estar aplicando ao texto */
   padding: 0; /* Remove qualquer preenchimento que possa estar aplicando ao texto */
+
+  @media (max-width: 400px) {
+    text-align: center; /* Centraliza o texto em telas menores */
+    width: 100%;
+  }
 `;
 
 
@@ -40,6 +57,13 @@ export const ImageSection = styled.div`
   padding: 0px;
   margin-right: -90px;
   
+  @media (max-width: 400px) {
+     /* Disposição vertical das imagens */
+    /* flex-direction: column; */
+    align-items: center; /* Centraliza as imagens */
+    margin-right: 0;
+    
+  }
 `;
 
 export const Logo = styled.div`
@@ -50,6 +74,15 @@ export const Logo = styled.div`
   margin-right: -5px;
   margin-top: -120px;
 
+  @media (max-width: 400px) {
+    margin-top: -50px;
+    gap: 5px;
+    transform: scale(0.8); /* Reduz ligeiramente o tamanho dos elementos */
+    margin-left: 27px;
+    margin-right: 10px;
+    transform: translateY(100px);
+  }
+
   .RetanguloInferior{
    
    border: solid 1px #A8990F;
@@ -57,6 +90,13 @@ export const Logo = styled.div`
    height: 150px;
    transform: translateY(90px);
    margin-left: -29px;
+
+
+   @media (max-width: 400px) {
+      transform: translateY(60px); /* Ajusta a posição em telas menores */
+      width: 60px;
+      height: 120px;
+    }
   }
 
 
@@ -68,7 +108,12 @@ export const Logo = styled.div`
    margin-left: 78px;
    margin-top: 1px;
    
-   
+   @media (max-width: 400px) {
+      width: 30px;
+      height: 45px;
+      margin-left: 58px;
+      transform: translateY(-2px);
+    }
   }
 
   .RetanguloSuperior{
@@ -78,6 +123,13 @@ export const Logo = styled.div`
    height: 150px;
    transform: translateY(-115px);
    margin-left: 50px;
+
+   @media (max-width: 400px) {
+      width: 60px;
+      height: 120px;
+      transform: translateY(-90px);
+      margin-left: 30px;
+    }
    
   }
 
@@ -89,7 +141,12 @@ export const Logo = styled.div`
    margin-left: -40px;
    margin-top: 29px;
    
-   
+   @media (max-width: 400px) {
+      width: 30px;
+      height: 45px;
+      transform: translateY(45px);
+      margin-left: -30px;
+    }
   }
 `;
 
@@ -102,6 +159,12 @@ export const Title = styled.h1`
   padding: 0; /* Remove o preenchimento do título */
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
   
+  @media (max-width: 400px) {
+    font-size: 24px; /* Reduz o tamanho da fonte */
+    text-align: center; /* Centraliza o título */
+    margin-top: 50px;
+  }
+
   span {
     /* color: #d9a400; */
      /* Cor amarela */
@@ -116,6 +179,12 @@ export const Subtitle = styled.p`
   padding: 0; /* Remove o preenchimento do subtítulo */
   color: #cccccc; /* Texto mais claro */
   margin-top: 30px;
+
+  @media (max-width: 400px) {
+    text-align: center; /* Centraliza o subtítulo */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    margin-top: 15px;
+  }
 `;
 
 export const ContactButton = styled.button`
@@ -134,6 +203,13 @@ export const ContactButton = styled.button`
     background-color: #d9a400;
     color: #1b1e23;
   }
+
+  @media (max-width: 400px) {
+    width: 50%; /* O botão ocupa toda a largura em telas menores */
+    text-align: center; /* Centraliza o texto do botão */
+    margin-left: 25%;
+    margin-top: 50px;
+  }
 `;
 
 export const Image = styled.img`
@@ -142,6 +218,11 @@ export const Image = styled.img`
   margin-top: 50px;
   margin-left: -30px;
   
+  @media (max-width: 400px) {
+    width: 250px; /* Reduz o tamanho da imagem */
+    margin-left: 0;
+    margin-top: 100px;
+  }
 `;
 
 export const ImageFundo = styled.img`
@@ -178,6 +259,14 @@ export const PortfolioTag = styled.div`
   width: 400px;
   padding: 5px;
   margin-right: 90px;
+
+  @media (max-width: 400px) {
+    width: 100%; /* Ocupar toda a largura em telas menores */
+    margin-right: 0;
+    font-size: 0.65rem; /* Reduz o tamanho da fonte */
+    margin-top: 20px;
+  }
+
   span {
     color: #fff;
     font-weight: bold;
@@ -185,6 +274,11 @@ export const PortfolioTag = styled.div`
 
   p{
       margin-right: -35px;
+
+      @media (max-width: 400px) {
+      margin-right: 0; /* Centraliza o texto do parágrafo */
+      text-align: center;
+    }
   }
 `;
 

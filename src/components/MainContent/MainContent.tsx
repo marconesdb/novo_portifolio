@@ -13,12 +13,12 @@ const MainContent: React.FC = () => {
   return (
     <div>
       <Home/>
-      <Citacao/>
+      {/* <Citacao/>
       <Projects/>
       <Skills/>
       <About/>
       <Contact/>
-      <Formulario/>
+      <Formulario/> */}
       </div>
   );
 };
