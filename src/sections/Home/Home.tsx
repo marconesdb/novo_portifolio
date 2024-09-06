@@ -1,5 +1,4 @@
 // Home.tsx
-import React from 'react';
 import fotoPerfil from '../../assets/images/Marcone.png';
 
 import { 
