@@ -15,32 +15,32 @@ import {
   Logo, 
 } from './Home.styles';
 
-const Home = () => (
-  <>
-    <Container id="início">  {/* Adicionando um ID à seção */}
+const Home = () => {
+  return (
+    <Container id="inicio">
       <ContentWrapper>
         <TextSection>
           <Title>
-            Marcone S. de Brito é <br /><span>Analista de Sistemas</span> e <span>Desenvolvedor Front-end</span>.
-            <br />
+            Marcone S. de Brito é 
+
+            <span> Analista de Sistemas</span> e <span>Desenvolvedor Front-end</span>.
           </Title>
           <Subtitle>“Transformo ideias em realidade, codificando a Web com bytes de inovação.”</Subtitle>
-          <ContactButton as="a" href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer">
-            Fale comigo !!
+          <ContactButton href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer">
+            Fale comigo!
           </ContactButton>
         </TextSection>
         <ImageSection>
           <Logo>
             <div>
-              <div className='RetanguloInferior'>
-                <div className='RetanguloInferiorMenor'></div>
+              <div className='retanguloInferior'>
+                <div className='retanguloInferiorMenor'></div>
               </div>
-              <div className='RetanguloSuperior'>
-                <div className='RetanguloSuperiorMenor'></div>
+              <div className='retanguloSuperior'>
+                <div className='retanguloSuperiorMenor'></div>
               </div>
             </div>
           </Logo>
-          
           <div>
             <Image src={fotoPerfil} alt="Foto - Marcone" />
             <PortfolioTag>
@@ -51,7 +51,7 @@ const Home = () => (
         </ImageSection>
       </ContentWrapper>
     </Container>
-  </>
-);
+  );
+};
 
 export default Home;
