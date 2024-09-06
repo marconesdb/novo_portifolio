@@ -18,6 +18,7 @@ export const ContentWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 1200px; /* Ajuste conforme necessário */
+  
 `;
 
 export const TextSection = styled.div`
@@ -38,6 +39,7 @@ export const ImageSection = styled.div`
   gap: 10px; /* Espaço entre as imagens, ajuste conforme necessário */
   padding: 0px;
   margin-right: -90px;
+  
 `;
 
 export const Logo = styled.div`

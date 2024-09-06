@@ -54,9 +54,10 @@ const Header: React.FC = () => {
         <NavMenu isOpen={isOpen}>
           <Nav>
             <NavItemHome href="#início">Início</NavItemHome>
-            <NavItem href="#sobre">Sobre</NavItem>
-            <NavItem href="#skills">Skills</NavItem>
             <NavItem href="#projetos">Projetos</NavItem>
+            <NavItem href="#skills">Skills</NavItem>
+            <NavItem href="#sobre">Sobre</NavItem>
+            <NavItem href="#contato">Contato</NavItem>
             <Dropdown>
               <DropdownToggle onClick={toggleDropdown}>
                 PT
