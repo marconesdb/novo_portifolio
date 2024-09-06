@@ -1,8 +1,106 @@
-import React from 'react';
-import { Container, Title, Line, Cards, Card, CardImage, CardTitle, CardText, CardButtons, CardSubtitle } from './Projects.styles';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';  // Importação dos ícones
+import { 
+  Container, 
+  Title, 
+  Line, 
+  Cards, 
+  Card, 
+  CardImage, 
+  CardTitle, 
+  CardText, 
+  CardButtons, 
+  CardSubtitle 
+} from './Projects.styles';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const Projects: React.FC = () => {
+type Project = {
+  image: string;
+  subtitle: string;
+  title: string;
+  description: string;
+  githubLink: string;
+  externalLink: string;
+};
+
+const projects: Project[] = [
+  {
+    image: "/src/assets/images/img-projetos/Laços de Amor 1.png",
+    subtitle: "HTML SCSS Python Flask",
+    title: "Nome do Projeto 1",
+    description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
+    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
+    externalLink: "https://seu-site.com/projeto1"
+  },
+  // Adicione mais projetos aqui
+
+  {
+    image: "/src/assets/images/img-projetos/Image.png",
+    subtitle: "HTML SCSS Python Flask",
+    title: "Nome do Projeto 1",
+    description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
+    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
+    externalLink: "https://seu-site.com/projeto1"
+  },
+  {
+    image: "/src/assets/images/img-projetos/Karine Cevalles 2.png",
+    subtitle: "HTML SCSS Python Flask",
+    title: "Nome do Projeto 1",
+    description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
+    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
+    externalLink: "https://seu-site.com/projeto1"
+  },
+
+  {
+    image: "https://via.placeholder.com/300x200",
+    subtitle: "HTML SCSS Python Flask",
+    title: "Nome do Projeto 1",
+    description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
+    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
+    externalLink: "https://seu-site.com/projeto1"
+  },
+  {
+    image: "https://via.placeholder.com/300x200",
+    subtitle: "HTML SCSS Python Flask",
+    title: "Nome do Projeto 1",
+    description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
+    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
+    externalLink: "https://seu-site.com/projeto1"
+  },
+  {
+    image: "https://via.placeholder.com/300x200",
+    subtitle: "HTML SCSS Python Flask",
+    title: "Nome do Projeto 1",
+    description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
+    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
+    externalLink: "https://seu-site.com/projeto1"
+  },
+];
+
+function ProjectCard({ image, subtitle, title, description, githubLink, externalLink }: Project) {
+  return (
+    <Card>
+      <CardImage src={image} alt={`Imagem do ${title}`} />
+      <CardSubtitle>{subtitle}</CardSubtitle>
+      <CardText>
+        <CardTitle>{title}</CardTitle>
+        {description}
+      </CardText>
+      <CardButtons>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <button>
+            <FaGithub /> Github
+          </button>
+        </a>
+        <a href={externalLink} target="_blank" rel="noopener noreferrer">
+          <button>
+            <FaExternalLinkAlt /> Page
+          </button>
+        </a>
+      </CardButtons>
+    </Card>
+  );
+}
+
+function Projects() {
   return (
     <Container>
       <Title>
@@ -11,135 +109,13 @@ const Projects: React.FC = () => {
         <Line />
       </Title>
       <Cards>
-         {/* Card 1 */}
-        <Card>
-          <CardImage src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1" />
-          <CardSubtitle>HTML SCSS Python Flask</CardSubtitle>
-          <CardText>
-            <CardTitle>Nome do Projeto</CardTitle>
-            Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.
-          </CardText>
-          <CardButtons>
-            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaGithub /> Github
-              </button>
-            </a>
-            <a href="https://seu-site.com" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaExternalLinkAlt /> Page
-              </button>
-            </a>
-          </CardButtons>
-        </Card>
-        {/* Card 2 */}
-        <Card>
-          <CardImage src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1" />
-          <CardSubtitle>HTML SCSS Python Flask</CardSubtitle>
-          <CardText>
-            <CardTitle>Nome do Projeto</CardTitle>
-            Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.
-          </CardText>
-          <CardButtons>
-            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaGithub /> Github
-              </button>
-            </a>
-            <a href="https://seu-site.com" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaExternalLinkAlt /> Page
-              </button>
-            </a>
-          </CardButtons>
-        </Card>
-         {/* Card 3 */}
-         <Card>
-          <CardImage src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1" />
-          <CardSubtitle>HTML SCSS Python Flask</CardSubtitle>
-          <CardText>
-            <CardTitle>Nome do Projeto</CardTitle>
-            Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.
-          </CardText>
-          <CardButtons>
-            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaGithub /> Github
-              </button>
-            </a>
-            <a href="https://seu-site.com" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaExternalLinkAlt /> Page
-              </button>
-            </a>
-          </CardButtons>
-        </Card>
-        {/* Card 4 */}
-        <Card>
-          <CardImage src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1" />
-          <CardSubtitle>HTML SCSS Python Flask</CardSubtitle>
-          <CardText>
-            <CardTitle>Nome do Projeto</CardTitle>
-            Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.
-          </CardText>
-          <CardButtons>
-            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaGithub /> Github
-              </button>
-            </a>
-            <a href="https://seu-site.com" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaExternalLinkAlt /> Page
-              </button>
-            </a>
-          </CardButtons>
-        </Card>
-        {/* Card 5 */}
-        <Card>
-          <CardImage src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1" />
-          <CardSubtitle>HTML SCSS Python Flask</CardSubtitle>
-          <CardText>
-            <CardTitle>Nome do Projeto</CardTitle>
-            Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.
-          </CardText>
-          <CardButtons>
-            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaGithub /> Github
-              </button>
-            </a>
-            <a href="https://seu-site.com" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaExternalLinkAlt /> Page
-              </button>
-            </a>
-          </CardButtons>
-        </Card>
-         {/* Card 6 */}
-         <Card>
-          <CardImage src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1" />
-          <CardSubtitle>HTML SCSS Python Flask</CardSubtitle>
-          <CardText>
-            <CardTitle>Nome do Projeto</CardTitle>
-            Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.
-          </CardText>
-          <CardButtons>
-            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaGithub /> Github
-              </button>
-            </a>
-            <a href="https://seu-site.com" target="_blank" rel="noopener noreferrer">
-              <button>
-                <FaExternalLinkAlt /> Page
-              </button>
-            </a>
-          </CardButtons>
-        </Card>
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+          
+        ))}
       </Cards>
     </Container>
   );
-};
+}
 
 export default Projects;
