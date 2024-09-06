@@ -21,8 +21,7 @@ const Home = () => {
       <ContentWrapper>
         <TextSection>
           <Title>
-            Marcone S. de Brito é 
-
+            Marcone S. de Brito é <br></br>
             <span> Analista de Sistemas</span> e <span>Desenvolvedor Front-end</span>.
           </Title>
           <Subtitle>“Transformo ideias em realidade, codificando a Web com bytes de inovação.”</Subtitle>

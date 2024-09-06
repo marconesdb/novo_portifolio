@@ -78,6 +78,7 @@ export const Logo = styled.div`
   gap: 10px;
   margin-right: -5px;
   margin-top: -120px;
+  
 
   @media (max-width: 400px) {
     margin-top: -50px;
@@ -85,6 +86,12 @@ export const Logo = styled.div`
     transform: scale(0.8);
     margin-left: 27px;
     margin-right: 10px;
+    transform: translateY(100px);
+  }
+
+
+  @media (min-width: 1640px) {
+    
   }
 
   .retanguloInferior {
