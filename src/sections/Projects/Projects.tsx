@@ -14,6 +14,8 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Image1 from '../../assets/images/img-projetos/Laços de Amor 1.png'
 import Image2 from '../../assets/images/img-projetos/Image.png'
 import Image3 from '../../assets/images/img-projetos/Karine Cevalles 2.png'
+import Image4 from '../../assets/images/img-projetos/Trabalhadores.png'
+import Image5 from '../../assets/images/img-projetos/Landpage.png'
 
 type Project = {
   image: string;
@@ -28,45 +30,45 @@ const projects: Project[] = [
   {
     image: Image1,
     subtitle: "HTML SCSS Python Flask",
-    title: "Nome do Projeto 1",
+    title: "Laços de Amor",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
-    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
-    externalLink: "https://seu-site.com/projeto1"
+    githubLink: "https://github.com/marconesdb/site-lacosdeamor",
+    externalLink: "https://site-lacosdeamor.vercel.app/"
   },
   // Adicione mais projetos aqui
 
   {
     image: Image2,
     subtitle: "HTML SCSS Python Flask",
-    title: "Nome do Projeto 1",
+    title: "Solar de Jesus",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
-    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
-    externalLink: "https://seu-site.com/projeto1"
+    githubLink: "https://github.com/marconesdb/solardejesus-ecommerce",
+    externalLink: "https://solardejesus-ecommerce.vercel.app/"
   },
   {
     image: Image3,
     subtitle: "HTML SCSS Python Flask",
-    title: "Nome do Projeto 1",
+    title: "Karina Cevalles",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
-    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
-    externalLink: "https://seu-site.com/projeto1"
+    githubLink: "https://github.com/marconesdb/site-karinaCevalles",
+    externalLink: "https://site-karina-cevalles.vercel.app/"
   },
 
   {
-    image: "https://via.placeholder.com/300x200",
+    image: Image4,
     subtitle: "HTML SCSS Python Flask",
-    title: "Nome do Projeto 1",
+    title: "T. da Última Hora",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
-    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
-    externalLink: "https://seu-site.com/projeto1"
+    githubLink: "https://github.com/marconesdb/SiteTrabalhadoresDaUltimaHora",
+    externalLink: "https://marconesdb.github.io/SiteTrabalhadoresDaUltimaHora/"
   },
   {
-    image: "https://via.placeholder.com/300x200",
+    image: Image5,
     subtitle: "HTML SCSS Python Flask",
-    title: "Nome do Projeto 1",
+    title: "Tom's Jazz School",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
-    githubLink: "https://github.com/seu-usuario/seu-repositorio1",
-    externalLink: "https://seu-site.com/projeto1"
+    githubLink: "https://github.com/marconesdb/landPageOneBitCode",
+    externalLink: "https://marconesdb.github.io/landPageOneBitCode/"
   },
   {
     image: "https://via.placeholder.com/300x200",
