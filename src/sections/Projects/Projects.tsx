@@ -11,6 +11,9 @@ import {
   CardSubtitle 
 } from './Projects.styles';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Image1 from '../../assets/images/img-projetos/Laços de Amor 1.png'
+import Image2 from '../../assets/images/img-projetos/Image.png'
+import Image3 from '../../assets/images/img-projetos/Karine Cevalles 2.png'
 
 type Project = {
   image: string;
@@ -23,7 +26,7 @@ type Project = {
 
 const projects: Project[] = [
   {
-    image: "/src/assets/images/img-projetos/Laços de Amor 1.png",
+    image: Image1,
     subtitle: "HTML SCSS Python Flask",
     title: "Nome do Projeto 1",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
@@ -33,7 +36,7 @@ const projects: Project[] = [
   // Adicione mais projetos aqui
 
   {
-    image: "/src/assets/images/img-projetos/Image.png",
+    image: Image2,
     subtitle: "HTML SCSS Python Flask",
     title: "Nome do Projeto 1",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
@@ -41,7 +44,7 @@ const projects: Project[] = [
     externalLink: "https://seu-site.com/projeto1"
   },
   {
-    image: "/src/assets/images/img-projetos/Karine Cevalles 2.png",
+    image: Image3,
     subtitle: "HTML SCSS Python Flask",
     title: "Nome do Projeto 1",
     description: "Este é o texto descritivo do projeto. Você pode adicionar mais detalhes aqui.",
