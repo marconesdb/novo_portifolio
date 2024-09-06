@@ -1,7 +1,6 @@
-import React from 'react';
 import { Autor, Citacao, ContainerCitacao, HorizontalAspas, HorizontalLineInferior, HorizontalLineInferiorCont, HorizontalLineInferiorMenor, HorizontalLineSuperior, HorizontalLineSuperiorCont, InferiorAspas, VerticalLineDireito, VerticalLineDireitoMenor, VerticalLineEsquerdo, VerticalLineEsquerdoMenor, } from '../../sections/Citacao/Citacao.styles';
 
-const CitacaoComponent: React.FC = () => {
+const CitacaoComponent = () => {
   return (
     <>
     <ContainerCitacao>
@@ -19,7 +18,7 @@ const CitacaoComponent: React.FC = () => {
       <Autor>- Steve Jobs</Autor>
       <HorizontalLineInferiorMenor/>
       <VerticalLineDireitoMenor/>
-    {/*  */}
+    
       
     </> 
   );
