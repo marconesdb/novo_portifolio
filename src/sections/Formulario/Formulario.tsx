@@ -1,8 +1,7 @@
-import React from 'react';
 import { Container, Main, FormularioWrapper, EnviarButton } from './Formulario.styles';
 
 
-const Formulario: React.FC = () => {
+const Formulario = () => {
   return (
     <Container>
       <Main>

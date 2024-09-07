@@ -1,9 +1,9 @@
 // components/Home/Home.tsx
-import React from 'react';
+
 import { Container, ContainerDireito, ContainerEsquerdo, Line, Main, Title } from './Contact.styles';
 import { FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <Container id="contato">
        <Title>

@@ -1,9 +1,7 @@
-import React from 'react';
-
 import {Container, ContainerAbout, ContainerDireito, ContainerEsquerdo, Line, Title} from '../About/About.styles';
 import { ContactButton } from '../Home/Home.styles';
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <Container id="sobre">
        <Title>
