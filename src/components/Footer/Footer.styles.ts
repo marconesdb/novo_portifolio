@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   transform: translateY(150px);
   
   @media (min-width: 1640px) {
-    transform: translateY(300px);
+    transform: translateY(345px);
     }
 `;
 

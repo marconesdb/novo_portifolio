@@ -12,17 +12,17 @@ const Formulario = () => {
               <div className="form-group">
                 <div className="form-item">
                   <label htmlFor="nome">Nome:</label>
-                  <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" />
+                  <input type="text" id="nome" name="nome" required placeholder="Digite seu nome..." />
                 </div>
                 <div className="form-item">
                   <label htmlFor="email">Email:</label>
-                  <input type="email" id="email" name="email" required placeholder="Digite seu email" />
+                  <input type="email" id="email" name="email" required placeholder="Digite seu email..." />
                 </div>
               </div>
 
               <div className="form-group">
                 <label htmlFor="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" required placeholder="Digite um assunto" />
+                <input type="text" id="assunto" name="assunto" required placeholder="Digite um assunto..." />
               </div>
 
               <div className="form-group">

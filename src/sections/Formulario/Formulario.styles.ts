@@ -14,7 +14,8 @@ export const Container = styled.section`
  
   
   @media (min-width: 1640px) {
-    /* Ajustes específicos para telas maiores */
+  transform: translateY(-200px);
+  margin-top: 0px;
   }
 `;
 
@@ -28,6 +29,8 @@ export const Main = styled.div`
 
   @media (min-width: 1640px) {
     /* Ajustes específicos para telas maiores */
+    transform: translateY(-250px);
+    margin-top: 0px;
   }
 `;
 
