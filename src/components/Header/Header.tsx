@@ -74,7 +74,7 @@ const Header = () => {
             to="skills"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-10}
           >
             <NavItem>Skills</NavItem>
           </ScrollLink>
@@ -82,7 +82,7 @@ const Header = () => {
             to="sobre"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-270}
           >
             <NavItem>Sobre</NavItem>
           </ScrollLink>

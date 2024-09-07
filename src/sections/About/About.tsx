@@ -5,7 +5,7 @@ import { ContactButton } from '../Home/Home.styles';
 
 const About: React.FC = () => {
   return (
-    <Container>
+    <Container id="sobre">
        <Title>
           <span>#</span>
           <p>Sobre mim</p>

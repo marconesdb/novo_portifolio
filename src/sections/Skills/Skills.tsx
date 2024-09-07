@@ -15,7 +15,7 @@ import {
 const Skills: React.FC = () => {
   return (
     <>
-      <Container>
+      <Container id="skills">
         <Title>
           <span>#</span>
           <p>Skills</p>

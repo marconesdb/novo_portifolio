@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   return (
-    <Container>
+    <Container id="contato">
        <Title>
           <span>#</span>
           <p>Contato</p>
