@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+
+export const SectionProjetos = styled.section`
+
+
+`;
+
 export const Container = styled.section`
   display: flex;
   flex-direction: column;

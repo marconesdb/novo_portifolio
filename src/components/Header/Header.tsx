@@ -53,7 +53,7 @@ const Header = () => {
 
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <NavItemHome href="#início">Início</NavItemHome>
+          <NavItemHome href="#inicio">Início</NavItemHome>
           <NavItem href="#projetos">Projetos</NavItem>
           <NavItem href="#skills">Skills</NavItem>
           <NavItem href="#sobre">Sobre</NavItem>
