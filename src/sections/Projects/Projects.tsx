@@ -10,7 +10,6 @@ import {
   CardText, 
   CardButtons, 
   CardSubtitle, 
-  SectionProjetos
 } from './Projects.styles';
 
 
