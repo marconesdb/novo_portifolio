@@ -87,7 +87,7 @@ const projects: Project[] = [
 
 function ProjectCard({ image, subtitle, title, description, githubLink, externalLink }: Project) {
   return (
-    <SectionProjetos id="projetos">
+   
     <Card>
       <CardImage src={image} alt={`Imagem do ${title}`} />
       <CardSubtitle>{subtitle}</CardSubtitle>
@@ -108,13 +108,13 @@ function ProjectCard({ image, subtitle, title, description, githubLink, external
         </a>
       </CardButtons>
     </Card>
-    </SectionProjetos>
+   
   );
 }
 
 function Projects() {
   return (
-    <Container>
+    <Container id="projetos">
       <Title>
         <span>#</span>
         <p>Projetos</p>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll'; // Importando o ScrollLink do react-scroll
 import {
   Container,
   Logo,
@@ -53,11 +54,46 @@ const Header = () => {
 
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <NavItemHome href="#inicio">Início</NavItemHome>
-          <NavItem href="#projetos">Projetos</NavItem>
-          <NavItem href="#skills">Skills</NavItem>
-          <NavItem href="#sobre">Sobre</NavItem>
-          <NavItem href="#contato">Contato</NavItem>
+          <ScrollLink
+            to="inicio"
+            smooth={true}
+            duration={500}
+            offset={-70}  // Ajuste o offset conforme necessário
+          >
+            <NavItemHome>Início</NavItemHome>
+          </ScrollLink>
+          <ScrollLink
+            to="projetos"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+            <NavItem>Projetos</NavItem>
+          </ScrollLink>
+          <ScrollLink
+            to="skills"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+            <NavItem>Skills</NavItem>
+          </ScrollLink>
+          <ScrollLink
+            to="sobre"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+            <NavItem>Sobre</NavItem>
+          </ScrollLink>
+          <ScrollLink
+            to="contato"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+            <NavItem>Contato</NavItem>
+          </ScrollLink>
           <Dropdown>
             <DropdownToggle onClick={toggleDropdown}>
               PT

@@ -61,7 +61,9 @@ export const NavItem = styled.a`
   position: relative;
   transition: color 0.3s ease;
   padding-right: 25px;
+  cursor: pointer; /* Adicionando cursor pointer */
 
+  
   &:before {
     content: '#';
     color: #A8990F;
