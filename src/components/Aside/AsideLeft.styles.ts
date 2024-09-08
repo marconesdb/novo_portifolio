@@ -9,7 +9,7 @@ export const AsideLeft = styled.aside`
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
    padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
    
-   @media (min-width: 400px) and (max-width: 768px) {
+   @media (min-width: 400px) and (max-width: 1080px) {
     display: none; /* Esconde o AsideLeft em telas com largura até 640px */
   }
 `;
@@ -23,7 +23,7 @@ export const VerticalLine = styled.div`
   margin-left: 20px;
 
 
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
 `;
@@ -35,7 +35,7 @@ export const ImageContainer = styled.div`
   flex-direction: column; /* Alinha as imagens verticalmente */
   gap: 10px; /* Espaço entre as imagens */
 
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
 `;
@@ -49,7 +49,7 @@ export const RetanguloEsquerdoInferior = styled.div`
   border-left: none;
   margin-left: -40px;
 
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
 
@@ -75,7 +75,7 @@ export const Cubo = styled.div`
     transform: translateY(3310px);
     margin-left: -55px;
     
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
 
@@ -92,7 +92,7 @@ export const Cubo = styled.div`
     border-radius: 50%;
 
 
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
   }
@@ -106,7 +106,7 @@ export const Cubo = styled.div`
     transform: translateY(340px);
     margin-left: -30px;
     
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
     
@@ -123,7 +123,7 @@ export const Cubo = styled.div`
     background-color: #ABB2BF;
     border-radius: 50%;
 
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
   }

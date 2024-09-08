@@ -7,7 +7,7 @@ export const AsideRight = styled.aside`
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
  
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: 400px) and (max-width: 1080px) {
     display: none; /* Esconde o AsideRight em telas com largura até 640px */
   }
 
@@ -22,7 +22,7 @@ export const RetanguloDireito= styled.div`
   margin-left: 126px;
   border-right: none;
 
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: 400px) and (max-width: 1080px) {
     transform: translateY(1125px);
     margin-left:185px;
     }
@@ -38,7 +38,7 @@ export const RetanguloDireitoInferior= styled.div`
 
 
 
-  @media (min-width: 400px) and (max-width: 768px) {
+  @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
 
@@ -60,7 +60,7 @@ export const CuboDireito= styled.div`
     margin-top: 40px;
     transform: translateY(2920px);
 
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
 
@@ -76,7 +76,7 @@ export const CuboDireito= styled.div`
     background-color: #ABB2BF;
     border-radius: 50%;
 
-    @media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 1080px) {
     display: none;
     }
   }
