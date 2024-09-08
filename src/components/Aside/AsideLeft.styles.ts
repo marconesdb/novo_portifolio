@@ -9,7 +9,9 @@ export const AsideLeft = styled.aside`
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
    padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
    
-  
+   @media (min-width: 400px) and (max-width: 640px) {
+    display: none;
+    }
 `;
 
 // Estiliza o traço vertical
@@ -104,7 +106,7 @@ export const Cubo = styled.div`
     background-color: #ABB2BF;
     border-radius: 50%;
 
-  
+    
   }
 `;
 
