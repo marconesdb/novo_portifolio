@@ -7,7 +7,7 @@ export const AsideRight = styled.aside`
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
  
-  @media (max-width: 640px) {
+  @media (min-width: 400px) and (max-width: 640px) {
     display: none; /* Esconde o AsideRight em telas com largura até 540px */
   }
 
