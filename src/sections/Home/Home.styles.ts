@@ -266,7 +266,7 @@ export const PortfolioTag = styled.div`
   @media (max-width: 400px) {
     width: 100%;
     margin-right: 0;
-    margin-left: 9px;
+    margin-left: 8px;
 
     /* align-items: center; */
     font-size: 0.65rem;
