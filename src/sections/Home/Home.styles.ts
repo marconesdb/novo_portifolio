@@ -52,6 +52,7 @@ export const TextSection = styled.div`
   @media (max-width: 400px) {
     text-align: center;
     width: 100%;
+    transform: translateY(-40px);
   }
 `;
 
@@ -65,9 +66,13 @@ export const ImageSection = styled.div`
   margin-right: -90px;
 
   @media (max-width: 400px) {
+    flex-wrap: wrap; /* Permite que os elementos "quebrem" para a próxima linha, se necessário */
+    /* flex-direction: row;  */
     flex-direction: column;
     align-items: center;
     margin-right: 0;
+    transform: translateY(-100px);
+    margin-left: 0px;
   }
 `;
 
@@ -84,7 +89,7 @@ export const Logo = styled.div`
     margin-top: -50px;
     gap: 5px;
     transform: scale(0.8);
-    margin-left: 27px;
+    margin-left:-150px;
     margin-right: 10px;
     transform: translateY(100px);
   }
@@ -227,9 +232,11 @@ export const Image = styled.img`
   margin-left: -30px;
 
   @media (max-width: 400px) {
-    width: 250px;
-    margin-left: 0;
-    margin-top: 100px;
+    width: 200px;
+    margin-left: 160px;
+    margin-top: 0px;
+    transform: translateX(165px);
+    transform: translateY(-140px);
   }
 `;
 
@@ -258,8 +265,11 @@ export const PortfolioTag = styled.div`
   @media (max-width: 400px) {
     width: 100%;
     margin-right: 0;
+    margin-left: 9px;
+
+    /* align-items: center; */
     font-size: 0.65rem;
-    margin-top: 20px;
+    transform: translateY(-150px);
   }
 
   span {
