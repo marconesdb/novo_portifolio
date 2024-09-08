@@ -21,6 +21,11 @@ export const VerticalLine = styled.div`
   background-color: #fff; /* Cor do traço */
   margin-bottom: 20px; /* Espaço entre o traço e as imagens */
   margin-left: 20px;
+
+
+  @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
 `;
 
 
@@ -29,6 +34,10 @@ export const ImageContainer = styled.div`
   display: flex;
   flex-direction: column; /* Alinha as imagens verticalmente */
   gap: 10px; /* Espaço entre as imagens */
+
+  @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
 `;
 
 
@@ -39,6 +48,10 @@ export const RetanguloEsquerdoInferior = styled.div`
   transform: translateY(2550px);
   border-left: none;
   margin-left: -40px;
+
+  @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
 
   @media (min-width: 1640px) {
     transform: translateY(2900px);
@@ -62,6 +75,9 @@ export const Cubo = styled.div`
     transform: translateY(3310px);
     margin-left: -55px;
     
+    @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
 
     @media (min-width: 1640px) {
       transform: translateY(3890px);
@@ -74,6 +90,11 @@ export const Cubo = styled.div`
     height: 5px;
     background-color: #ABB2BF;
     border-radius: 50%;
+
+
+    @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
   }
 
 
@@ -85,7 +106,9 @@ export const Cubo = styled.div`
     transform: translateY(340px);
     margin-left: -30px;
     
-
+    @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
     
     @media (min-width: 1640px) {
     transform: translateY(870px);
@@ -99,6 +122,10 @@ export const Cubo = styled.div`
     height: 5px;
     background-color: #ABB2BF;
     border-radius: 50%;
+
+    @media (min-width: 400px) and (max-width: 768px) {
+    display: none;
+    }
   }
 `;
 
