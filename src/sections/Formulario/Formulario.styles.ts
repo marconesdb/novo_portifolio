@@ -113,7 +113,7 @@ export const EnviarButton = styled.button`
   align-self: flex-start;  /* Alinha o botão à esquerda */
   
   &:hover {
-    background-color: #d9a400;
+    background-color: #A8990F;
     color: #1b1e23;
   }
 `;
