@@ -25,9 +25,11 @@ export const Container = styled.section`
     height:auto;
     min-height: 100vh; // Garante que o container tenha pelo menos a altura da viewport
 
-    @media (min-width: 1080px) {
+   // Para dispositivos de alta densidade de pixels e maiores resoluções
+  @media (min-width: 640px) and (min-resolution: 2dppx) {
+    padding: 20px;
+    margin-top: 100px;
     height: auto;
-    padding: 3rem;  /* Aumentar o padding em telas maiores */
   }
   }
 `;
@@ -48,9 +50,12 @@ export const ContentWrapper = styled.div`
     
   }
 
-  @media (min-width: 1080px) {
-    max-width: 90%;  // Limitar a largura máxima em telas maiores
+
+   // Ajustes para telas maiores e dispositivos de alta densidade
+   @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    max-width: 90%;
   }
+
 `;
 
 // Componente TextSection
@@ -67,7 +72,10 @@ export const TextSection = styled.div`
     /* transform: translateY(50px); */
     padding-top: 3rem;  // Usar rem para manter consistência
 
-
+    // Ajuste para dispositivos de alta densidade de pixels
+    @media (min-width: 1080px) and (min-resolution: 2dppx) {
+        text-align: center;
+      }
     .TextoFront-end{
       display: block;
     }
@@ -90,6 +98,12 @@ export const ImageSection = styled.div`
     margin-right: 0;
     transform: translateY(0px);
   }
+
+
+  // Ajuste para alta densidade de pixels e resoluções maiores
+  @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    margin-right: 0;
+  }
 `;
 
 // Componente Logo
@@ -107,10 +121,12 @@ export const Logo = styled.div`
     transform: scale(0.9);
   }
 
-  @media (min-width: 1080px) {
-    transform: scale(1.05);  // Aumentar levemente o tamanho em telas maiores
+   // Ajustes para dispositivos com densidade de pixels alta
+   @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    transform: scale(1.1);
+    margin-right: 0;
   }
-  
+
   @media (min-width: 1640px) {
     
   }
@@ -191,7 +207,11 @@ export const Title = styled.h1`
     text-align: center;
   }
 
-
+  // Ajuste para dispositivos com alta densidade
+  @media (min-width: 1080px) and (min-resolution: 2dppx) {
+      font-size: 36px;
+      text-align: center;
+    }
   span {
     color: ${secondaryColor};
   }
@@ -210,6 +230,11 @@ export const Subtitle = styled.p`
     text-align: center;
     font-size: 0.95rem;
     padding-top: 1.25rem;
+  }
+
+   // Ajuste para dispositivos com alta densidade
+   @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -238,6 +263,11 @@ export const ContactButton = styled.a`
     margin-top: 5rem;
     
   }
+
+   // Ajuste para dispositivos com alta densidade
+   @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    width: 200px;
+  }
 `;
 
 // Componente Image
@@ -251,6 +281,12 @@ export const Image = styled.img`
     width: 17.5rem;
     margin-left: 2.1875rem;
     margin-top: 1.25rem;
+  }
+
+   // Ajuste para dispositivos com alta densidade
+   @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    width: 400px;
+    margin-left: 0;
   }
 `;
 
@@ -282,6 +318,11 @@ export const PortfolioTag = styled.div`
     font-size: 0.8rem;
     justify-content: center;
     margin-top: 20px;
+  }
+
+   // Ajuste para dispositivos com alta densidade
+   @media (min-width: 1080px) and (min-resolution: 2dppx) {
+    font-size: 1rem;
   }
 
   span {
