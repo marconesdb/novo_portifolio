@@ -66,12 +66,13 @@ export const ImageSection = styled.div`
   margin-right: -90px;
 
   @media (max-width: 400px) {
-    flex-wrap: wrap; /* Permite que os elementos "quebrem" para a próxima linha, se necessário */
+    /* flex-wrap: wrap; */
+     /* Permite que os elementos "quebrem" para a próxima linha, se necessário */
     /* flex-direction: row;  */
     flex-direction: column;
     align-items: center;
     margin-right: 0;
-    transform: translateY(-100px);
+    transform: translateY(-60px);
     margin-left: 0px;
   }
 `;
