@@ -10,7 +10,7 @@ export const AsideLeft = styled.aside`
    padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
    
    @media (min-width: 400px) and (max-width: 640px) {
-    display: none; /* Esconde o AsideLeft em telas com largura até 540px */
+    display: none; /* Esconde o AsideLeft em telas com largura até 640px */
   }
 `;
 

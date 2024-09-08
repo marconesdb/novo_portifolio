@@ -16,14 +16,15 @@ export const Container = styled.section`
   background-color: ${primaryColor};
   color: ${textColor};
   height: 100vh;
-  padding: 20px;
+  padding: 2rem; /* Usar rem para maior consistência */
   margin-top: 89px;
 
   @media (min-width: 400px) and (max-width: 640px) {
-    padding: 15px;  // Reduzir o padding
+    padding: 1.5rem;  // Reduzir o padding
     margin-top: 60px;  // Ajustar o espaçamento superior para melhor visualização em telas menores
     height:auto;
     min-height: 100vh; // Garante que o container tenha pelo menos a altura da viewport
+    
   }
 `;
 
@@ -39,7 +40,7 @@ export const ContentWrapper = styled.div`
   @media (min-width: 400px) and (max-width: 640px) {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     
   }
 `;
@@ -54,9 +55,11 @@ export const TextSection = styled.div`
   @media (min-width: 400px) and (max-width: 640px) {
     text-align: center;
     width: 100%;
-    margin-top: -5px;
+    margin-top: -0.5rem;
     /* transform: translateY(50px); */
-    padding-top: 50px;
+    padding-top: 3rem;  // Usar rem para manter consistência
+
+
     .TextoFront-end{
       display: block;
     }
@@ -68,9 +71,9 @@ export const ImageSection = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.625rem;  // Usar rem
   padding: 0;
-  margin-right: -90px;
+  margin-right: -5rem;  // Ajuste com rem
 
   
   @media (min-width: 400px) and (max-width: 640px) {
@@ -85,15 +88,14 @@ export const ImageSection = styled.div`
 export const Logo = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  margin-right: -5px;
-  /* margin-top: -120px; */
-  padding-top: 50px;
+  gap: 0.625rem;
+  margin-right: -0.3125rem;
+  padding-top: 3.125rem;
   
 
   @media (min-width: 400px) and (max-width: 640px) {
     /* margin-top: 0px; */
-    gap: 8px;
+    gap: 0.5rem;
     transform: scale(0.9);
   }
 
@@ -104,69 +106,69 @@ export const Logo = styled.div`
 
   .retanguloInferior {
     border: 1px solid ${secondaryColor};
-    width: 80px;
-    height: 150px;
-    transform: translateY(90px);
-    margin-left: -29px;
+    width: 5rem;
+    height: 9.375rem;
+    transform: translateY(5.625rem);
+    margin-left: -1.8125rem;
 
     @media (max-width: 400px) {
-      transform: translateY(60px);
-      width: 60px;
-      height: 120px;
+      width: 3.75rem;
+      height: 7.5rem;
+      transform: translateY(3.75rem);
     }
   }
 
   .retanguloInferiorMenor {
     border: 1px solid ${secondaryColor};
-    width: 40px;
-    height: 49px;
-    transform: translateY(-1px);
-    margin-left: 78px;
-    margin-top: 1px;
+    width: 2.5rem;
+    height: 3.0625rem;
+    transform: translateY(-0.0625rem);
+    margin-left: 4.875rem;
+    
 
     @media (max-width: 400px) {
-      width: 30px;
-      height: 45px;
-      margin-left: 58px;
+      width: 2.25rem;
+      height: 2.8125rem;
+      margin-left: 3.625rem;
       transform: translateY(-2px);
     }
   }
 
   .retanguloSuperior {
     border: 1px solid ${secondaryColor};
-    width: 80px;
-    height: 150px;
-    transform: translateY(-115px);
-    margin-left: 50px;
+    width: 5rem;
+    height: 9.375rem;
+    transform: translateY(-7.1875rem);
+    margin-left: 3.125rem;
 
     @media (max-width: 400px) {
-      width: 60px;
-      height: 120px;
-      transform: translateY(-90px);
-      margin-left: 30px;
+      width: 3.75rem;
+      height: 7.5rem;
+      transform: translateY(-5.625rem);
+      margin-left: 1.875rem;
     }
   }
 
   .retanguloSuperiorMenor {
     border: 1px solid ${secondaryColor};
-    width: 40px;
-    height: 46px;
-    transform: translateY(75px);
-    margin-left: -40px;
-    margin-top: 29px;
+    width: 2.5rem;
+    height: 2.875rem;
+    transform: translateY(4.6875rem);
+    margin-left: -2.5rem;
+    margin-top: 1.8125rem;
 
     @media (max-width: 400px) {
-      width: 30px;
-      height: 45px;
-      transform: translateY(45px);
-      margin-left: -30px;
+     width: 2.25rem;
+      height: 2.8125rem;
+      transform: translateY(2.65rem);
+      margin-left: -2.270rem;
     }
   }
 `;
 
 // Componente Title
 export const Title = styled.h1`
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   text-align: left;
   margin: 0;
@@ -174,7 +176,7 @@ export const Title = styled.h1`
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
 
   @media (min-width: 400px) and (max-width: 640px) {
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: center;
   }
 
@@ -191,29 +193,27 @@ export const Subtitle = styled.p`
   margin: 0;
   padding: 0;
   color: ${lightTextColor};
-  margin-top: 30px;
+  margin-top: 2rem;
 
   @media (min-width: 400px) and (max-width: 640px) {
     text-align: center;
     font-size: 0.95rem;
-    /* margin-top: 20px; */
-
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
 `;
 
 // Componente ContactButton
 export const ContactButton = styled.a`
   display: block;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: 1px solid ${secondaryColor};
   background: transparent;
   color: ${textColor};
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
   text-align: left;
-  width: 178px;
+  width: 11rem;
 
   &:hover {
     background-color: ${secondaryColor};
@@ -224,30 +224,30 @@ export const ContactButton = styled.a`
     width: 60%;
     text-align: center;
     margin-left: 20%;
-    margin-top: 80px;
+    margin-top: 5rem;
     
   }
 `;
 
 // Componente Image
 export const Image = styled.img`
-  width: 350px;
+  width: 21.875rem;
   height: auto;
-  margin-top: 50px;
-  margin-left: -30px;
+  margin-top: 3.125rem;
+  margin-left: -1.875rem;
 
   @media (min-width: 400px) and (max-width: 640px) {
-    width: 280px;
-    margin-left: 35px;
-    margin-top: 20px;
+    width: 17.5rem;
+    margin-left: 2.1875rem;
+    margin-top: 1.25rem;
   }
 `;
 
 // Componente ImageQuadrado
 export const ImageQuadrado = styled.img`
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  margin-right: 0.625rem;
   background-color: ${secondaryColor};
 `;
 
@@ -255,15 +255,15 @@ export const ImageQuadrado = styled.img`
 export const PortfolioTag = styled.div`
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   color: ${lightTextColor};
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 2rem;
   border: 1px solid #ABB2BF;
-  width: 400px;
-  padding: 5px;
-  margin-right: 90px;
+  width: 25rem;
+  padding: 0.3125rem;
+  margin-right: 5.625rem;
 
   @media (min-width: 400px) and (max-width: 640px) {
     width: 100%;
@@ -279,7 +279,7 @@ export const PortfolioTag = styled.div`
   }
 
   p {
-    margin-right: -35px;
+    margin-right: -2.1875rem;
 
     @media (min-width: 400px) and (max-width: 640px) {
       margin-right: 0;
