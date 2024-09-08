@@ -24,7 +24,11 @@ export const Container = styled.section`
     margin-top: 60px;  // Ajustar o espaçamento superior para melhor visualização em telas menores
     height:auto;
     min-height: 100vh; // Garante que o container tenha pelo menos a altura da viewport
-    
+
+    @media (min-width: 1080px) {
+    height: auto;
+    padding: 3rem;  /* Aumentar o padding em telas maiores */
+  }
   }
 `;
 
@@ -42,6 +46,10 @@ export const ContentWrapper = styled.div`
     align-items: center;
     gap: 2rem;
     
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 90%;  // Limitar a largura máxima em telas maiores
   }
 `;
 
@@ -99,7 +107,10 @@ export const Logo = styled.div`
     transform: scale(0.9);
   }
 
-
+  @media (min-width: 1080px) {
+    transform: scale(1.05);  // Aumentar levemente o tamanho em telas maiores
+  }
+  
   @media (min-width: 1640px) {
     
   }
