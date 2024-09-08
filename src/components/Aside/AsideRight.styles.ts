@@ -7,7 +7,7 @@ export const AsideRight = styled.aside`
   display: flex;
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
  
-  @media (max-width: 400px) {
+  @media (max-width: 640px) {
     display: none; /* Esconde o AsideRight em telas com largura até 540px */
   }
 
@@ -22,7 +22,7 @@ export const RetanguloDireito= styled.div`
   margin-left: 126px;
   border-right: none;
 
-  @media (min-width: 1640px) {
+  @media (min-width: 400px) and (max-width: 640px) {
     transform: translateY(1125px);
     margin-left:185px;
     }

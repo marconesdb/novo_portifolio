@@ -19,10 +19,11 @@ export const Container = styled.section`
   padding: 20px;
   margin-top: 89px;
 
-  @media (max-width: 400px) {
-    padding: 10px;
-    height: auto;
-    justify-content: flex-start;
+  @media (min-width: 400px) and (max-width: 640px) {
+    padding: 15px;  // Reduzir o padding
+    margin-top: 60px;  // Ajustar o espaçamento superior para melhor visualização em telas menores
+    height:auto;
+    min-height: 100vh; // Garante que o container tenha pelo menos a altura da viewport
   }
 `;
 
@@ -35,10 +36,11 @@ export const ContentWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
 
-  @media (max-width: 400px) {
+  @media (min-width: 400px) and (max-width: 640px) {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
+    
   }
 `;
 
@@ -49,10 +51,15 @@ export const TextSection = styled.div`
   margin: 0;
   padding: 0;
 
-  @media (max-width: 400px) {
+  @media (min-width: 400px) and (max-width: 640px) {
     text-align: center;
     width: 100%;
-    transform: translateY(-40px);
+    margin-top: -5px;
+    /* transform: translateY(50px); */
+    padding-top: 50px;
+    .TextoFront-end{
+      display: block;
+    }
   }
 `;
 
@@ -65,15 +72,12 @@ export const ImageSection = styled.div`
   padding: 0;
   margin-right: -90px;
 
-  @media (max-width: 400px) {
-    /* flex-wrap: wrap; */
-     /* Permite que os elementos "quebrem" para a próxima linha, se necessário */
-    /* flex-direction: row;  */
+  
+  @media (min-width: 400px) and (max-width: 640px) {
     flex-direction: column;
     align-items: center;
     margin-right: 0;
-    transform: translateY(-60px);
-    margin-left: 0px;
+    transform: translateY(0px);
   }
 `;
 
@@ -83,16 +87,14 @@ export const Logo = styled.div`
   flex-direction: row;
   gap: 10px;
   margin-right: -5px;
-  margin-top: -120px;
+  /* margin-top: -120px; */
+  padding-top: 50px;
   
 
-  @media (max-width: 400px) {
-    margin-top: -50px;
-    gap: 5px;
-    transform: scale(0.8);
-    margin-left:-150px;
-    margin-right: 10px;
-    transform: translateY(100px);
+  @media (min-width: 400px) and (max-width: 640px) {
+    /* margin-top: 0px; */
+    gap: 8px;
+    transform: scale(0.9);
   }
 
 
@@ -171,11 +173,11 @@ export const Title = styled.h1`
   padding: 0;
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
 
-  @media (max-width: 400px) {
-    font-size: 24px;
+  @media (min-width: 400px) and (max-width: 640px) {
+    font-size: 28px;
     text-align: center;
-    margin-top: 50px;
   }
+
 
   span {
     color: ${secondaryColor};
@@ -191,10 +193,12 @@ export const Subtitle = styled.p`
   color: ${lightTextColor};
   margin-top: 30px;
 
-  @media (max-width: 400px) {
+  @media (min-width: 400px) and (max-width: 640px) {
     text-align: center;
-    font-size: 0.9rem;
-    margin-top: 15px;
+    font-size: 0.95rem;
+    /* margin-top: 20px; */
+
+    padding-top: 20px;
   }
 `;
 
@@ -207,7 +211,6 @@ export const ContactButton = styled.a`
   color: ${textColor};
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
   text-decoration: none;
   text-align: left;
   width: 178px;
@@ -217,11 +220,12 @@ export const ContactButton = styled.a`
     color: ${textColor};
   }
 
-  @media (max-width: 400px) {
-    width: 50%;
+  @media (min-width: 400px) and (max-width: 640px) {
+    width: 60%;
     text-align: center;
-    margin-left: 25%;
-    margin-top: 50px;
+    margin-left: 20%;
+    margin-top: 80px;
+    
   }
 `;
 
@@ -232,12 +236,10 @@ export const Image = styled.img`
   margin-top: 50px;
   margin-left: -30px;
 
-  @media (max-width: 400px) {
-    width: 200px;
-    margin-left: 160px;
-    margin-top: 0px;
-    transform: translateX(165px);
-    transform: translateY(-140px);
+  @media (min-width: 400px) and (max-width: 640px) {
+    width: 280px;
+    margin-left: 35px;
+    margin-top: 20px;
   }
 `;
 
@@ -263,14 +265,12 @@ export const PortfolioTag = styled.div`
   padding: 5px;
   margin-right: 90px;
 
-  @media (max-width: 400px) {
+  @media (min-width: 400px) and (max-width: 640px) {
     width: 100%;
     margin-right: 0;
-    margin-left: 8px;
-
-    /* align-items: center; */
-    font-size: 0.65rem;
-    transform: translateY(-150px);
+    font-size: 0.8rem;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   span {
@@ -281,7 +281,7 @@ export const PortfolioTag = styled.div`
   p {
     margin-right: -35px;
 
-    @media (max-width: 400px) {
+    @media (min-width: 400px) and (max-width: 640px) {
       margin-right: 0;
       text-align: center;
     }

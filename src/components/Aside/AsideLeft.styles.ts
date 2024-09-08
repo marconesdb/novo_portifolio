@@ -9,7 +9,7 @@ export const AsideLeft = styled.aside`
   flex-direction: column; /* Organiza o conteúdo interno em coluna */
    padding: 20px; /* Adiciona algum preenchimento ao redor do conteúdo */
    
-   @media (max-width: 400px) {
+   @media (max-width: 640px){
     display: none; /* Esconde o AsideLeft em telas com largura até 540px */
   }
 `;
