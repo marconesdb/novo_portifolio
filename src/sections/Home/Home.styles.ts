@@ -19,18 +19,13 @@ export const Container = styled.section`
   padding: 2rem; /* Usar rem para maior consistência */
   margin-top: 89px;
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     padding: 1.5rem;  // Reduzir o padding
     margin-top: 60px;  // Ajustar o espaçamento superior para melhor visualização em telas menores
     height:auto;
     min-height: 100vh; // Garante que o container tenha pelo menos a altura da viewport
 
-   // Para dispositivos de alta densidade de pixels e maiores resoluções
-  @media (min-width: 640px) and (min-resolution: 2dppx) {
-    padding: 20px;
-    margin-top: 100px;
-    height: auto;
-  }
+  
   }
 `;
 
@@ -43,7 +38,7 @@ export const ContentWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -60,7 +55,7 @@ export const TextSection = styled.div`
   margin: 0;
   padding: 0;
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     text-align: center;
     width: 100%;
     margin-top: -0.5rem;
@@ -84,7 +79,7 @@ export const ImageSection = styled.div`
   margin-right: -5rem;  // Ajuste com rem
 
   
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     margin-right: 0;
@@ -103,7 +98,7 @@ export const Logo = styled.div`
   padding-top: 3.125rem;
   
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     /* margin-top: 0px; */
     gap: 0.5rem;
     transform: scale(0.9);
@@ -186,7 +181,7 @@ export const Title = styled.h1`
   padding: 0;
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     font-size: 1.65rem;
     text-align: center;
   }
@@ -206,7 +201,7 @@ export const Subtitle = styled.p`
   color: ${lightTextColor};
   margin-top: 2rem;
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     text-align: center;
     font-size: 0.95rem;
     padding-top: 1.25rem;
@@ -233,7 +228,7 @@ export const ContactButton = styled.a`
     color: ${textColor};
   }
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     width: 60%;
     text-align: center;
     margin-left: 20%;
@@ -251,7 +246,7 @@ export const Image = styled.img`
   margin-top: 3.125rem;
   margin-left: -1.875rem;
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     width: 17.5rem;
     margin-left: 2.1875rem;
     margin-top: 1.25rem;
@@ -282,7 +277,7 @@ export const PortfolioTag = styled.div`
   padding: 0.3125rem;
   margin-right: 5.625rem;
 
-  @media (min-width: 400px) and (max-width: 640px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     width: 100%;
     margin-right: 0;
     font-size: 0.8rem;
@@ -300,7 +295,7 @@ export const PortfolioTag = styled.div`
   p {
     margin-right: -2.1875rem;
 
-    @media (min-width: 400px) and (max-width: 640px) {
+    @media (min-width: 360px) and (max-width: 768px) {
       margin-right: 0;
       text-align: center;
     }
