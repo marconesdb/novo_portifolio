@@ -101,7 +101,7 @@ export const FirstParagraph = styled.p`
   @media (min-width: 360px) and (max-width: 768px){
     
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 1px;
     text-align: center;
   
     }
@@ -117,8 +117,9 @@ export const SecondParagraph = styled.p`
 
   @media (min-width: 360px) and (max-width: 768px){
     
-    margin-left: 0;
-    margin-top: 0;
+    /* margin-left: -3px; */
+    margin-right: 4px;
+    margin-top: 1px;
     text-align: center;
   
     }
@@ -186,6 +187,7 @@ export const LogoImage = styled.img`
   @media (min-width: 360px) and (max-width: 768px){
     margin-left: 0;
     margin-top: 0;
+    
   
     }
 `;
