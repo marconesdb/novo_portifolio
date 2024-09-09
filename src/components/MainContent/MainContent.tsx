@@ -1,5 +1,4 @@
 // components/MainContent/MainContent.tsx
-import React from 'react';
 import Home from '../../sections/Home/Home';
 // import Projects from '../../sections/Projects/Projects';
 // import Skills from '../../sections/Skills/Skills';
@@ -9,7 +8,7 @@ import Home from '../../sections/Home/Home';
 // import Formulario from '../../sections/Formulario/Formulario';
 
 
-const MainContent: React.FC = () => {
+const MainContent = () => {
   return (
     <div>
       <Home/>

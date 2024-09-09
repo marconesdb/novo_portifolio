@@ -12,15 +12,15 @@ const App: React.FC = () => {
   return (
     <>
     <Container>
-      <AsideLeft />
+      {/* <AsideLeft /> */}
       <ContentWrapper>
         <Header />
         <MainContent />
       </ContentWrapper>
-      <AsideRight />
-     <FooterWrapper>
+      {/* <AsideRight /> */}
+     {/* <FooterWrapper>
       <Footer/>
-      </FooterWrapper>
+      </FooterWrapper> */}
     </Container>
     <GlobalStyles/>
     </>
