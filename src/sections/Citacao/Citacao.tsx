@@ -8,7 +8,7 @@ const CitacaoComponent = () => {
       <HorizontalLineSuperior />
       <HorizontalAspas>❝</HorizontalAspas>
       <HorizontalLineSuperiorCont />
-      <Citacao>A única maneira de fazer um excelente trabalho é amar o que você faz.</Citacao>
+      <Citacao>A única maneira de fazer<span className='textCitacao'> um excelente trabalho é </span>amar o que você faz.</Citacao>
       <HorizontalLineInferior />
       <InferiorAspas>❞</InferiorAspas>
       <HorizontalLineInferiorCont />

@@ -4,7 +4,7 @@ import Home from '../../sections/Home/Home';
 // import Skills from '../../sections/Skills/Skills';
 // import About from '../../sections/About/About';
 // import Contact from '../../sections/Contact/Contact';
-// import Citacao from '../../sections/Citacao/Citacao';
+import Citacao from '../../sections/Citacao/Citacao';
 // import Formulario from '../../sections/Formulario/Formulario';
 
 
@@ -12,8 +12,9 @@ const MainContent = () => {
   return (
     <div>
       <Home/>
-      {/* <Citacao/>
-      
+      <Citacao/>
+
+      {/*
       <Projects/>
       <Skills/>
       <About/>

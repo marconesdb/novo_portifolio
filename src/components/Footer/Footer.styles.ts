@@ -103,7 +103,7 @@ export const FirstParagraph = styled.p`
     margin-left: 0;
     margin-top: 1px;
     text-align: center;
-  
+
     }
 `;
 
