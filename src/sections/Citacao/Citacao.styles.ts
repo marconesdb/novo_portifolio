@@ -10,7 +10,7 @@ export const ContainerCitacao = styled.div`
   font-family: 'Fira Code', sans-serif; 
   color: #FFFFFF;
   
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
     padding: 20px; /* Ajuste de padding para garantir espaçamento em telas pequenas */
     margin-top: -50px; /* Ajusta a margem para evitar corte no topo */
   }
@@ -33,7 +33,7 @@ export const HorizontalLineSuperior = styled.div`
   margin-left: 60px;
 
 
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
     margin-left: 5px;
     width: 48px;
   }
@@ -76,7 +76,7 @@ export const HorizontalLineSuperiorCont = styled.div`
   margin-right: 50px;
 
   
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
   
     width: 203px !important; /* Forçar a aplicação dessa largura */
     margin-right: 3px;
@@ -109,7 +109,7 @@ export const HorizontalLineInferior = styled.div`
 
 
   
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
   display: inline-block;
   width: 200px;
   margin-left: 0px;
@@ -159,7 +159,7 @@ export const HorizontalLineInferiorCont = styled.div`
 
 
   
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
   
   width: 15px ;
  }
@@ -207,12 +207,12 @@ export const VerticalLineDireito = styled.div`
  transform: translateY(-99px); /* Sobe o traço 100px */
 
 
- @media (max-width: 360px) {
+ @media (max-width: 400px){
     margin-left: 5px; 
     transform: translateY(-140px);
     height: 135px;
     margin-right: 0px;
-    margin-left: 310px;
+    margin-left: 330px;
 
   }
  /* @media (min-width: 360px) and (max-width: 768px) {
@@ -243,12 +243,12 @@ export const VerticalLineEsquerdo = styled.div`
  transform: translateY(133px); 
 
 
- @media (max-width: 360px) {
+ @media (max-width: 400px) {
   position: relative;
   top: 177px;
   transform: translateY(10px);
   height: 136px;
-  transform: translateX(-234px);
+  transform: translateX(-214px);
   margin-left: 0px;
     
   }
@@ -283,7 +283,7 @@ export const VerticalLineEsquerdoMenor = styled.div`
  transform: translateY(-199px); /* Desce o traço 100px */
 
 
- @media (max-width: 360px){
+ @media (max-width: 400px){
   
   transform: translateY(-162px);
   margin-left: 180px;
@@ -315,8 +315,8 @@ export const Autor = styled.div`
  transform: translateY(-265px); /* Sobe nome do Autor */
  margin-left: 760px;
  
- @media (max-width: 360px) {
-  margin-left: 195px;
+ @media (max-width: 400px) {
+  margin-left: 205px;
   transform: translateY(-225px);
   }
 
@@ -343,10 +343,10 @@ margin-bottom: 50px;
 transform: translateY(-231px); /* Sobe o traço 100px */
 
 
-@media (max-width: 360px){
+@media (max-width: 400px){
   margin-left: 180px;
   transform: translateY(-194px); 
-  width: 152px;
+  width: 172px;
 }
 
 /* @media (min-width: 360px) and (max-width: 768px) {
@@ -373,8 +373,8 @@ export const VerticalLineDireitoMenor = styled.div`
  margin-right: 155px;
  transform: translateY(-345px); /* Sobe o traço 100px */
 
- @media (max-width: 360px) {
-  margin-right: 28px;
+ @media (max-width: 400px) {
+  margin-right: 48px;
   transform: translateY(-300px);
   height: 50px;
  }
