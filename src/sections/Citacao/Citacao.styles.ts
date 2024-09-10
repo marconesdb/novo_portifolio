@@ -11,6 +11,13 @@ export const ContainerCitacao = styled.div`
   font-family: 'Fira Code', sans-serif;
   color: #FFFFFF;
   
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    
+    min-height: 50vh; /* Reduz a altura mínima em dispositivos menores */
+    padding: 0 10px; /* Reduz o padding lateral */
+    
+  }
 `;
 
 
@@ -22,7 +29,11 @@ export const DivCitacao = styled.div`
   border: 1px solid #ABB2BF;
   margin-top: -300px;
   text-align: center; /* Centraliza o texto da citação */
-  
+  @media (min-width: 360px) and (max-width: 768px) {
+    
+   
+    transform: translateY(150px);
+  }
 
   .aspasSuperior, .aspasInferior {
     font-size: 40px;
