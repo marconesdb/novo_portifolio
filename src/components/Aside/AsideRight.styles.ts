@@ -50,7 +50,7 @@ export const CuboDireito= styled.div`
     gap: 5px; /* Espaço entre os círculos */
     margin-left: 155px;
     margin-top: 40px;
-    transform: translateY(2920px);
+    transform: translateY(3050px);
 
 
     @media (min-width: 1640px) {

@@ -10,7 +10,8 @@ export const Container = styled.section`
   padding: 20px;
   position: relative;
   transform: translateY(-190px);
-  margin-top: -165px;
+  margin-top: -153px;
+ 
   
   @media (min-width: 1640px) {
     transform: translateY(-390px);

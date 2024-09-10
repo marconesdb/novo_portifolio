@@ -17,7 +17,7 @@ export const Container = styled.section`
   color: ${textColor};
   height: 100vh;
   padding: 2rem; /* Usar rem para maior consistência */
-  margin-top: 89px;
+  margin-top: 0px;
 
   @media (min-width: 360px) and (max-width: 768px) {
     padding: 1.5rem;  // Reduzir o padding
@@ -64,7 +64,8 @@ export const TextSection = styled.div`
 
     
     .TextoFront-end{
-      display: block;
+      display: inline;
+      
     }
   }
 `;
@@ -94,8 +95,11 @@ export const Logo = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0.625rem;
-  margin-right: -0.3125rem;
-  padding-top: 3.125rem;
+ 
+  transform: translateY(0px);
+  transform: translateX(50px);
+  /* margin-left: 20px; */
+  /* top: -250px; */
   
 
   @media (min-width: 360px) and (max-width: 768px) {
@@ -180,6 +184,8 @@ export const Title = styled.h1`
   margin: 0;
   padding: 0;
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+  /* margin-right: 30px; */
+
 
   @media (min-width: 360px) and (max-width: 768px) {
     font-size: 1.65rem;
@@ -222,6 +228,7 @@ export const ContactButton = styled.a`
   text-decoration: none;
   text-align: left;
   width: 11rem;
+  margin-top: 2rem;
 
   &:hover {
     background-color: ${secondaryColor};
@@ -244,7 +251,8 @@ export const Image = styled.img`
   width: 21.875rem;
   height: auto;
   margin-top: 3.125rem;
-  margin-left: -1.875rem;
+  margin-left: 2.8rem;
+  
 
   @media (min-width: 360px) and (max-width: 768px) {
     width: 17.5rem;
@@ -275,7 +283,7 @@ export const PortfolioTag = styled.div`
   border: 1px solid #ABB2BF;
   width: 25rem;
   padding: 0.3125rem;
-  margin-right: 5.625rem;
+  margin-right: 4.9rem;
 
   @media (min-width: 360px) and (max-width: 768px) {
     width: 100%;

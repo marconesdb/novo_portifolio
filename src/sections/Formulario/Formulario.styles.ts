@@ -1,35 +1,33 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
+ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #2c3036;
-  min-height: 100vh; 
+  height: 85vh; /* Altera para 100% da altura da viewport */
   padding: 0px;
   position: relative;
-  transform: translateY(-210px);
-  margin-top: -186px;
- 
-  
+  margin-top: -192px;
+
   @media (min-width: 1640px) {
-  transform: translateY(-200px);
-  margin-top: 0px;
+    transform: translateY(-200px);
+    margin-top: 0px;
   }
 `;
 
 export const Main = styled.div`
   display: flex;
-  justify-content: center; /* Centraliza os containers horizontalmente */
-  align-items: center; /* Alinha os containers verticalmente */
-  width: 100%; /* Ocupa 100% da largura disponível */
-  transform: translateY(-200px);
-  margin-top: 290px;
-
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  width: 100%;              /* Ocupa 100% da largura disponível */
+  transform: translateY(-230px);
+  /* margin-top: -350px; */
+ 
   @media (min-width: 1640px) {
     /* Ajustes específicos para telas maiores */
-    transform: translateY(-250px);
+    transform: translateY(-250px); /* Se necessário */
     margin-top: 0px;
   }
 `;

@@ -6,7 +6,9 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   border-top: 1px solid #fff;
   background-color: #282C33;
-  transform: translateY(150px);
+  transform: translateY(36px);
+  
+  
   
 
   @media (min-width: 360px) and (max-width: 768px){

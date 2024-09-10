@@ -89,7 +89,7 @@ export const Cubo = styled.div`
     grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
-    transform: translateY(340px);
+    transform: translateY(480px);
     margin-left: -30px;
   
     

@@ -1,11 +1,11 @@
 // components/MainContent/MainContent.tsx
 import Home from '../../sections/Home/Home';
-// import Projects from '../../sections/Projects/Projects';
-// import Skills from '../../sections/Skills/Skills';
-// import About from '../../sections/About/About';
-// import Contact from '../../sections/Contact/Contact';
+import Projects from '../../sections/Projects/Projects';
+import Skills from '../../sections/Skills/Skills';
+import About from '../../sections/About/About';
+import Contact from '../../sections/Contact/Contact';
 import Citacao from '../../sections/Citacao/Citacao';
-// import Formulario from '../../sections/Formulario/Formulario';
+import Formulario from '../../sections/Formulario/Formulario';
 
 
 const MainContent = () => {
@@ -13,13 +13,11 @@ const MainContent = () => {
     <div>
       <Home/>
       <Citacao/>
-
-      {/*
       <Projects/>
       <Skills/>
       <About/>
       <Contact/>
-      <Formulario/> */}
+      <Formulario/> 
     </div>
   );
 };
