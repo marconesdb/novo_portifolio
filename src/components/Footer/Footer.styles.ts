@@ -21,7 +21,9 @@ export const FooterContainer = styled.footer`
   }
 
   @media (min-width: 1640px) {
-    transform: translateY(345px);
+    /* transform: translateY(300px); */
+    
+    
     }
 `;
 
@@ -52,7 +54,7 @@ export const FooterContent = styled.footer`
   @media (min-width: 1640px) {
       padding-left: 15px;
       padding-right: 15px;
-    }
+      }
 `;
 
 // Seção da esquerda

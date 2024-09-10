@@ -15,4 +15,9 @@ export const FooterWrapper = styled.footer`
   position: absolute;
   bottom: 0;
   transform: translateY(4600px);
+
+  @media (min-width: 1640px) {
+    transform: translateY(4850px);
+    
+  }
 `;

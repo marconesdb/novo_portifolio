@@ -12,8 +12,10 @@ export const Container = styled.section`
   margin-top: -192px;
 
   @media (min-width: 1640px) {
-    transform: translateY(-200px);
-    margin-top: 0px;
+    transform: translateY(-150px);
+    height: 80vh;
+    /* margin-top: 200px; */
+    top: -100px;
   }
 `;
 
@@ -27,7 +29,7 @@ export const Main = styled.div`
  
   @media (min-width: 1640px) {
     /* Ajustes específicos para telas maiores */
-    transform: translateY(-250px); /* Se necessário */
+    transform: translateY(-150px); /* Se necessário */
     margin-top: 0px;
   }
 `;

@@ -94,7 +94,7 @@ export const Cubo = styled.div`
   
     
     @media (min-width: 1640px) {
-    transform: translateY(870px);
+    transform: translateY(1100px);
    
   }
     
