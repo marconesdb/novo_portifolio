@@ -5,7 +5,7 @@ import {
   ImagensSuperiorContainer, 
   Line, 
   MainContainer, 
-  SkillsContainer, 
+  // SkillsContainer, 
   Title 
 } from './Skills.styles';
 
