@@ -11,10 +11,16 @@ export const Container = styled.section`
   position: relative;
   transform: translateY(-340px);
   margin-bottom: -50px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+  margin-top: 80px;
+  
+  }
 `;
 
 
 export const Title = styled.div`
+  width: 80%;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,11 +31,31 @@ export const Title = styled.div`
   margin-top: 100px;
   transform: translateY(-300px);
 
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 90%;
+    justify-content: space-between;
+    position: relative;
+   
+   
+  }
+
+
   span {
     color: #A8990F; /* Cor amarela */
+    @media (min-width: 360px) and (max-width: 768px) {
+     
+    
   }
+  }
+
   p{
     font-size: 32px;
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      font-size: 24px;
+      white-space: nowrap; /* Impede a quebra de linha do texto */
+      width: auto; /* Permite que o parágrafo se ajuste à largura */
+  }
   }
 `;
 
@@ -38,6 +64,11 @@ export const Line = styled.div`
   width: 325px;
   background-color: #A8990F;
   margin-left: 10px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+  
+   
+  }
 `;
 
 export const ContainerAbout = styled.div`
@@ -54,12 +85,31 @@ export const ContainerEsquerdo = styled.div`
   width: 50%;
   padding: 0px;
 
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; /* O ContainerEsquerdo passa a ocupar 100% da largura */
+    transform: none;
+    margin-top: -60px;
+    }
 
   .texto-titulo{
   font-size: 16px;
   color: #ABB2BF;
   
+  @media (min-width: 360px) and (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 35px;
   }
+  }
+
+  .recuo{
+    margin-left: 35px;
+    
+    @media (min-width: 360px) and (max-width: 768px) {
+      margin-left: 35px;
+  }
+  }
+
 
 
  .p-1{
@@ -67,6 +117,7 @@ export const ContainerEsquerdo = styled.div`
   color: #ABB2BF;
   margin-top: 10px;
   text-align: justify;
+
  }
 
  .p-2{
@@ -76,7 +127,6 @@ export const ContainerEsquerdo = styled.div`
   text-align: justify;
  }
 
- 
 `;
 
 
@@ -84,6 +134,13 @@ export const ContainerDireito = styled.div`
   width: 50%;
   padding: 0px;
  
+  
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%;
+    margin-top: 1200px;
+    margin-left: -450px;
+    
+  }
 
   .cubo1 {
     display: grid;
@@ -93,6 +150,11 @@ export const ContainerDireito = styled.div`
     transform: translateY(-20px);
     margin-left: 150px;
     
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    
+    
+    }
   }
 
   .dot {
@@ -116,6 +178,11 @@ export const ContainerDireito = styled.div`
     margin-left:550px;
    
     }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      margin-left:75px;
+    
+   }
   }
 
   .dot {

@@ -18,9 +18,9 @@ const App = () => {
         <MainContent />
       </ContentWrapper>
       <AsideRight />
-     <FooterWrapper>
+     {/* <FooterWrapper>
       <Footer/>
-      </FooterWrapper>
+      </FooterWrapper> */}
     </Container>
     <GlobalStyles/>
     </>

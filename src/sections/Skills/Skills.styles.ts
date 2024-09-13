@@ -304,6 +304,7 @@ export const SkillsContainer = styled.div`
   }
 
   .p-1{
+    color: white;
     border-bottom: solid 1px #ABB2BF;
     width: 148px;
     margin-right: 35px;
@@ -312,11 +313,16 @@ export const SkillsContainer = styled.div`
 
     @media (min-width: 1640px) {
     width: 198px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     }
 
     @media (min-width: 360px) and (max-width: 768px) {
       width: 100%; 
-    
+      align-items: center;
+      text-align: center;
+      justify-content: center;
 
     }
   }
@@ -347,10 +353,12 @@ export const SkillsContainer = styled.div`
     width: 100%; /* Largura flexível */
     height: 410px; /* Altura fixa */
     margin-top: 250px; /* Espaço superior */
+    
     }
   }
 
   .p-2{
+    color: white;
     border-bottom: solid 1px #ABB2BF;
     width: 148px;
     margin-right: 35px;
@@ -360,11 +368,17 @@ export const SkillsContainer = styled.div`
 
     @media (min-width: 1640px) {
     width: 238px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     
     }
 
     @media (min-width: 360px) and (max-width: 768px) {
       width: 100%; 
+      align-items: center;
+      text-align: center;
+      justify-content: center;
     }
   }
 
@@ -385,8 +399,6 @@ export const SkillsContainer = styled.div`
 
     @media (min-width: 1640px) {
     width: 270px;
-    /* transform: translateY(-200px); */
-    /* transform: translateX(-80px); */
     margin-top: 150px;
         
     }
@@ -409,7 +421,7 @@ export const SkillsContainer = styled.div`
     font-size: 16px;
 
     @media (min-width: 1640px) {
-    /* width: 268px; */
+    width: 268px;
     
     }
 
@@ -433,7 +445,7 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1640px) {
       width: 240px;
       transform: translateX(-80px) translateY(-350px) !important; /* Forçar a aplicação */
-       
+      
     }
 
 
