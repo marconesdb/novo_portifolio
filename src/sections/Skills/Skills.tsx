@@ -5,7 +5,7 @@ import {
   ImagensSuperiorContainer, 
   Line, 
   MainContainer, 
-  // SkillsContainer, 
+  SkillsContainer, 
   Title 
 } from './Skills.styles';
 
@@ -48,7 +48,7 @@ const Skills = () => {
             <div className='quadrado2'></div>
           </ImagensInferiorContainer>
         </div>
-        {/* <SkillsContainer>
+        <SkillsContainer>
           <div className='Skill-1'>
             <p className='p-1'>Linguagens</p>
             <p className='p-texto'>TypeScript, JavaScript</p>
@@ -69,7 +69,7 @@ const Skills = () => {
             <p className='p-5'>Frameworks</p>
             <p className='p-texto'>Tailwind.CSS, Bootstrap, React.JS</p>
           </div>
-        </SkillsContainer> */}
+        </SkillsContainer>
       </MainContainer>
     </Container>
   );

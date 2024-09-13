@@ -20,4 +20,10 @@ export const FooterWrapper = styled.footer`
     transform: translateY(4850px);
     
   }
+
+
+   /* Responsividade */
+   @media (min-width: 360px) and (max-width: 768px) {
+    transform: translateY(7150px);
+  }
 `;

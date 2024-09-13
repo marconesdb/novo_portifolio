@@ -39,6 +39,7 @@ export const Title = styled.div`
 
   /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
+    width: 80%;
     margin-top: 70px;
     left: 50%;
     transform: translateX(-50%); /* Centraliza horizontalmente */
@@ -56,7 +57,8 @@ export const Line = styled.div`
 
  /* Responsividade */
  @media (min-width: 360px) and (max-width: 768px) {
-    width: 150px;
+    /* width: 150px; */
+    width: 78%;
     display: flex;
     align-items: center;
     justify-content: center; /* Certifica-se de que os elementos internos estejam centralizados */
@@ -250,7 +252,7 @@ export const IconeLogo = styled.div`
 `;
 
 export const SkillsContainer = styled.div`
-  
+
   gap: 10px; /* Espaço entre os itens */
   width: 40%; /* Ajuste o tamanho do container */
   max-width: 600px;
@@ -263,6 +265,19 @@ export const SkillsContainer = styled.div`
     transform: translateX(190px) !important;
   }
 
+  
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; /* O container ocupa 100% da largura da tela */
+    margin-left: 0; /* Remove margem lateral */
+    transform: none; /* Remove qualquer transformação */
+    
+    display: flex;
+    flex-direction: column; /* Alinha em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+
+  }
+
+  
   .Skill-1 {
     /* background-color: #2b2e33; */
     color: white;
@@ -278,6 +293,14 @@ export const SkillsContainer = styled.div`
     transform: translateX(-125px);
     margin-left: 5px;
     }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    height: 410px; /* Altura fixa */
+    width: 100%; /* Largura flexível */
+    margin-top: 150px; /* Espaço superior */
+       
+    }
+
   }
 
   .p-1{
@@ -289,6 +312,12 @@ export const SkillsContainer = styled.div`
 
     @media (min-width: 1640px) {
     width: 198px;
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
+    
+
     }
   }
 
@@ -310,6 +339,15 @@ export const SkillsContainer = styled.div`
     transform: translateX(-80px);
     margin-top: -150px;
     }
+
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    
+    margin-left: 0px;
+    width: 100%; /* Largura flexível */
+    height: 410px; /* Altura fixa */
+    margin-top: 250px; /* Espaço superior */
+    }
   }
 
   .p-2{
@@ -322,6 +360,11 @@ export const SkillsContainer = styled.div`
 
     @media (min-width: 1640px) {
     width: 238px;
+    
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
     }
   }
 
@@ -347,6 +390,14 @@ export const SkillsContainer = styled.div`
     margin-top: 150px;
         
     }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+   
+    margin-left: 0px;
+    width: 100%; /* Largura flexível */
+    height: 410px; /* Altura fixa */
+    margin-top: 250px; /* Espaço superior */
+    }
   }
 
 
@@ -358,7 +409,12 @@ export const SkillsContainer = styled.div`
     font-size: 16px;
 
     @media (min-width: 1640px) {
-    width: 268px;
+    /* width: 268px; */
+    
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
     }
   }
 
@@ -379,6 +435,14 @@ export const SkillsContainer = styled.div`
       transform: translateX(-80px) translateY(-350px) !important; /* Forçar a aplicação */
        
     }
+
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    margin-left: 0;
+    width: 100%; /* Largura flexível */
+    height: 410px;  /* Altura fixa */
+    margin-top: 165px; /* Espaço superior */
+    }
   }
 
   .p-4{
@@ -389,9 +453,15 @@ export const SkillsContainer = styled.div`
     font-size: 16px;
 
 
+
     
     @media (min-width: 1640px) {
     width: 238px;
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
+      
     }
   }
 
@@ -412,6 +482,14 @@ export const SkillsContainer = styled.div`
     height: 210px; 
     margin-top: -10px;
     }
+
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; /* Largura flexível */
+    height: 410px;  /* Altura fixa */
+    margin-top: 200px; /* Espaço superior */
+  
+    }
     }
 
   .p-5{
@@ -425,36 +503,27 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1640px) {
     width: 268px;
     }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%;  
+    }
   }
 
   .p-texto{
     color: #ABB2BF;
     font-size: 16px;
     padding: 10px;
-  }
 
-  /* Responsividade */
-  @media (min-width: 360px) and (max-width: 768px) {
-    width: 80%;
-    transform: translateX(0);
-    
-    .Skill-1, .Skill-2, .Skill-3, .Skill-4, .Skill-5 {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-    }
 
-    .p-1, .p-2, .p-3, .p-4, .p-5 {
-      width: 100%;
-      font-size: 14px;
-    }
-
-    .p-texto {
-      font-size: 14px;
-      padding: 5px;
+    @media (min-width: 360px) and (max-width: 768px) {
+      margin-top: 30%;
     }
   }
+
+  
 `;
+
+
 
 
 
