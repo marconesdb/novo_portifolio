@@ -488,6 +488,7 @@ export const SkillsContainer = styled.div`
     width: 100%; /* Largura flexível */
     height: 410px;  /* Altura fixa */
     margin-top: 200px; /* Espaço superior */
+    margin-left: 0;
   
     }
     }
