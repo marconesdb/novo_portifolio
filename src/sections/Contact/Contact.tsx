@@ -14,7 +14,7 @@ const Contact = () => {
         <Main>
        <ContainerEsquerdo>
         <p className='paragrafo'>
-        Estou interessado em oportunidades de freelance. No entanto, se você tiver outra solicitação ou pergunta, não hesite em entrar em contato comigo
+        <span className='recuo-paragrafo'>Estou</span> interessado em oportunidades de freelance. No entanto, se você tiver outra solicitação ou pergunta, não hesite em entrar em contato comigo
         </p>
        </ContainerEsquerdo>
        <ContainerDireito>

@@ -13,7 +13,7 @@ export const Container = styled.section`
   margin-bottom: -50px;
 
   @media (min-width: 360px) and (max-width: 768px) {
-  margin-top: 80px;
+  margin-top: 280px;
   
   }
 `;
@@ -35,7 +35,8 @@ export const Title = styled.div`
     width: 90%;
     justify-content: space-between;
     position: relative;
-   
+    margin-top: 250px;
+    transform: translateY(-600px);
    
   }
 
@@ -66,8 +67,8 @@ export const Line = styled.div`
   margin-left: 10px;
 
   @media (min-width: 360px) and (max-width: 768px) {
+  width: 80%;
   
-   
   }
 `;
 
@@ -78,6 +79,14 @@ export const ContainerAbout = styled.div`
   justify-content: space-between; /* Separa os containers esquerdo e direito */
   align-items: stretch; /* Garante que ambos os containers tenham a mesma altura */
    transform: translateY(-200px);
+
+
+   @media (min-width: 360px) and (max-width: 768px) {
+    justify-content: center; /* Centraliza horizontalmente no mobile */
+    align-items: center; /* Centraliza verticalmente no mobile */
+    flex-direction: column; /* Torna os containers empilhados no mobile */
+    margin-top: 450px;
+    }
 `;
 
 
@@ -89,6 +98,7 @@ export const ContainerEsquerdo = styled.div`
     width: 100%; /* O ContainerEsquerdo passa a ocupar 100% da largura */
     transform: none;
     margin-top: -60px;
+    
     }
 
   .texto-titulo{
@@ -104,7 +114,7 @@ export const ContainerEsquerdo = styled.div`
 
   .recuo{
     margin-left: 35px;
-    
+
     @media (min-width: 360px) and (max-width: 768px) {
       margin-left: 35px;
   }
@@ -118,6 +128,8 @@ export const ContainerEsquerdo = styled.div`
   margin-top: 10px;
   text-align: justify;
 
+
+ 
  }
 
  .p-2{
@@ -137,9 +149,9 @@ export const ContainerDireito = styled.div`
   
   @media (min-width: 360px) and (max-width: 768px) {
     width: 100%;
-    margin-top: 1200px;
-    margin-left: -450px;
-    
+    margin-top: 200px;
+   
+    min-height: 100vh;
   }
 
   .cubo1 {
@@ -181,7 +193,7 @@ export const ContainerDireito = styled.div`
 
     @media (min-width: 360px) and (max-width: 768px) {
       margin-left:75px;
-    
+      margin-top: 60px;
    }
   }
 

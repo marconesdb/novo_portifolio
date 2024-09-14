@@ -12,7 +12,11 @@ export const Container = styled.section`
   transform: translateY(-190px);
   margin-top: -153px;
  
-  
+  @media (min-width: 360px) and (max-width: 768px) {
+     min-height: 100vh; 
+   }
+
+
   @media (min-width: 1640px) {
     transform: translateY(-390px);
     height: 600px;
@@ -29,12 +33,28 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
 
+  @media (min-width: 360px) and (max-width: 768px) {
+    position: relative; /* Ajusta a posição para relativa */
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%; /* O título agora ocupa 100% da largura */
+    justify-content: center; /* Centraliza o conteúdo internamente */
+    margin-top: -150px; /* Ajusta o espaçamento superior conforme necessário */
+   
+    }
+
   span {
     color: #A8990F; /* Cor amarela */
   }
 
   p {
     font-size: 32px;
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      font-size: 24px; 
+      
+    }
   }
 `;
 
@@ -43,6 +63,12 @@ export const Line = styled.div`
   width: 200px;
   background-color: #A8990F;
   margin-left: 10px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 60%; /* O traço agora ocupa toda a largura disponível */
+    
+      
+    }
 `;
 
 export const Main = styled.div`
@@ -52,6 +78,14 @@ export const Main = styled.div`
   width: 100%; /* Ocupa 100% da largura disponível */
   transform: translateY(30px);
   margin-top: -90px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    flex-direction: column; /* Alinha os elementos em uma única coluna */
+    margin-top: 20px; /* Ajusta o espaçamento superior */
+    
+  }
+
+
 
   @media (min-width: 1640px) {
     margin-top: -20px;
@@ -64,12 +98,21 @@ export const ContainerEsquerdo = styled.div`
   width: 50%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
   
-
+  @media (min-width: 360px) and (max-width: 768px) {
+      margin-top: 100px;
+      width: 100%;
+    }
   .paragrafo{
   font-size: 16px;
   color: #ABB2BF;
   margin-top: -100px;
   text-align: justify;
+
+ 
+ }
+
+ .recuo-paragrafo{
+  margin-left: 35px;
  }
 `;
 
@@ -77,12 +120,24 @@ export const ContainerDireito = styled.div`
   width: 50%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
  
-
+  @media (min-width: 360px) and (max-width: 768px) {
+      margin-top: 100px;
+      margin-left: -320px;
+      /* transform: translateX(-150px); */
+      width: 100%;
+    }
+  
   .contato{
   width: 60%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
   border: 1px solid #ABB2BF;
-  transform:translateX(185px)
+  transform:translateX(185px);
+
+  @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%;
+      margin-left: -25px;
+      
+    }
   }
 
   .emailContainer {
