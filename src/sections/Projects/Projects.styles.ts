@@ -23,12 +23,11 @@ export const Container = styled.section`
 
 export const Title = styled.div`
   
-  width: 80%; /* Garante que o título ocupe a largura total */
-  padding: 15px;
+  width: 100%; /* Garante que o título ocupe a largura total */
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Garante alinhamento do título e linha */
+  justify-content: flex-start; /* Garante alinhamento do título e linha */
   span {
     color: #A8990F; /* Cor amarela */
   }
@@ -53,9 +52,10 @@ export const Line = styled.div`
 
   /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    /* width: calc(100% - 30px); */
-     /* Reduz o tamanho da linha para caber no espaço com margem */
+    
   }
+
+
 `;
 
 export const Cards = styled.div`
