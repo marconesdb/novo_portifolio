@@ -28,6 +28,13 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Garante alinhamento do título e linha */
+
+
+  /* Responsividade */
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 80%;
+  }
+
   span {
     color: #A8990F; /* Cor amarela */
   }

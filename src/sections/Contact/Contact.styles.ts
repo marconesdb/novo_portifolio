@@ -14,6 +14,7 @@ export const Container = styled.section`
  
   @media (min-width: 360px) and (max-width: 768px) {
      min-height: 100vh; 
+     
    }
 
 
@@ -125,6 +126,7 @@ export const ContainerDireito = styled.div`
       margin-left: -320px;
       /* transform: translateX(-150px); */
       width: 100%;
+      
     }
   
   .contato{
