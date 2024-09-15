@@ -20,7 +20,7 @@ export const Container = styled.section`
 
 
   @media (min-width: 360px) and (max-width: 768px) {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: -190px; 
     padding-bottom: 200px;
     
