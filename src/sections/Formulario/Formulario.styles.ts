@@ -17,6 +17,13 @@ export const Container = styled.section`
     /* margin-top: 200px; */
     top: -100px;
   }
+
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    height: 100vh; /* Ajusta a altura para ocupar toda a tela */
+    margin-top: -190px; /* Ajuste do espaçamento */
+    padding: 10px; /* Adiciona um espaçamento interno */
+  }
 `;
 
 export const Main = styled.div`
@@ -32,6 +39,12 @@ export const Main = styled.div`
     transform: translateY(-150px); /* Se necessário */
     margin-top: 0px;
   }
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    flex-direction: column; /* Empilha os itens no eixo vertical */
+    transform: translateY(0); /* Remove o deslocamento vertical */
+    margin-top: -200px; /* Ajusta o espaçamento superior */
+  }
 `;
 
 export const FormularioWrapper = styled.div`
@@ -43,6 +56,11 @@ export const FormularioWrapper = styled.div`
     width: 100%;
     margin-top: 200px;
     
+    @media (min-width: 360px) and (max-width: 768px) {
+      padding: 15px; /* Reduz o padding em telas menores */
+      margin-top: 50px; /* Reduz o espaçamento superior */
+      max-width: 100%; /* O formulário ocupa toda a largura */
+    }
   }
 
   h2 {
@@ -73,12 +91,21 @@ export const FormularioWrapper = styled.div`
   .form-group:first-child {
     flex-direction: row;
     justify-content: space-between;
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      flex-direction: column; /* Empilha os campos */
+    }
   }
 
   .form-item {
     display: flex;
     flex-direction: column;
     width: 48%; /* Ajuste para deixar um espaço entre os campos */
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; /* Ocupa a largura total em telas menores */
+      margin-bottom: 10px; /* Adiciona um espaçamento entre os itens */
+    }
   }
 
   label {
@@ -115,6 +142,12 @@ export const EnviarButton = styled.button`
   &:hover {
     background-color: #A8990F;
     color: #1b1e23;
+  }
+
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    align-self: center; /* Centraliza o botão em telas menores */
+    width: 100%; /* Faz o botão ocupar a largura total */
   }
 `;
 

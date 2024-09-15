@@ -86,6 +86,7 @@ export const ContainerAbout = styled.div`
     align-items: center; /* Centraliza verticalmente no mobile */
     flex-direction: column; /* Torna os containers empilhados no mobile */
     margin-top: 450px;
+    
     }
 `;
 

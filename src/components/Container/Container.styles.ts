@@ -3,7 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
 
-
+ /* Responsividade */
+ @media (min-width: 360px) and (max-width: 768px) {
+   
+    
+  }
   @media (min-width: 1640px) {
     height: 80vh;
     }
@@ -24,6 +28,7 @@ export const FooterWrapper = styled.footer`
 
    /* Responsividade */
    @media (min-width: 360px) and (max-width: 768px) {
-    transform: translateY(7150px);
+    transform: translateY(10500px);
+    
   }
 `;

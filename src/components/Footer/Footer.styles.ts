@@ -16,7 +16,7 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     padding: 0px;
-   
+    height: 60vh;
     /* background-color: #fff; */
   }
 
@@ -47,7 +47,7 @@ export const FooterContent = styled.footer`
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: auto;
+    height: 100vh;
     /* background-color: #fff; */
   }
 
