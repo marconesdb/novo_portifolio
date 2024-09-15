@@ -16,17 +16,13 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    transform: translateY(560px);
-    margin-top: -500px;
+    transform: translateY(0px);
+  
     
   }
 
 
-  @media (min-width: 426px) and (max-width: 768px){
-  
-   
 
-  }
 
 
   @media (min-width: 1640px) {
@@ -57,6 +53,7 @@ export const FooterContent = styled.footer`
     flex-direction: column;
     padding: 10px;
     height: auto;
+    
     /* background-color: #fff; */
   }
 

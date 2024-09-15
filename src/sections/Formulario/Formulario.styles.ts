@@ -45,7 +45,7 @@ export const Main = styled.div`
     flex-direction: column; /* Empilha os itens no eixo vertical */
     transform: translateY(0px); /* Remove o deslocamento vertical */
     margin-top: 0px; /* Ajusta o espaçamento superior */
-    
+    margin-bottom: 150px;
   }
 `;
 
@@ -60,7 +60,9 @@ export const FormularioWrapper = styled.div`
     
     @media (min-width: 360px) and (max-width: 768px) {
       padding: 15px; /* Reduz o padding em telas menores */
-      margin-top: 50px; /* Reduz o espaçamento superior */
+      margin-top: 0px; /* Reduz o espaçamento superior */
+
+      
       max-width: 100%; /* O formulário ocupa toda a largura */
       
     }
