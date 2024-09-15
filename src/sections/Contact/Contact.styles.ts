@@ -138,7 +138,7 @@ export const ContainerDireito = styled.div`
   @media (min-width: 360px) and (max-width: 768px) {
       width: 100%;
       margin-left: -25px;
-      
+      padding-bottom: 50px;
     }
   }
 

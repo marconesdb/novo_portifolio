@@ -30,7 +30,7 @@ export const FooterWrapper = styled.footer`
 
    /* Responsividade */
    @media (min-width: 360px) and (max-width: 768px) {
-    transform: translateY(10535px);
+    transform: translateY(10600px);
     margin-bottom: 220px;
     height: auto;
     

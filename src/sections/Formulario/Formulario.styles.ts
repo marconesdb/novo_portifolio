@@ -20,9 +20,9 @@ export const Container = styled.section`
 
 
   @media (min-width: 360px) and (max-width: 768px) {
-    min-height: 100vh;
-    margin-top: -190px; 
-    padding-bottom: 200px;
+    height: 900px;
+    /* margin-top: -190px;  */
+    /* padding-bottom: 200px; */
     
   }
 `;
@@ -46,6 +46,7 @@ export const Main = styled.div`
     transform: translateY(0px); /* Remove o deslocamento vertical */
     margin-top: 0px; /* Ajusta o espaçamento superior */
     margin-bottom: 150px;
+    padding-bottom: 50px;
   }
 `;
 
