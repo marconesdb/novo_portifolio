@@ -20,11 +20,10 @@ export const Container = styled.section`
 
 
   @media (min-width: 360px) and (max-width: 768px) {
-     /* Ajusta a altura para ocupar toda a tela */
-    margin-top: -190px; 
-    padding: 0px; /* Adiciona um espaçamento interno */
     height: 100vh;
-     
+    margin-top: -190px; 
+    padding-bottom: 200px;
+    
   }
 `;
 
@@ -44,8 +43,8 @@ export const Main = styled.div`
 
   @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column; /* Empilha os itens no eixo vertical */
-    transform: translateY(-100px); /* Remove o deslocamento vertical */
-    margin-top: -50px; /* Ajusta o espaçamento superior */
+    transform: translateY(0px); /* Remove o deslocamento vertical */
+    margin-top: 0px; /* Ajusta o espaçamento superior */
     
   }
 `;

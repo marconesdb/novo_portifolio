@@ -5,7 +5,8 @@ export const Container = styled.div`
 
  /* Responsividade */
  @media (min-width: 360px) and (max-width: 768px) {
-   min-height: 100vh;
+   height: auto;
+   margin-top: 450px;
     
   }
   @media (min-width: 1640px) {
