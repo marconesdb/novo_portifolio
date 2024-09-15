@@ -21,7 +21,7 @@ export const Container = styled.section`
 
   @media (min-width: 360px) and (max-width: 768px) {
     height: 100vh; /* Ajusta a altura para ocupar toda a tela */
-    margin-top: -300px; /* Ajuste do espaçamento */
+    margin-top: -190px; /* Ajuste do espaçamento */
     padding: 10px; /* Adiciona um espaçamento interno */
   }
 `;
