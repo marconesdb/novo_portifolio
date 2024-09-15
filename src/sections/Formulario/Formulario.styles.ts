@@ -45,7 +45,7 @@ export const Main = styled.div`
   @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column; /* Empilha os itens no eixo vertical */
     transform: translateY(-100px); /* Remove o deslocamento vertical */
-    margin-top: -100px; /* Ajusta o espaçamento superior */
+    margin-top: -50px; /* Ajusta o espaçamento superior */
     
   }
 `;
