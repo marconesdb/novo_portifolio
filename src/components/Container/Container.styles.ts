@@ -5,7 +5,7 @@ export const Container = styled.div`
 
  /* Responsividade */
  @media (min-width: 360px) and (max-width: 768px) {
-   
+   min-height: 100vh;
     
   }
   @media (min-width: 1640px) {
@@ -28,7 +28,7 @@ export const FooterWrapper = styled.footer`
 
    /* Responsividade */
    @media (min-width: 360px) and (max-width: 768px) {
-    transform: translateY(10540px);
-  
+    transform: translateY(10580px);
+    /* height: 100vh; */
   }
 `;
