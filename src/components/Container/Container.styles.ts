@@ -28,7 +28,7 @@ export const FooterWrapper = styled.footer`
 
    /* Responsividade */
    @media (min-width: 360px) and (max-width: 768px) {
-    transform: translateY(10580px);
-    /* height: 100vh; */
+    transform: translateY(10535px);
+    margin-bottom: 110px;
   }
 `;

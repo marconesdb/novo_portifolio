@@ -21,9 +21,10 @@ export const Container = styled.section`
 
   @media (min-width: 360px) and (max-width: 768px) {
      /* Ajusta a altura para ocupar toda a tela */
-    margin-top: -190px; /* Ajuste do espaçamento */
-    padding: 10px; /* Adiciona um espaçamento interno */
-    min-height: 100vh;
+    margin-top: -190px; 
+    padding: 0px; /* Adiciona um espaçamento interno */
+    height: 100vh;
+     
   }
 `;
 
@@ -43,8 +44,9 @@ export const Main = styled.div`
 
   @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column; /* Empilha os itens no eixo vertical */
-    transform: translateY(0); /* Remove o deslocamento vertical */
+    transform: translateY(-100px); /* Remove o deslocamento vertical */
     margin-top: -200px; /* Ajusta o espaçamento superior */
+    
   }
 `;
 
@@ -61,6 +63,7 @@ export const FormularioWrapper = styled.div`
       padding: 15px; /* Reduz o padding em telas menores */
       margin-top: 50px; /* Reduz o espaçamento superior */
       max-width: 100%; /* O formulário ocupa toda a largura */
+      
     }
   }
 

@@ -17,11 +17,11 @@ export const FooterContainer = styled.footer`
     align-items: center;
     padding: 0px;
     height: 50vh;
-    /* background-color: #fff; */
+   
   }
 
   @media (min-width: 1640px) {
-    /* transform: translateY(300px); */
+    
     
     
     }
