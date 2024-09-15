@@ -23,6 +23,7 @@ export const Container = styled.section`
     height: 100vh; /* Ajusta a altura para ocupar toda a tela */
     margin-top: -190px; /* Ajuste do espaçamento */
     padding: 10px; /* Adiciona um espaçamento interno */
+    min-height: 100vh;
   }
 `;
 
