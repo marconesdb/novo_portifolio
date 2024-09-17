@@ -30,6 +30,12 @@ export const FooterContainer = styled.footer`
     
     
     }
+
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+      background-color: #2c3036;
+    
+  }
 `;
 
 export const FooterContent = styled.footer`
@@ -176,6 +182,11 @@ export const ParagraphSocialNetworks = styled.p`
     margin-top: 10px;
   
     }
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+    margin-left: 30px;
+   
+  }
 `;
 
 // Seção da direita

@@ -25,6 +25,7 @@ export const FooterWrapper = styled.footer`
   @media (min-width: 1640px) {
     transform: translateY(4850px);
     
+  
   }
 
 
@@ -34,5 +35,10 @@ export const FooterWrapper = styled.footer`
     margin-bottom: 220px;
     height: auto;
     
+  }
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    transform: translateY(5220px);
+   
   }
 `;

@@ -18,6 +18,12 @@ export const Container = styled.section`
     padding: 10px;
     
   }
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 0;
+    
+  }
 `;
 
 export const Title = styled.div`
@@ -83,6 +89,17 @@ export const MainContainer = styled.div`
     align-items: center;
     margin-top: 200px;
   }
+
+
+  
+  @media (min-width: 992px) and (max-width: 1280px) {
+    width: 100%;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+
+    
+  }
 `;
 
 export const ImagensSuperiorContainer = styled.div`
@@ -91,6 +108,11 @@ export const ImagensSuperiorContainer = styled.div`
   margin-bottom: 20px;
   margin-top: 125px;
   
+  @media (min-width: 992px) and (max-width: 1280px) {
+    
+  
+  }
+
   img {
     width: 48%; /* Ajusta a largura das imagens para que fiquem lado a lado */
     height: auto;
@@ -103,6 +125,12 @@ export const ImagensSuperiorContainer = styled.div`
     gap: 5px; /* Espaço entre os círculos */
     margin-left: 10px;
     margin-top: 40px;
+
+    @media (min-width: 992px) and (max-width: 1280px){
+  margin-left: 0px;
+  transform: translateX(53px);
+  }
+
   }
 
   .dot {
@@ -143,13 +171,13 @@ export const ImagensInferiorContainer = styled.div`
   justify-content: space-between;
   margin-top: 100px;
   
-  img {
-    width: 32%; /* Ajusta a largura das imagens para que fiquem lado a lado */
-    height: auto;
-    margin-left: 30px;
-    margin-right:40px;
-    transform: translateY(20px);
+  @media (min-width: 992px) and (max-width: 1280px) {
+    
+    
+   
   }
+
+  
 
   .cubo2 {
     display: grid;
@@ -159,6 +187,12 @@ export const ImagensInferiorContainer = styled.div`
     transform: translateY(-20px);
     margin-left: 30px;
     margin-right: 60px;
+
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+      transform: translateX(55px);
+   
+  }
   }
 
   .dot {
@@ -174,6 +208,12 @@ export const ImagensInferiorContainer = styled.div`
     height: 60px;
     margin-top: 50px;
     transform: translateX(-10px);
+
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+      margin-right: 0px;
+      transform: translateX(55px);
+    }
   }
 
 /* Responsividade */
@@ -205,6 +245,10 @@ export const IconeLogo = styled.div`
   margin-top: -120px;
   margin-left: 15px;
 
+  @media (min-width: 992px) and (max-width: 1280px){
+  margin-left: 0px;
+  transform: translateX(53px);
+  }
 
   .RetanguloInferior{
    border: solid 1px #A8990F;
@@ -277,6 +321,17 @@ export const SkillsContainer = styled.div`
 
   }
 
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    width: 100%;
+    margin-left: 0;
+    transform: translateX(-5px);
+   
+
+    
+   
+  
+  }
   
   .Skill-1 {
     /* background-color: #2b2e33; */

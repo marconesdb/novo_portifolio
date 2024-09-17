@@ -12,6 +12,11 @@ export const AsideLeft = styled.aside`
    @media (min-width: 360px) and (max-width: 768px) {
     display: none;
     }
+
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+      display: none;
+    }
 `;
 
 // Estiliza o traço vertical

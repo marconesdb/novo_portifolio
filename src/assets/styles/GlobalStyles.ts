@@ -15,7 +15,6 @@ export const GlobalStyles = createGlobalStyle `
     
   background-color: #282c33;
  
-  // height: 50vh; /* ou altura específica */
 
   }
 

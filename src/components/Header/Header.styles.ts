@@ -27,6 +27,15 @@ export const Container = styled.header`
     max-width: 1335px; 
   }
   
+
+
+  @media (min-width: 992px) and (max-width: 1280px){
+  width: 100%;
+  max-width: 1280px;
+  padding: 10px 20px;
+   /* Reduzindo o padding */
+  justify-content: space-between; /* Mantém os elementos distribuídos */
+  }
 `;
 
 

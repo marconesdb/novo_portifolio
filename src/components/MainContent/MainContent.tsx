@@ -16,8 +16,8 @@ const MainContent = () => {
       <Projects/>
       <Skills/>
       <About/>
-     <Contact/>
-       <Formulario/>
+      <Contact/>
+     <Formulario/>
     </div>
   );
 };

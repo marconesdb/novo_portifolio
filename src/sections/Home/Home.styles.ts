@@ -27,6 +27,14 @@ export const Container = styled.section`
 
   
   }
+
+  
+  @media (min-width: 992px) and (max-width: 1280px){
+    width: 100%; 
+    
+   
+    
+  }
 `;
 
 // Componente ContentWrapper
@@ -45,7 +53,11 @@ export const ContentWrapper = styled.div`
     
   }
 
-
+  @media (min-width: 992px) and (max-width: 1280px){
+    width: 100%;
+    padding: 0;
+    
+  }
   `;
 
 // Componente TextSection
@@ -62,7 +74,11 @@ export const TextSection = styled.div`
     /* transform: translateY(50px); */
     padding-top: 3rem;  // Usar rem para manter consistência
 
+    @media (min-width: 992px) and (max-width: 1280px){
+    width: 100%;
+    margin-right: 0;
     
+  }
     .TextoFront-end{
       display: inline;
       
@@ -87,7 +103,10 @@ export const ImageSection = styled.div`
     transform: translateY(0px);
   }
 
-
+  @media (min-width: 992px) and (max-width: 1280px){
+    width: 100%;
+    margin-right: 0;
+  }
 `;
 
 // Componente Logo
@@ -113,6 +132,14 @@ export const Logo = styled.div`
   @media (min-width: 1640px) {
     
   }
+
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    width: 100%;
+    transform: translateX(140px);
+  }
+
+
 
   .retanguloInferior {
     border: 1px solid ${secondaryColor};
@@ -260,7 +287,9 @@ export const Image = styled.img`
     margin-top: 1.25rem;
   }
 
-  
+  @media (min-width: 992px) and (max-width: 1280px){
+    transform: translateX(70px);
+  }
 `;
 
 // Componente ImageQuadrado
@@ -293,7 +322,9 @@ export const PortfolioTag = styled.div`
     margin-top: 20px;
   }
 
-   
+  @media (min-width: 992px) and (max-width: 1280px){
+    transform: translateX(50px);
+  } 
 
   span {
     color: ${textColor};

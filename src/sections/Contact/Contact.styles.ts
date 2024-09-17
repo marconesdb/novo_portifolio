@@ -23,6 +23,12 @@ export const Container = styled.section`
     height: 600px;
     margin-bottom: -300px;
   }
+
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    margin-top: -10px;
+   
+  }
 `;
 
 export const Title = styled.div`
@@ -44,6 +50,10 @@ export const Title = styled.div`
     margin-top: -150px; /* Ajusta o espaçamento superior conforme necessário */
    
     }
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+    margin-top: 100px;
+  }
 
   span {
     color: #A8990F; /* Cor amarela */
@@ -83,10 +93,7 @@ export const Main = styled.div`
   @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column; /* Alinha os elementos em uma única coluna */
     margin-top: 20px; /* Ajusta o espaçamento superior */
-    
   }
-
-
 
   @media (min-width: 1640px) {
     margin-top: -20px;
@@ -96,13 +103,19 @@ export const Main = styled.div`
 `;
 
 export const ContainerEsquerdo = styled.div`
-  width: 50%; /* Ocupa 50% da largura */
+  width: 65%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
   
+
   @media (min-width: 360px) and (max-width: 768px) {
       margin-top: 100px;
       width: 100%;
     }
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+   padding: 0;
+   
+  }
   .paragrafo{
   font-size: 16px;
   color: #ABB2BF;
@@ -121,6 +134,16 @@ export const ContainerDireito = styled.div`
   width: 50%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
  
+  @media (min-width: 992px) and (max-width: 1280px) {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 190px;
+    width: 100%;
+  }
+
+
   @media (min-width: 360px) and (max-width: 768px) {
       margin-top: 100px;
       margin-left: -320px;
@@ -140,6 +163,11 @@ export const ContainerDireito = styled.div`
       margin-left: -25px;
       padding-bottom: 50px;
     }
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    
+   
+  }
   }
 
   .emailContainer {

@@ -16,6 +16,14 @@ export const Container = styled.section`
   margin-top: 280px;
   
   }
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    width: 100%;
+   transform: translateY(-200px); /* Ajuste o valor conforme necessário */
+   margin-bottom: 0; /* Remover margem inferior se não for necessária */
+  }
+
+
 `;
 
 
@@ -88,6 +96,14 @@ export const ContainerAbout = styled.div`
     margin-top: 450px;
     
     }
+
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+   justify-content: space-around; /* Espaçamento mais balanceado */
+   height: 450px; /* Ajuste a altura se necessário */
+   transform: translateY(-150px); /* Ajuste conforme necessário */
+   }
+
 `;
 
 
@@ -101,6 +117,12 @@ export const ContainerEsquerdo = styled.div`
     margin-top: -60px;
     
     }
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+   width: 45%; /* Ajuste conforme necessário */
+   margin-top: 0;
+}
+
 
   .texto-titulo{
   font-size: 16px;
@@ -155,6 +177,13 @@ export const ContainerDireito = styled.div`
     min-height: 100vh;
   }
 
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+   width: 45%; /* Ajuste conforme necessário */
+   
+  }
+
+
   .cubo1 {
     display: grid;
     grid-template-columns: repeat(5, 15px); /* 5 colunas de 30px */
@@ -196,6 +225,11 @@ export const ContainerDireito = styled.div`
       margin-left:75px;
       margin-top: 60px;
    }
+
+   @media (min-width: 992px) and (max-width: 1280px) {
+   margin-left: 320px;
+   
+  }
   }
 
   .dot {
