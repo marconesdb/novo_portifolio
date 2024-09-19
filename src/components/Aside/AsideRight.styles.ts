@@ -39,7 +39,7 @@ export const RetanguloDireito= styled.div`
 
  @media (min-width: 1281px) and (max-width: 1639px){
   width: 76%;
-  margin-left: 33px;
+  margin-left: 25px;
   
   }
 `;
@@ -61,7 +61,7 @@ export const RetanguloDireitoInferior= styled.div`
 
   @media (min-width: 1281px) and (max-width: 1639px){
     width: 76%;
-    margin-left: 33px;
+    margin-left: 25px;
    transform: translateY(none);
    
   }
@@ -101,8 +101,8 @@ export const CuboDireito= styled.div`
   
   }
 
-  @media (min-width: 1640px) {
+  /* @media (min-width: 1640px) {
     transform: translateY(400px);
     margin-left: 52px;
-  }
+  } */
 `;
