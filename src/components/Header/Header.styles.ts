@@ -21,18 +21,16 @@ export const Container = styled.header`
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
   
 
-
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    }
   
-  @media (min-width: 1640px) {
-    max-width: 1335px; 
-  }
-  
-
-
   @media (min-width: 992px) and (max-width: 1280px){
   width: 100%;
   max-width: 1280px;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
    /* Reduzindo o padding */
   justify-content: space-between; /* Mantém os elementos distribuídos */
   }
@@ -40,7 +38,12 @@ export const Container = styled.header`
   @media (min-width: 1281px) and (max-width: 1639px){
     width: 100%;
     max-width: 80%;
-  }  
+  }
+  
+  @media (min-width: 1640px) {
+    max-width: 1335px; 
+  }
+  
 `;
 
 

@@ -11,6 +11,10 @@ export const AsideRight = styled.aside`
     display: none; /* Esconde o AsideRight em telas com largura até 640px */
   }
 
+  @media (min-width: 769px) and (max-width: 991px) {
+    display: none;
+    }
+
   @media (min-width: 992px) and (max-width: 1280px) {
       display: none;
     }
@@ -80,8 +84,8 @@ export const CuboDireito= styled.div`
 
 
     @media (min-width: 1640px) {
-    transform: translateY(3090px);
-    margin-left: 160px;
+    transform: translateY(3520px);
+    margin-left: 210px;
   }
 
 

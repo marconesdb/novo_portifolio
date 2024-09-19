@@ -13,7 +13,11 @@ export const AsideLeft = styled.aside`
     display: none;
     }
 
+    @media (min-width: 769px) and (max-width: 991px) {
+    display: none;
+    }
 
+    
     @media (min-width: 992px) and (max-width: 1280px) {
       display: none;
     }

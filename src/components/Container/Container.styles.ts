@@ -10,14 +10,23 @@ export const Container = styled.div`
    padding-bottom: 0px; /* Remova padding inferior */
     
   }
-  @media (min-width: 1640px) {
-    height: 80vh;
-  }
+
+
+  
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 100%;
+    
+    }
 
 
   @media (min-width: 1281px) and (max-width: 1639px){
    width: 100%;
    
+  }
+
+
+  @media (min-width: 1640px) {
+    height: 80vh;
   }
 `;
 

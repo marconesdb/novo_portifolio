@@ -29,6 +29,13 @@ export const Container = styled.section`
   }
 
   
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 100%;
+    max-width: none;
+    
+    }
+
+
   @media (min-width: 992px) and (max-width: 1280px){
     width: 100%; 
      
@@ -56,6 +63,12 @@ export const ContentWrapper = styled.div`
     
   }
 
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 100%;
+    margin-top: 0px;
+    
+    }
+
   @media (min-width: 992px) and (max-width: 1280px){
     width: 100%;
     padding: 0;
@@ -82,6 +95,14 @@ export const TextSection = styled.div`
     margin-right: 0;
     
   }
+
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 100%;
+   
+    
+    }
+
     .TextoFront-end{
       display: inline;
       
@@ -98,10 +119,7 @@ export const ImageSection = styled.div`
   padding: 0;
   margin-right: -5rem;  // Ajuste com rem
 
-  @media (min-width: 1281px) and (max-width: 1639px){
-    margin-right: 0;  
-    
-  }
+ 
 
   @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column;
@@ -110,9 +128,27 @@ export const ImageSection = styled.div`
     transform: translateY(0px);
   }
 
+
+  @media (min-width: 769px) and (max-width: 991px) {
+  flex-direction: row;
+  gap: 1rem; // Ajusta o espaçamento entre as imagens
+  margin-right: 0; // Remover a margem à direita
+  /* transform: translateX(33px); */
+  transform: translateY(-90px);
+  
+  }
+
+  
+
   @media (min-width: 992px) and (max-width: 1280px){
     width: 100%;
     margin-right: 0;
+  }
+
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+    margin-right: 0;  
+    
   }
 `;
 
@@ -134,7 +170,12 @@ export const Logo = styled.div`
     transform: scale(0.9);
   }
 
-   
+  @media (min-width: 769px) and (max-width: 991px) {
+     
+    transform: translateY(50px);
+    transform: translateX(75px);
+    
+  }
 
   @media (min-width: 1640px) {
     
@@ -226,7 +267,10 @@ export const Title = styled.h1`
     text-align: center;
   }
 
- 
+  @media (min-width: 769px) and (max-width: 991px) {
+    font-size: 1.9rem;
+    
+    }
   span {
     color: ${secondaryColor};
   }
@@ -294,6 +338,14 @@ export const Image = styled.img`
     margin-top: 1.25rem;
   }
 
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 18rem;
+    /* margin-left: 75px; */
+    /* padding: 25px; */
+    /* transform: translateX(33px); */
+  }
+
+
   @media (min-width: 992px) and (max-width: 1280px){
     transform: translateX(70px);
   }
@@ -314,7 +366,7 @@ export const PortfolioTag = styled.div`
   font-size: 1rem;
   color: ${lightTextColor};
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   margin-top: 2rem;
   border: 1px solid #ABB2BF;
   width: 25rem;
@@ -328,6 +380,16 @@ export const PortfolioTag = styled.div`
     justify-content: center;
     margin-top: 20px;
   }
+
+ 
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 17.875rem;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 25px;
+    /* transform: translateX(135px); */
+  }
+
 
   @media (min-width: 992px) and (max-width: 1280px){
     transform: translateX(50px);
