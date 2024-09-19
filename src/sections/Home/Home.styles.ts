@@ -31,10 +31,13 @@ export const Container = styled.section`
   
   @media (min-width: 992px) and (max-width: 1280px){
     width: 100%; 
-    
-   
-    
+     
   }
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+    width: 100%;
+    max-width: 100%;
+  } 
 `;
 
 // Componente ContentWrapper
@@ -95,7 +98,11 @@ export const ImageSection = styled.div`
   padding: 0;
   margin-right: -5rem;  // Ajuste com rem
 
-  
+  @media (min-width: 1281px) and (max-width: 1639px){
+    margin-right: 0;  
+    
+  }
+
   @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column;
     align-items: center;

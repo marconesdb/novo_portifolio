@@ -17,6 +17,15 @@ export const AsideLeft = styled.aside`
     @media (min-width: 992px) and (max-width: 1280px) {
       display: none;
     }
+
+
+    @media (min-width: 1281px) and (max-width: 1639px){
+    width: 10%; /* Mesma abordagem do Header */
+    /* Mesmo max-width para garantir consistência */
+    /* max-width: 1639px;  */
+    justify-content: space-between;
+   
+  } 
 `;
 
 // Estiliza o traço vertical

@@ -36,6 +36,11 @@ export const Container = styled.header`
    /* Reduzindo o padding */
   justify-content: space-between; /* Mantém os elementos distribuídos */
   }
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+    width: 100%;
+    max-width: 80%;
+  }  
 `;
 
 

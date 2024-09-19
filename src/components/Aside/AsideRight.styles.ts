@@ -14,6 +14,13 @@ export const AsideRight = styled.aside`
   @media (min-width: 992px) and (max-width: 1280px) {
       display: none;
     }
+
+    @media (min-width: 1281px) and (max-width: 1639px){
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+   
+  }
 `;
 
 export const RetanguloDireito= styled.div`
@@ -29,6 +36,12 @@ export const RetanguloDireito= styled.div`
    margin-left:185px;
    
  }
+
+ @media (min-width: 1281px) and (max-width: 1639px){
+  width: 76%;
+  margin-left: 33px;
+  
+  }
 `;
 
 export const RetanguloDireitoInferior= styled.div`
@@ -44,6 +57,13 @@ export const RetanguloDireitoInferior= styled.div`
     transform: translateY(1600px);
     margin-left:185px;
     height: 200px;
+  }
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+    width: 76%;
+    margin-left: 33px;
+   transform: translateY(none);
+   
   }
 `;
 
@@ -62,6 +82,13 @@ export const CuboDireito= styled.div`
     @media (min-width: 1640px) {
     transform: translateY(3090px);
     margin-left: 160px;
+  }
+
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+   margin-left: 0;
+    transform: translateY(none);
+   
   }
   }
 

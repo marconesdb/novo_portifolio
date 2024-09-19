@@ -12,7 +12,13 @@ export const Container = styled.div`
   }
   @media (min-width: 1640px) {
     height: 80vh;
-    }
+  }
+
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+   width: 100%;
+   
+  }
 `;
 
 
@@ -41,4 +47,11 @@ export const FooterWrapper = styled.footer`
     transform: translateY(5220px);
    
   }
+
+  @media (min-width: 1281px) and (max-width: 1639px){
+    width: 100%;
+ 
+    
+  }
+
 `;
