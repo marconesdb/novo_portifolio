@@ -24,6 +24,7 @@ export const Container = styled.header`
   @media (min-width: 769px) and (max-width: 991px) {
     width: 100%;
     max-width: 100%;
+    padding: 10px 20px;
     justify-content: space-between;
     }
   
