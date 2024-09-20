@@ -49,7 +49,7 @@ export const ImageContainer = styled.div`
  
 
   @media (min-width: 1281px) and (max-width: 1639px) {
-    transform: translateY(-700px);
+    transform: translateY(-650px);
   }
   
 `;
