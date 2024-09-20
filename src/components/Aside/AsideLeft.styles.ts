@@ -46,7 +46,11 @@ export const ImageContainer = styled.div`
   display: flex;
   flex-direction: column; /* Alinha as imagens verticalmente */
   gap: 10px; /* Espaço entre as imagens */
-  transform: translateY(-750px);
+ 
+
+  @media (min-width: 1281px) and (max-width: 1639px) {
+    transform: translateY(-750px);
+  }
   
 `;
 
