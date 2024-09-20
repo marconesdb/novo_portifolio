@@ -18,6 +18,10 @@ export const ContainerCitacao = styled.div`
     padding: 0 10px; /* Reduz o padding lateral */
     
   }
+
+  @media (min-width: 769px) and (max-width: 991px){
+    
+  }
 `;
 
 

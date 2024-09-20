@@ -90,18 +90,19 @@ export const TextSection = styled.div`
     /* transform: translateY(50px); */
     padding-top: 3rem;  // Usar rem para manter consistência
 
+  
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    width: 100%;
+  
+    }
+
     @media (min-width: 992px) and (max-width: 1280px){
     width: 100%;
     margin-right: 0;
     
   }
 
-
-  @media (min-width: 769px) and (max-width: 991px) {
-    width: 100%;
-   
-    
-    }
 
     .TextoFront-end{
       display: inline;
@@ -139,7 +140,6 @@ export const ImageSection = styled.div`
   }
 
   
-
   @media (min-width: 992px) and (max-width: 1280px){
     width: 100%;
     margin-right: 0;
@@ -271,6 +271,12 @@ export const Title = styled.h1`
     font-size: 1.9rem;
     
     }
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: 2rem;
+    
+  }
+
   span {
     color: ${secondaryColor};
   }
