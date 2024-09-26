@@ -65,7 +65,7 @@ export const RetanguloDireitoInferior= styled.div`
 
   @media (min-width: 1281px) and (max-width: 1639px){
     width: 76%;
-    margin-left: 30px;
+    margin-left: 25px;
    transform: translateY(none);
    
   }
@@ -90,7 +90,7 @@ export const CuboDireito= styled.div`
 
 
   @media (min-width: 1281px) and (max-width: 1639px){
-    margin-left: 0;
+   margin-left: 0;
     transform: translateY(none);
    
   }

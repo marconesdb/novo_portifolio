@@ -24,7 +24,9 @@ export const AsideLeft = styled.aside`
 
 
     @media (min-width: 1281px) and (max-width: 1639px){
-    width: 10%; 
+    width: 10%; /* Mesma abordagem do Header */
+    /* Mesmo max-width para garantir consistência */
+    /* max-width: 1639px;  */
     justify-content: space-between;
    
   } 
@@ -46,11 +48,7 @@ export const ImageContainer = styled.div`
   display: flex;
   flex-direction: column; /* Alinha as imagens verticalmente */
   gap: 10px; /* Espaço entre as imagens */
- 
-
-  @media (min-width: 1281px) and (max-width: 1639px) {
-    transform: translateY(-650px);
-  }
+  transform: translateY(-750px);
   
 `;
 

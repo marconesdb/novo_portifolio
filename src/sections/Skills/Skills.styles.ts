@@ -24,10 +24,6 @@ export const Container = styled.section`
     padding: 0;
     
   }
-
-  @media (min-width: 1281px) and (max-width: 1639px) {
-     
-  }
 `;
 
 export const Title = styled.div`
@@ -104,14 +100,6 @@ export const MainContainer = styled.div`
 
     
   }
-
-  @media (min-width: 1281px) and (max-width: 1639px){
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  }
 `;
 
 export const ImagensSuperiorContainer = styled.div`
@@ -120,10 +108,10 @@ export const ImagensSuperiorContainer = styled.div`
   margin-bottom: 20px;
   margin-top: 125px;
   
-  @media (min-width: 1281px) and (max-width: 1639px) {
-    transform: translateX(-10px);  
+  @media (min-width: 992px) and (max-width: 1280px) {
+    
+  
   }
-
 
   img {
     width: 48%; /* Ajusta a largura das imagens para que fiquem lado a lado */
@@ -183,8 +171,10 @@ export const ImagensInferiorContainer = styled.div`
   justify-content: space-between;
   margin-top: 100px;
   
-  @media (min-width: 1281px) and (max-width: 1639px) {
-    transform: translateX(-20px);
+  @media (min-width: 992px) and (max-width: 1280px) {
+    
+    
+   
   }
 
   
@@ -336,18 +326,12 @@ export const SkillsContainer = styled.div`
     width: 100%;
     margin-left: 0;
     transform: translateX(-5px);
+   
 
+    
+   
+  
   }
-
-
-  @media (min-width: 1281px) and (max-width: 1639px) {
-    width: 100%;
-    transform: translateX(30px);
-    transform: translateY(none);
-    gap: 0; /* Espaço entre os itens */
-    margin-left: 0;
-  }
-
   
   .Skill-1 {
     /* background-color: #2b2e33; */
